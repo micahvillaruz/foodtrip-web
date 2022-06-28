@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -49,6 +49,67 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
-$route['404_override'] = '';
+$route['default_controller'] = 'home/customer';
+$route['404_override'] = 'auth/error_message';
 $route['translate_uri_dashes'] = FALSE;
+
+/*
+| -------------------------------------------------------------------------
+| ROUTES
+| -------------------------------------------------------------------------
+*/
+
+// Main Routes
+$route['customer']                                  = 'home/customer';
+$route['restoadmin']                                = 'home/restoadmin';
+
+// Authentication Routes
+$route['signin']                                    = 'auth/signin';
+$route['signup/restoadmin']                         = 'auth/signup_restoadmin';
+$route['signup/customer']                           = 'auth/signup_customer';
+$route['forgot-password']                           = 'auth/forgot_password';
+$route['password-change']                           = 'auth/password_change';
+$route['logout']                                    = 'auth/logout';
+
+// Admin Routes
+$route['admin']                                     = 'admin/dashboard';
+$route['admin/restaurants']                         = 'admin/restaurants';
+$route['admin/restaurants/restaurant-details']      = 'admin/restaurant_details';
+$route['admin/products']                            = 'admin/products';
+$route['admin/products/product-details']            = 'admin/product_details';
+$route['admin/products/add-product']                = 'admin/add_product';
+$route['admin/customers']                           = 'admin/customers';
+$route['admin/orders']                              = 'admin/orders'; // remove add order
+$route['admin/orders/order-details']                = 'admin/order_details'; // edit order status, courier etc
+$route['admin/invoices']                            = 'admin/invoices';
+$route['admin/invoices/invoice-details']            = 'admin/invoice_details';
+$route['admin/restaurant-admins']                   = 'admin/restaurant_admins';
+
+// Customer Routes
+$route['customer/explore']                          = 'customer/explore';
+$route['customer/profile']                          = 'customer/profile';
+$route['customer/profile/settings']                 = 'customer/profile_settings';
+$route['customer/products']                         = 'customer/products';
+$route['customer/products/product-details']         = 'customer/product_details';
+$route['customer/restaurants']                      = 'customer/restaurants';
+$route['customer/restaurants/restaurant-details']   = 'customer/restaurant_details';
+$route['customer/cart']                             = 'customer/shopping_cart';
+$route['customer/cart/checkout']                    = 'customer/checkout';
+$route['customer/orders']                           = 'customer/orders';
+$route['customer/orders/order-details']             = 'customer/order_details';
+$route['customer/invoices']                         = 'customer/invoices';
+$route['customer/invoices/invoice-details']         = 'customer/invoice_details';
+
+// Resto Admin Routes
+$route['restoadmin/dashboard']                      = 'restoadmin/dashboard';
+$route['restoadmin/profile']                        = 'restoadmin/profile';
+$route['restoadmin/profile/settings']               = 'restoadmin/profile_settings';
+$route['restoadmin/restaurant']                     = 'restoadmin/restaurant';
+$route['restoadmin/restaurant/edit-restaurant']     = 'restoadmin/edit_restaurant';
+$route['restoadmin/products']                       = 'restoadmin/products';
+$route['restoadmin/products/product-details']       = 'restoadmin/product_details';
+$route['restoadmin/products/add-product']           = 'restoadmin/add_product';
+$route['restoadmin/orders']                         = 'restoadmin/orders';
+$route['restoadmin/orders/order-details']           = 'restoadmin/order_details';
+$route['restoadmin/invoices']                       = 'restoadmin/invoices';
+$route['restoadmin/invoices/invoice-details']       = 'restoadmin/invoice_details';
