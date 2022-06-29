@@ -31,6 +31,6 @@
     <!-- App Css-->
     <link href="<?php echo base_url('public/assets') ?>/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
-    <link href="<?php echo base_url('public/assets') ?>/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url('public/assets') ?>/css/custom.css" rel="stylesheet" type="text/css" />
 
     </head>

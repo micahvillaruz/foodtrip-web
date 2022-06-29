@@ -5,3 +5,8 @@ Website: https://themesbrand.com/
 Contact: support@themesbrand.com
 File: Custom Css File
 */
+.foodtrip-bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
