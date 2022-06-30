@@ -20,10 +20,10 @@
             <div class="text-center mt-sm-5 mb-4 text-white-50">
               <div>
                 <a href="index.html" class="d-inline-block auth-logo">
-                  <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" alt="" height="50">
+                  <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" alt="" height="60">
                 </a>
               </div>
-              <p class="mt-3 fs-15 fw-medium">FoodTrip😋 | Food Ordering App🍕</p>
+              <p class="mt-3 fs-15 fw-medium">FoodTrip 😋 | Food Ordering App 🍕</p>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
 
                 <div class="mt-4 pt-2">
                   <h5>You are Logged Out</h5>
-                  <p class="text-muted">Thank you for using <span class="fw-semibold">velzon</span> admin template</p>
+                  <p class="text-muted">Thank you for visiting <span class="fw-semibold">FoodTrip</span></p>
                   <div class="mt-4">
                     <a href="auth-signin-basic.html" class="btn btn-success w-100">Sign In</a>
                   </div>
