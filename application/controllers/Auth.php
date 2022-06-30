@@ -71,6 +71,7 @@ class Auth extends CI_Controller
 		$this->load->view('access/forgot-password');
 		$this->load->view('access/footer');
 		$this->load->view('partials/foot-scripts');
+		$this->load->view('access/scripts/forgot-password-scripts');
 	}
 
 	public function password_change()
