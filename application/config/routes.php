@@ -61,10 +61,11 @@ $route['translate_uri_dashes'] = FALSE;
 
 // Main Routes
 $route['customer']                                  = 'home/customer';
-$route['restoadmin']                                = 'home/restoadmin';
+$route['restaurant']                                = 'home/restaurant';
 
 // Authentication Routes
 $route['signin']                                    = 'auth/signin';
+$route['register/restaurant']                       = 'auth/register_restaurant';
 $route['signup/restoadmin']                         = 'auth/signup_restoadmin';
 $route['signup/customer']                           = 'auth/signup_customer';
 $route['forgot-password']                           = 'auth/forgot_password';

@@ -30,6 +30,17 @@ class Auth extends CI_Controller
 		$this->load->view('access/scripts/signin-scripts');
 	}
 
+	public function register_restaurant()
+	{
+		$this->load->view('partials/main');
+		$this->load->view('partials/title-meta');
+		$this->load->view('partials/head-css');
+		$this->load->view('access/restaurant/pages/restaurant');
+		$this->load->view('access/footer');
+		$this->load->view('partials/foot-scripts');
+		$this->load->view('access/restaurant/pages/scripts/restaurant-scripts');
+	}
+
 	public function signup_restoadmin()
 	{
 		$this->load->view('partials/main');
