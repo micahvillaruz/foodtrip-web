@@ -40,27 +40,33 @@
                                             </div>
 
                                             <div class="mt-4">
-                                                <form action="index.html">
+                                                <form class="needs-validation" novalidate id="signin_form" name="signin_form" enctype="multipart/form-data">
 
                                                     <div class="mb-3">
-                                                        <label for="email" class="form-label">Email Address</label>
-                                                        <input type="email" class="form-control" id="email" placeholder="Enter email address" required>
+                                                        <label for="email_address" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" id="email_address" name="email_address" placeholder="Enter Email Address" required>
+                                                        <div class="invalid-feedback">
+                                                            Please enter Email Address
+                                                        </div>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <div class="float-end">
-                                                            <a href="auth-pass-reset-cover.html" class="text-muted">Forgot password?</a>
+                                                            <a href="#" class="text-muted">Forgot password?</a>
                                                         </div>
-                                                        <label class="form-label" for="password-input">Password</label>
+                                                        <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
                                                         <div class="position-relative auth-pass-inputgroup mb-3">
-                                                            <input type="password" class="form-control pe-5" placeholder="Enter password" id="password-input" required>
-                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                            <input type="password" class="form-control pe-5" placeholder="Enter Password" id="password" name="password" required>
+                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
+                                                            <div class="invalid-feedback">
+                                                                Please enter Password
+                                                            </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="auth-remember-check">
-                                                        <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                                                        <input class="form-check-input" type="checkbox" value="" id="remember-check" name="remember-check">
+                                                        <label class="form-check-label" for="remember-check">Remember me</label>
                                                     </div>
 
                                                     <div class="mt-4">

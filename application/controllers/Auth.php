@@ -21,6 +21,7 @@ class Auth extends CI_Controller
 	 */
 	public function signin()
 	{
+		$this->session->sess_destroy();
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
@@ -28,6 +29,34 @@ class Auth extends CI_Controller
 		$this->load->view('access/footer');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('access/scripts/signin-scripts');
+	}
+
+	public function oAuth()
+	{
+		if ($_GET['token'] != null) {
+			// set session
+			$this->session->set_userdata(
+				array(
+					'TOKEN' => $_GET['token'],
+					'FIRST_NAME' => $_GET['first_name'],
+					'MIDDLE_NAME' => $_GET['middle_name'],
+					'LAST_NAME' => $_GET['last_name'],
+					'FULL_NAME' => $_GET['full_name'],
+					'EMAIL' => $_GET['email_address'],
+					'USER_TYPE' => $_GET['user_type'],
+				)
+			);
+			if ($this->session->userdata('USER_TYPE') == 'Admin') {
+				// redirect admin dashboard 
+				redirect(base_url('admin/dashboard'));
+			} elseif ($this->session->userdata('USER_TYPE') == 'Resto_Admin') {
+				// redirect restoadmin dashboard 
+				redirect(base_url('restoadmin/dashboard'));
+			} else {
+				// redirect customer homepage
+				redirect(base_url('customer/explore'));
+			}
+		}
 	}
 
 	public function register_restaurant()

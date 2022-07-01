@@ -1,3 +1,6 @@
+<!-- Sweet Alert css-->
+<link href="<?php echo base_url('public/assets') ?>/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
 <!-- Dropzone css -->
 <link href="<?php echo base_url('public/assets') ?>/libs/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
 
@@ -12,6 +15,8 @@
 
 <!--Swiper slider css-->
 <link href="<?php echo base_url('public/assets') ?>/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+<!-- jQuery cdn -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <!-- Layout config Js -->
 <script src="<?php echo base_url('public/assets') ?>/js/layout.js"></script>
@@ -31,6 +36,10 @@
 <link href="<?php echo base_url('public/assets') ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <!-- Icons Css -->
 <link href="<?php echo base_url('public/assets') ?>/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+<!-- bootstrap icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 <!-- App Css-->
 <link href="<?php echo base_url('public/assets') ?>/css/app.min.css" rel="stylesheet" type="text/css" />
 <!-- custom Css-->
