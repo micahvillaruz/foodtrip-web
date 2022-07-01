@@ -18,21 +18,18 @@
               <a class="nav-link fs-15 active" href="#hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-15" href="#wallet">Wallet</a>
+              <a class="nav-link fs-15" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-15" href="#marketplace">Marketplace</a>
+              <a class="nav-link fs-15" href="#restaurant">Restaurants</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-15" href="#categories">Categories</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link fs-15" href="#creators">Creators</a>
-            </li>
           </ul>
 
           <div class="">
-            <a href="apps-nft-wallet.html" class="btn btn-success">Wallet Connect</a>
+            <a href="#" class="btn btn-success">Create Account</a>
           </div>
         </div>
 
@@ -48,12 +45,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-sm-10">
             <div class="text-center">
-              <h1 class="display-4 fw-medium mb-4 lh-base text-white">Discover Digital Art & Collect <span class="text-success">NFT Marketplace</span></h1>
-              <p class="lead text-white-50 lh-base mb-4 pb-2">Can artwork be NFT? NFTs (non-fungible tokens) are one-of-a-kind digital assets. Given they're digital in nature, can physical works of art be turned into NFTs?.</p>
+              <h1 class="display-4 fw-medium mb-4 lh-base text-white">Browse over Restaurants & Order your <span class="text-success">Favorite Foods</span></h1>
+              <p class="lead text-white-50 lh-base mb-4 pb-2">Food means everything to Filipino culture, whether ordering at home, visiting restaurants or cooking your favorite meal. From small bites to big meals, we won't limit your appetite. Go ahead and order all you want.</p>
 
               <div class="hstack gap-2 justify-content-center">
-                <a href="apps-nft-create.html" class="btn btn-primary">Create Own <i class="ri-arrow-right-line align-middle ms-1"></i></a>
-                <a href="apps-nft-explore.html" class="btn btn-danger">Explore Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="#" class="btn btn-primary">Sign In Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="#" class="btn btn-danger">Explore Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
               </div>
             </div>
           </div>
@@ -62,14 +59,14 @@
       </div><!-- end container -->
     </section><!-- end hero section -->
 
-    <!-- start wallet -->
-    <section class="section" id="wallet">
+    <!-- start home -->
+    <section class="section" id="main">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="text-center mb-5">
-              <h2 class="mb-3 fw-semibold lh-base">Connect NFT Marketplace</h2>
-              <p class="text-muted">A non-fungible token is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, that can be sold and traded.</p>
+              <h2 class="mb-3 fw-semibold lh-base">There's something for everyone!</h2>
+              <p class="text-muted">Find and order your favorite cuisines across the Philippines - order food online in just a few taps, from pandesal with kape for Breakfast, to sinigang na baboy for Lunch, from tapsilog for brunch to sisig with egg for Dinner! We are here to satisfy your hunger with a wide selection of merchant partners.</p>
             </div>
           </div><!-- end col -->
         </div><!-- end row -->
@@ -78,20 +75,20 @@
           <div class="col-lg-4">
             <div class="card text-center border">
               <div class="card-body py-5 px-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/wallet/metamask.png" alt="" height="55" class="mb-3 pb-2">
-                <h5>Metamask</h5>
-                <p class="text-muted pb-1 fs-13">MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain.</p>
-                <a href="#!" class="btn btn-soft-info">Connect Wallet</a>
+                <img src="<?php echo base_url('public/assets') ?>/images/home/menu.png" alt="" height="60" class="mb-3 pb-2">
+                <h5>Menu</h5>
+                <p class="text-muted pb-1 fs-13">FoodTrip is a perfect solution when you don't feel like cooking or eating out. You can order the best food in Manila right to your doorstep and indulge your favorite meal with your loved ones.</p>
+                <a href="#menu" class="btn btn-info">Explore Now</a>
               </div>
             </div>
           </div><!-- end col -->
           <div class="col-lg-4">
             <div class="card text-center border">
               <div class="card-body py-5 px-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/wallet/coinbase.png" alt="" height="55" class="mb-3 pb-2">
-                <h5>Coinbase Wallet</h5>
-                <p class="text-muted pb-1 fs-13">Coinbase Wallet is a software product that gives you access to a wide spectrum.</p>
-                <a href="#!" class="btn btn-info">Change Wallet</a>
+                <img src="<?php echo base_url('public/assets') ?>/images/home/restaurant.png" alt="" height="60" class="mb-3 pb-2">
+                <h5>Restaurants</h5>
+                <p class="text-muted pb-1 fs-13">Satisfy your cravings with a huge selection of restaurants! You can order food online from all your favorite food spots from Mcdonalds, Jollibee, Chowking, KFC, and many many more! </p>
+                <a href="#restaurant" class="btn btn-info">Explore Now</a>
               </div>
             </div>
           </div>
@@ -99,207 +96,171 @@
           <div class="col-lg-4">
             <div class="card text-center border">
               <div class="card-body py-5 px-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/wallet/binance.png" alt="" height="55" class="mb-3 pb-2">
-                <h5>Binance</h5>
-                <p class="text-muted pb-1 fs-13">Binance offers a relatively secure, versatile way to invest in and trade cryptocurrencies.</p>
-                <a href="#!" class="btn btn-soft-info">Connect Wallet</a>
+                <img src="<?php echo base_url('public/assets') ?>/images/home/category.png" alt="" height="60" class="mb-3 pb-2">
+                <h5>Category</h5>
+                <p class="text-muted pb-1 fs-13">From Japanese, Chinese, American, or whatever cuisine you're craving for, FoodTrip will be there to satisfy your cravings! You'll never get tired of eating the same type of meals every day! </p>
+                <a href="#categories" class="btn btn-info">Explore Now</a>
               </div>
             </div>
           </div><!-- end col -->
         </div><!-- end row -->
       </div><!-- end container -->
-    </section><!-- end wallet -->
+    </section><!-- end main -->
 
-    <!-- start marketplace -->
-    <section class="section bg-light" id="marketplace">
+    <!-- start menu -->
+    <section class="section bg-light" id="menu">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="text-center mb-5">
-              <h2 class="mb-3 fw-semibold lh-base">Explore Products</h2>
-              <p class="text-muted mb-4">Collection widgets specialize in displaying many elements of the same type, such as a collection of pictures from a collection of articles.</p>
+              <h2 class="mb-3 fw-semibold lh-base">Explore Menu</h2>
+              <p class="text-muted mb-4">We have curated all your favorite dishes, restaurants, and cuisines to help you grab your food in the easiest & quickest way possible.</p>
               <ul class="nav nav-pills filter-btns justify-content-center" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link fw-medium active" type="button" data-filter="all">All Items</button>
+                  <button class="nav-link fw-medium active" type="button" data-filter="all">All Dishes</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link fw-medium" type="button" data-filter="artwork">Artwork</button>
+                  <button class="nav-link fw-medium" type="button" data-filter="breakfast">Breakfast</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link fw-medium" type="button" data-filter="music">Music</button>
+                  <button class="nav-link fw-medium" type="button" data-filter="group-meals">Group Meals</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link fw-medium" type="button" data-filter="games">Games</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link fw-medium" type="button" data-filter="crypto-card">Crypto Card</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link fw-medium" type="button" data-filter="3d-style">3d Style</button>
+                  <button class="nav-link fw-medium" type="button" data-filter="desserts-and-drinks">Desserts & Drinks</button>
                 </li>
               </ul>
             </div>
           </div><!-- end col -->
         </div><!-- end row -->
         <div class="row">
-          <div class="col-lg-4 product-item artwork crypto-card 3d-style">
+          <div class="col-lg-4 product-item 3d-style breakfast">
             <div class="card explore-box card-animate">
-              <div class="bookmark-icon position-absolute top-0 end-0 p-2">
-                <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
-              </div>
               <div class="explore-place-bid-img">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/img-03.jpg" alt="" class="card-img-top explore-img" />
+                <img src="<?php echo base_url('public/assets') ?>/images/food/2-pc-Pancakes-w-Drink.png" alt="" class="card-img-top explore-img" />
                 <div class="bg-overlay"></div>
                 <div class="place-bid-btn">
-                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                 </div>
               </div>
               <div class="card-body">
-                <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 19.29k </p>
-                <h5 class="mb-1"><a href="apps-nft-item-details.html">Creative Filtered Portrait</a></h5>
-                <p class="text-muted mb-0">Photography</p>
+                <h5 class="mb-1"><a href="#">2 - pc. Pancakes w/ Drink</a></h5>
+                <p class="text-muted mb-0">Jolibee</p>
               </div>
               <div class="card-footer border-top border-top-dashed">
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1 fs-14">
-                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> Highest: <span class="fw-medium">75.3ETH</span>
+                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> <span class="fw-medium">₱ 95.00</span>
                   </div>
-                  <h5 class="flex-shrink-0 fs-14 text-primary mb-0">67.36 ETH</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 product-item music crypto-card games">
+          <div class="col-lg-4 product-item 3d-style group-meals">
             <div class="card explore-box card-animate">
-              <div class="bookmark-icon position-absolute top-0 end-0 p-2">
-                <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
-              </div>
               <div class="explore-place-bid-img">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/img-02.jpg" alt="" class="card-img-top explore-img" />
+                <img src="<?php echo base_url('public/assets') ?>/images/food/Shots-Fully-Loaded-Meal.jpg" alt="" class="card-img-top explore-img" />
                 <div class="bg-overlay"></div>
                 <div class="place-bid-btn">
-                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                 </div>
               </div>
               <div class="card-body">
-                <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 23.63k </p>
-                <h5 class="mb-1"><a href="apps-nft-item-details.html">The Chirstoper</a></h5>
-                <p class="text-muted mb-0">Music</p>
+                <h5 class="mb-1"><a href="#">Shots Fully Loaded Meal</a></h5>
+                <p class="text-muted mb-0">KFC</p>
               </div>
               <div class="card-footer border-top border-top-dashed">
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1 fs-14">
-                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> Highest: <span class="fw-medium">412.30ETH</span>
+                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> <span class="fw-medium">₱ 205.00</span>
                   </div>
-                  <h5 class="flex-shrink-0 fs-14 text-primary mb-0">394.7 ETH</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 product-item artwork music games">
+          <div class="col-lg-4 product-item 3d-style desserts-and-drinks">
             <div class="card explore-box card-animate">
-              <div class="bookmark-icon position-absolute top-0 end-0 p-2">
-                <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
-              </div>
               <div class="explore-place-bid-img">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-4.gif" alt="" class="card-img-top explore-img" />
+                <img src="<?php echo base_url('public/assets') ?>/images/food/Crema-de-Leche-Halo-Halo.png" alt="" class="card-img-top explore-img" />
                 <div class="bg-overlay"></div>
                 <div class="place-bid-btn">
-                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                 </div>
               </div>
               <div class="card-body">
-                <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 15.93k </p>
-                <h5 class="mb-1"><a href="apps-nft-item-details.html">Evolved Reality</a></h5>
-                <p class="text-muted mb-0">Video</p>
+                <h5 class="mb-1"><a href="#">Crema de Leche Halo-Halo</a></h5>
+                <p class="text-muted mb-0">Mang Inasal</p>
               </div>
               <div class="card-footer border-top border-top-dashed">
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1 fs-14">
-                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> Highest: <span class="fw-medium">2.75ETH</span>
+                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i><span class="fw-medium">₱ 65.00</span>
                   </div>
-                  <h5 class="flex-shrink-0 fs-14 text-primary mb-0">3.167 ETH</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 product-item crypto-card 3d-style">
+          <div class="col-lg-4 product-item 3d-style desserts-and-drinks">
             <div class="card explore-box card-animate">
-              <div class="bookmark-icon position-absolute top-0 end-0 p-2">
-                <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
-              </div>
               <div class="explore-place-bid-img">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/img-01.jpg" alt="" class="card-img-top explore-img" />
+                <img src="<?php echo base_url('public/assets') ?>/images/food/BRKLN-Soda Shake.jpg" alt="" class="card-img-top explore-img" />
                 <div class="bg-overlay"></div>
                 <div class="place-bid-btn">
-                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                 </div>
               </div>
               <div class="card-body">
-                <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 14.85k </p>
-                <h5 class="mb-1"><a href="apps-nft-item-details.html">Abstract Face Painting</a></h5>
-                <p class="text-muted mb-0">Collectibles</p>
+                <h5 class="mb-1"><a href="#">Vanilla Berry</a></h5>
+                <p class="text-muted mb-0">Yellow Cab</p>
               </div>
               <div class="card-footer border-top border-top-dashed">
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1 fs-14">
-                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> Highest: <span class="fw-medium">122.34ETH</span>
+                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i><span class="fw-medium">₱ 155.00</span>
                   </div>
-                  <h5 class="flex-shrink-0 fs-14 text-primary mb-0">97.8 ETH</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 product-item games music 3d-style">
+          <div class="col-lg-4 product-item 3d-style group-meals">
             <div class="card explore-box card-animate">
-              <div class="bookmark-icon position-absolute top-0 end-0 p-2">
-                <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
-              </div>
               <div class="explore-place-bid-img">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/img-05.jpg" alt="" class="card-img-top explore-img" />
+                <img src="<?php echo base_url('public/assets') ?>/images/food/McCrispy-Chicken-Fillet-McFloat.png" alt="" class="card-img-top explore-img" />
                 <div class="bg-overlay"></div>
                 <div class="place-bid-btn">
-                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                 </div>
               </div>
               <div class="card-body">
-                <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 64.10k </p>
-                <h5 class="mb-1"><a href="apps-nft-item-details.html">Long-tailed Macaque</a></h5>
-                <p class="text-muted mb-0">Artwork</p>
+                <h5 class="mb-1"><a href="#">McCrispy Chicken Fillet w/ Coke McFloat</a></h5>
+                <p class="text-muted mb-0">Mcdonald's</p>
               </div>
               <div class="card-footer border-top border-top-dashed">
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1 fs-14">
-                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> Highest: <span class="fw-medium">874.01ETH</span>
+                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i><span class="fw-medium">₱ 249.00</span>
                   </div>
-                  <h5 class="flex-shrink-0 fs-14 text-primary mb-0">745.14 ETH</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 product-item artwork music crypto-card">
+          <div class="col-lg-4 product-item 3d-style group-meals">
             <div class="card explore-box card-animate">
-              <div class="bookmark-icon position-absolute top-0 end-0 p-2">
-                <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
-              </div>
               <div class="explore-place-bid-img">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/img-06.jpg" alt="" class="card-img-top explore-img" />
+                <img src="<?php echo base_url('public/assets') ?>/images/food/pancit-canton-grand-platter.png" alt="" class="card-img-top explore-img" />
                 <div class="bg-overlay"></div>
                 <div class="place-bid-btn">
-                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                  <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                 </div>
               </div>
               <div class="card-body">
-                <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 36.42k </p>
-                <h5 class="mb-1"><a href="apps-nft-item-details.html">Robotic Body Art</a></h5>
-                <p class="text-muted mb-0">Artwork</p>
+                <h5 class="mb-1"><a href="#">Pancit Canton Group Platter</a></h5>
+                <p class="text-muted mb-0">Chowking</p>
               </div>
               <div class="card-footer border-top border-top-dashed">
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1 fs-14">
-                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i> Highest: <span class="fw-medium">41.658 ETH</span>
+                    <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i><span class="fw-medium">₱ 212.00</span>
                   </div>
-                  <h5 class="flex-shrink-0 fs-14 text-primary mb-0">34.81 ETH</h5>
                 </div>
               </div>
             </div>
@@ -309,236 +270,37 @@
     </section>
     <!-- end marketplace -->
 
-    <!-- start features -->
-    <section class="section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="text-center mb-5">
-              <h2 class="mb-3 fw-semibold lh-base">Create and Sell Your NFTs</h2>
-              <p class="text-muted">The process of creating an NFT may cost less than a dollar, but the process of selling it can cost up to a thousand dollars. For example, Allen Gannett, a software developer.</p>
-            </div>
-          </div><!-- end col -->
-        </div><!-- end row -->
-
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card shadow-none">
-              <div class="card-body">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/wallet.png" alt="" class="avatar-sm">
-                <h5 class="mt-4">Set up your wallet</h5>
-                <p class="text-muted fs-14">You have to choose whether to use a hot wallet a cold wallet.</p>
-                <a href="#!" class="link-success fs-14">Read More <i class="ri-arrow-right-line align-bottom"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3">
-            <div class="card shadow-none">
-              <div class="card-body">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/money.png" alt="" class="avatar-sm">
-                <h5 class="mt-4">Create your collection</h5>
-                <p class="text-muted fs-14">Create a collection in Opensea and give it a proper art.</p>
-                <a href="#!" class="link-success fs-14">Read More <i class="ri-arrow-right-line align-bottom"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3">
-            <div class="card shadow-none">
-              <div class="card-body">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/add.png" alt="" class="avatar-sm">
-                <h5 class="mt-4">Add your NFT's</h5>
-                <p class="text-muted fs-14">Go to your profile icon and top right corner creation page.</p>
-                <a href="#!" class="link-success fs-14">Read More <i class="ri-arrow-right-line align-bottom"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3">
-            <div class="card shadow-none">
-              <div class="card-body">
-                <img src="<?php echo base_url('public/assets') ?>/images/nft/sell.png" alt="" class="avatar-sm">
-                <h5 class="mt-4">Sell Your NFT's</h5>
-                <p class="text-muted fs-14">Create a collection in Opensea and give Add items and art.</p>
-                <a href="#!" class="link-success fs-14">Read More <i class="ri-arrow-right-line align-bottom"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-      </div><!-- end container -->
-    </section><!-- end features -->
-
-    <!-- start plan -->
-    <section class="section bg-light" id="categories">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="text-center mb-5">
-              <h2 class="mb-3 fw-semibold lh-base">Trending All Categories</h2>
-              <p class="text-muted">The process of creating an NFT may cost less than a dollar, but the process of selling it can cost up to a thousand dollars. For example, Allen Gannett, a software developer.</p>
-            </div>
-          </div><!-- end col -->
-        </div><!-- end row -->
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Swiper -->
-            <div class="swiper mySwiper pb-4">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row g-1 mb-3">
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-06.jpg" alt="" class="img-fluid rounded">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-2.gif" alt="" class="img-fluid rounded mt-1">
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-5.gif" alt="" class="img-fluid rounded mb-1">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-03.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
-                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                      <h5 class="mb-0 fs-16"><a href="#!">Artwork <span class="badge badge-soft-success">206</span></a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row g-1 mb-3">
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-05.jpg" alt="" class="img-fluid rounded">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-1.gif" alt="" class="img-fluid rounded mt-1">
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-4.gif" alt="" class="img-fluid rounded mb-1">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-04.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
-                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                      <h5 class="mb-0 fs-16"><a href="#!">Crypto Card <span class="badge badge-soft-success">743</span></a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row g-1 mb-3">
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-02.jpg" alt="" class="img-fluid rounded">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-3.gif" alt="" class="img-fluid rounded mt-1">
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-1.gif" alt="" class="img-fluid rounded mb-1">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-01.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
-                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                      <h5 class="mb-0 fs-16"><a href="#!">Music <span class="badge badge-soft-success">679</span></a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row g-1 mb-3">
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-03.jpg" alt="" class="img-fluid rounded">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-5.gif" alt="" class="img-fluid rounded mt-1">
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-2.gif" alt="" class="img-fluid rounded mb-1">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-05.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
-                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                      <h5 class="mb-0 fs-16"><a href="#!">Games <span class="badge badge-soft-success">341</span></a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row g-1 mb-3">
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-02.jpg" alt="" class="img-fluid rounded">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-3.gif" alt="" class="img-fluid rounded mt-1">
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-1.gif" alt="" class="img-fluid rounded mb-1">
-                          <img src="<?php echo base_url('public/assets') ?>/images/nft/img-01.jpg" alt="" class="img-fluid rounded">
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
-                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                      <h5 class="mb-0 fs-16"><a href="#!">Photography <span class="badge badge-soft-success">1452</span></a></h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination swiper-pagination-dark"></div>
-            </div>
-          </div>
-        </div>
-      </div><!-- end container -->
-    </section>
-    <!-- end plan -->
-
     <!-- start Discover Items-->
-    <section class="section">
+    <section class="section" id="restaurant">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
             <div class="d-flex align-items-center mb-5">
-              <h2 class="mb-0 fw-semibold lh-base flex-grow-1">Discover Items</h2>
-              <a href="apps-nft-explore.html" class="btn btn-primary">View All <i class="ri-arrow-right-line align-bottom"></i></a>
+              <h2 class="mb-0 fw-semibold lh-base flex-grow-1">Discover Restaurants</h2>
+              <a href="#" class="btn btn-primary">View All <i class="ri-arrow-right-line align-bottom"></i></a>
             </div>
           </div>
         </div><!-- end row -->
         <div class="row">
           <div class="col-lg-4">
-            <div class="card explore-box card-animate border">
+            <div class="card explore-box ribbon-box card-animate border right">
               <div class="card-body">
                 <div class="d-flex align-items-center mb-3">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-2.jpg" alt="" class="avatar-xs rounded-circle">
-                  <div class="ms-2 flex-grow-1">
+                  <div class="ms-2 flex-grow-1 card-header">
                     <a href="#!">
-                      <h6 class="mb-0 fs-15">Nancy Martino</h6>
+                      <h6 class="mb-0 fs-15">Kenny Rogers Roasters</h6>
                     </a>
-                    <p class="mb-0 text-muted fs-13">Owners</p>
-                  </div>
-                  <div class="bookmark-icon">
-                    <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
                   </div>
                 </div>
                 <div class="explore-place-bid-img overflow-hidden rounded">
-                  <img src="<?php echo base_url('public/assets') ?>/images/nft/img-05.jpg" alt="" class="explore-img w-100">
+                  <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kenny-rogers-roasters.jpg" alt="" class="explore-img w-100">
                   <div class="bg-overlay"></div>
                   <div class="place-bid-btn">
-                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                   </div>
                 </div>
                 <div class="mt-3">
-                  <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 19.29k </p>
-                  <h5 class="text-success"><i class="mdi mdi-ethereum"></i> 97.8 ETH </h5>
-                  <h6 class="fs-16 mb-0"><a href="apps-nft-item-details.html">Patterns arts &amp; culture</a></h6>
+                  <a href="javascript:void(0)" class="btn btn-info btn-sm d-block">See Details</a>
                 </div>
               </div>
             </div>
@@ -547,28 +309,21 @@
             <div class="card explore-box card-animate border">
               <div class="card-body">
                 <div class="d-flex align-items-center mb-3">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-9.jpg" alt="" class="avatar-xs rounded-circle">
-                  <div class="ms-2 flex-grow-1">
+                  <div class="ms-2 flex-grow-1 card-header">
                     <a href="#!">
-                      <h6 class="mb-0 fs-15">Henry Baird</h6>
+                      <h6 class="mb-0 fs-15">Red Ribbon</h6>
                     </a>
-                    <p class="mb-0 text-muted fs-13">Creators</p>
-                  </div>
-                  <div class="bookmark-icon">
-                    <button type="button" class="btn btn-icon" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
                   </div>
                 </div>
                 <div class="explore-place-bid-img overflow-hidden rounded">
-                  <img src="<?php echo base_url('public/assets') ?>/images/nft/img-03.jpg" alt="" class="explore-img w-100">
+                  <img src="<?php echo base_url('public/assets') ?>/images/restaurants/red-ribbon.jpg" alt="" class="explore-img w-100">
                   <div class="bg-overlay"></div>
                   <div class="place-bid-btn">
-                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                   </div>
                 </div>
                 <div class="mt-3">
-                  <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 31.64k </p>
-                  <h5 class="text-success"><i class="mdi mdi-ethereum"></i> 475.23 ETH </h5>
-                  <h6 class="fs-16 mb-0"><a href="apps-nft-item-details.html">Evolved Reality</a></h6>
+                  <a href="javascript:void(0)" class="btn btn-info btn-sm d-block">See Details</a>
                 </div>
               </div>
             </div>
@@ -577,28 +332,21 @@
             <div class="card explore-box card-animate border">
               <div class="card-body">
                 <div class="d-flex align-items-center mb-3">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle">
-                  <div class="ms-2 flex-grow-1">
+                  <div class="ms-2 flex-grow-1 card-header">
                     <a href="#!">
-                      <h6 class="mb-0 fs-15">Diana Kohler</h6>
+                      <h6 class="mb-0 fs-15">McDonald's</h6>
                     </a>
-                    <p class="mb-0 text-muted fs-13">Owners</p>
-                  </div>
-                  <div class="bookmark-icon">
-                    <button type="button" class="btn btn-icon active" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
                   </div>
                 </div>
                 <div class="explore-place-bid-img overflow-hidden rounded">
-                  <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-1.gif" alt="" class="img-fluid explore-img">
+                  <img src="<?php echo base_url('public/assets') ?>/images/restaurants/mcdonalds.png" alt="" class="img-fluid explore-img">
                   <div class="bg-overlay"></div>
                   <div class="place-bid-btn">
-                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Place Bid</a>
+                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
                   </div>
                 </div>
                 <div class="mt-3">
-                  <p class="fw-medium mb-0 float-end"><i class="mdi mdi-heart text-danger align-middle"></i> 8.34k </p>
-                  <h5 class="text-success"><i class="mdi mdi-ethereum"></i> 701.38 ETH </h5>
-                  <h6 class="fs-16 mb-0"><a href="apps-nft-item-details.html">Long-tailed macaque</a></h6>
+                  <a href="javascript:void(0)" class="btn btn-info btn-sm d-block">See Details</a>
                 </div>
               </div>
             </div>
@@ -611,195 +359,135 @@
     </section>
     <!--end Discover Items-->
 
-    <!-- start Work Process -->
-    <section class="section bg-light" id="creators">
-      <div class="container">
+    <!-- start plan -->
+    <section class="section bg-light" id="categories">
+      <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
+          <div class="col-lg-5">
             <div class="text-center mb-5">
-              <h2 class="mb-3 fw-semibold lh-base">Top Creator This Week</h2>
-              <p class="text-muted">NFTs are valuable because they verify the authenticity of a non-fungible asset. This makes these assets unique and one of a kind.</p>
+              <h2 class="mb-3 fw-semibold lh-base">Trending All Categories</h2>
+              <p class="text-muted">From local Filipino cuisine to delicious western dishes like steak and burgers, there is something for everyone. Whether you're searching for the best restaurants in Manila or wondering where to eat in Quezon City, there is one destination where you can find it all : FoodTrip 😋.</p>
             </div>
-          </div>
+          </div><!-- end col -->
         </div><!-- end row -->
         <div class="row">
-          <div class="col-xl-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="flex-shink-0">
-                    <img src="<?php echo base_url('public/assets') ?>/images/nft/img-01.jpg" alt="" class="avatar-sm object-cover rounded" />
+          <div class="col-lg-12">
+            <!-- Swiper -->
+            <div class="swiper mySwiper pb-4">
+              <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-1 mb-3">
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="img-fluid rounded category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kfc.png" alt="" class="img-fluid rounded mt-1 category-img">
+                        </div>
+                        <!--end col-->
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/greenwich.png" alt="" class="img-fluid rounded mb-1 category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/chowking.jpg" alt="" class="img-fluid rounded category-img">
+                        </div>
+                        <!--end col-->
+                      </div>
+                      <!--end row-->
+                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
+                      <h5 class="mb-0 fs-16"><a href="#!">Fast Food <span class="badge badge-soft-success">206</span></a></h5>
+                    </div>
                   </div>
-                  <div class="ms-3 flex-grow-1">
-                    <a href="pages-profile.html">
-                      <h5 class="mb-1">Timothy Smith</h5>
-                    </a>
-                    <p class="text-muted mb-0"><i class="mdi mdi-ethereum text-primary fs-14"></i> 4,754 ETH</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-1 mb-3">
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/pizza-express.png" alt="" class="img-fluid rounded category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/pan-de-manila.jpg" alt="" class="img-fluid rounded mt-1 category-img">
+                        </div>
+                        <!--end col-->
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/frankies-buffalo-wings.jpg" alt="" class="img-fluid rounded mb-1 category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/army-navy.png" alt="" class="img-fluid rounded category-img">
+                        </div>
+                        <!--end col-->
+                      </div>
+                      <!--end row-->
+                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
+                      <h5 class="mb-0 fs-16"><a href="#!">Casual Dining <span class="badge badge-soft-success">743</span></a></h5>
+                    </div>
                   </div>
-                  <div>
-                    <div class="dropdown float-end">
-                      <button class="btn btn-ghost-primary btn-icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-more-fill align-middle fs-16"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item view-item-btn" href="javascript:void(0);">Share</a></li>
-                        <li><a class="dropdown-item edit-item-btn" href="#!" data-bs-toggle="modal">Report</a></li>
-                      </ul>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-1 mb-3">
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/conti-bakeshop.jpg" alt="" class="img-fluid rounded category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/dunkin-donuts.jpg" alt="" class="img-fluid rounded mt-1 category-img">
+                        </div>
+                        <!--end col-->
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/goldilocks.png" alt="" class="img-fluid rounded mb-1 category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jco.png" alt="" class="img-fluid rounded category-img">
+                        </div>
+                        <!--end col-->
+                      </div>
+                      <!--end row-->
+                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
+                      <h5 class="mb-0 fs-16"><a href="#!">Bakery <span class="badge badge-soft-success">679</span></a></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-1 mb-3">
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/hot-star.png" alt="" class="img-fluid rounded category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/burger-king.png" alt="" class="img-fluid rounded mt-1 category-img">
+                        </div>
+                        <!--end col-->
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/wendy's.png" alt="" class="img-fluid rounded mb-1 category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/subway.png" alt="" class="img-fluid rounded category-img">
+                        </div>
+                        <!--end col-->
+                      </div>
+                      <!--end row-->
+                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
+                      <h5 class="mb-0 fs-16"><a href="#!">Quick Bites <span class="badge badge-soft-success">341</span></a></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-1 mb-3">
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/yoshinoya.jpg" alt="" class="img-fluid rounded category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/tokyo-tokyo.png" alt="" class="img-fluid rounded mt-1 category-img">
+                        </div>
+                        <!--end col-->
+                        <div class="col-lg-6">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/yabu.png" alt="" class="img-fluid rounded mb-1 category-img">
+                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/marugame-udon.jpg" alt="" class="img-fluid rounded category-img">
+                        </div>
+                        <!--end col-->
+                      </div>
+                      <!--end row-->
+                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
+                      <h5 class="mb-0 fs-16"><a href="#!">Japanese <span class="badge badge-soft-success">1452</span></a></h5>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination swiper-pagination-dark"></div>
             </div>
           </div>
-          <!--end col-->
-          <div class="col-xl-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="flex-shink-0">
-                    <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-5.jpg" alt="" class="avatar-sm object-cover rounded">
-                  </div>
-                  <div class="ms-3 flex-grow-1">
-                    <a href="pages-profile.html">
-                      <h5 class="mb-1">Alexis Clarke</h5>
-                    </a>
-                    <p class="text-muted mb-0"><i class="mdi mdi-ethereum text-primary fs-14"></i> 81,369 ETH</p>
-                  </div>
-                  <div>
-                    <div class="dropdown float-end">
-                      <button class="btn btn-ghost-primary btn-icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-more-fill align-middle fs-16"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item view-item-btn" href="javascript:void(0);">Share</a></li>
-                        <li><a class="dropdown-item edit-item-btn" href="#!" data-bs-toggle="modal">Report</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-xl-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="flex-shink-0">
-                    <img src="<?php echo base_url('public/assets') ?>/images/nft/img-06.jpg" alt="" class="avatar-sm object-cover rounded">
-                  </div>
-                  <div class="ms-3 flex-grow-1">
-                    <a href="pages-profile.html">
-                      <h5 class="mb-1">Glen Matney</h5>
-                    </a>
-                    <p class="text-muted mb-0"><i class="mdi mdi-ethereum text-primary fs-14"></i> 13,156 ETH</p>
-                  </div>
-                  <div>
-                    <div class="dropdown float-end">
-                      <button class="btn btn-ghost-primary btn-icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-more-fill align-middle fs-16"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item view-item-btn" href="javascript:void(0);">Share</a></li>
-                        <li><a class="dropdown-item edit-item-btn" href="#!" data-bs-toggle="modal">Report</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-xl-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="flex-shink-0">
-                    <img src="<?php echo base_url('public/assets') ?>/images/nft/gif/img-5.gif" alt="" class="avatar-sm object-cover rounded">
-                  </div>
-                  <div class="ms-3 flex-grow-1">
-                    <a href="pages-profile.html">
-                      <h5 class="mb-1">Herbert Stokes</h5>
-                    </a>
-                    <p class="text-muted mb-0"><i class="mdi mdi-ethereum text-primary fs-14"></i> 34,754 ETH</p>
-                  </div>
-                  <div>
-                    <div class="dropdown float-end">
-                      <button class="btn btn-ghost-primary btn-icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-more-fill align-middle fs-16"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item view-item-btn" href="javascript:void(0);">Share</a></li>
-                        <li><a class="dropdown-item edit-item-btn" href="#!" data-bs-toggle="modal">Report</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-xl-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="flex-shink-0">
-                    <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-8.jpg" alt="" class="avatar-sm object-cover rounded">
-                  </div>
-                  <div class="ms-3 flex-grow-1">
-                    <a href="pages-profile.html">
-                      <h5 class="mb-1">Michael Morris</h5>
-                    </a>
-                    <p class="text-muted mb-0"><i class="mdi mdi-ethereum text-primary fs-14"></i> 13,841 ETH</p>
-                  </div>
-                  <div>
-                    <div class="dropdown float-end">
-                      <button class="btn btn-ghost-primary btn-icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-more-fill align-middle fs-16"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item view-item-btn" href="javascript:void(0);">Share</a></li>
-                        <li><a class="dropdown-item edit-item-btn" href="#!" data-bs-toggle="modal">Report</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-xl-4 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="flex-shink-0">
-                    <img src="<?php echo base_url('public/assets') ?>/images/nft/img-02.jpg" alt="" class="avatar-sm object-cover rounded">
-                  </div>
-                  <div class="ms-3 flex-grow-1">
-                    <a href="pages-profile.html">
-                      <h5 class="mb-1">James Morris</h5>
-                    </a>
-                    <p class="text-muted mb-0"><i class="mdi mdi-ethereum text-primary fs-14"></i> 63,710 ETH</p>
-                  </div>
-                  <div>
-                    <div class="dropdown float-end">
-                      <button class="btn btn-ghost-primary btn-icon dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-more-fill align-middle fs-16"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item view-item-btn" href="javascript:void(0);">Share</a></li>
-                        <li><a class="dropdown-item edit-item-btn" href="#!" data-bs-toggle="modal">Report</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
         </div>
       </div><!-- end container -->
-    </section><!-- end Work Process -->
+    </section>
+    <!-- end plan -->
 
     <!-- start cta -->
     <section class="py-5 bg-primary position-relative">
@@ -808,14 +496,13 @@
         <div class="row align-items-center gy-4">
           <div class="col-sm">
             <div>
-              <h4 class="text-white mb-0 fw-semibold">Create and Sell Your NFT's</h4>
+              <h4 class="text-white mb-0 fw-semibold">End all your cravings here.</h4>
             </div>
           </div>
           <!-- end col -->
           <div class="col-sm-auto">
             <div>
-              <a href="apps-nft-create.html" class="btn bg-gradient btn-danger">Create NFT</a>
-              <a href="apps-nft-explore.html" class="btn bg-gradient btn-info">Discover More</a>
+              <a href="#" class="btn-lg bg-gradient btn-danger">Order Now</a>
             </div>
           </div>
           <!-- end col -->
@@ -836,8 +523,8 @@
                 <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" alt="logo light" height="50">
               </div>
               <div class="mt-4">
-                <p>Premium Multipurpose Admin & Dashboard Template</p>
-                <p>You can build any type of web application like eCommerce, CRM, CMS, Project management apps, Admin Panels, etc.</p>
+                <p>A Food Ordering Web Application</p>
+                <p> From flavorful Asian delicacies to mouthwatering Mexican food, FoodTrip has got it all. With over 30 different cuisines to choose from, you can taste different flavors of the world everyday.</p>
               </div>
             </div>
           </div>
@@ -845,25 +532,32 @@
           <div class="col-lg-7 ms-lg-auto">
             <div class="row">
               <div class="col-sm-4 mt-4">
-                <h5 class="text-white mb-0">Company</h5>
+                <h5 class="text-white mb-0">Partner Restaurants</h5>
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list">
-                    <li><a href="pages-profile.html">About Us</a></li>
-                    <li><a href="pages-gallery.html">Gallery</a></li>
-                    <li><a href="apps-projects-overview.html">Projects</a></li>
-                    <li><a href="pages-timeline.html">Timeline</a></li>
+                    <li><a href="#">Bonchon</a></li>
+                    <li><a href="#">Chowking</a></li>
+                    <li><a href="#">Greenwich</a></li>
+                    <li><a href="#">Jollibee</a></li>
+                    <li><a href="#">KFC</a></li>
+                    <li><a href="#">McDonald's</a></li>
+                    <li><a href="#">PizzaHut</a></li>
+                    <li><a href="#">Shakeys</a></li>
+                    <li><a href="#">Yellow Cab</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-sm-4 mt-4">
-                <h5 class="text-white mb-0">Apps Pages</h5>
+                <h5 class="text-white mb-0">Popular Cuisines</h5>
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list">
-                    <li><a href="pages-pricing.html">Calendar</a></li>
-                    <li><a href="apps-mailbox.html">Mailbox</a></li>
-                    <li><a href="apps-chat.html">Chat</a></li>
-                    <li><a href="apps-crm-deals.html">Deals</a></li>
-                    <li><a href="apps-tasks-kanban.html">Kanban Board</a></li>
+                    <li><a href="#">Chinese Food</a></li>
+                    <li><a href="#">Fast Food</a></li>
+                    <li><a href="#">Filipino Food</a></li>
+                    <li><a href="#">Japanese Food</a></li>
+                    <li><a href="#">Korean Food</a></li>
+                    <li><a href="#">Mexican Food</a></li>
+                    <li><a href="#">Seafood</a></li>
                   </ul>
                 </div>
               </div>
@@ -871,8 +565,9 @@
                 <h5 class="text-white mb-0">Support</h5>
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list">
-                    <li><a href="pages-faqs.html">FAQ</a></li>
-                    <li><a href="pages-faqs.html">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Be a FoodTrip Merchant</a></li>
                   </ul>
                 </div>
               </div>

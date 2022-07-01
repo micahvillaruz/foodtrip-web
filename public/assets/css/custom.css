@@ -10,3 +10,7 @@ File: Custom Css File
 	height: 100%;
 	object-fit: cover;
 }
+.category-img {
+	width: 200px;
+	height: 200px;
+}
