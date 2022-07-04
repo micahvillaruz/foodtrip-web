@@ -14,3 +14,15 @@ File: Custom Css File
 	width: 200px;
 	height: 200px;
 }
+
+.client-images img {
+	max-height: 100px !important;
+}
+
+.use-cases {
+	height: 150px;
+}
+
+.resto-landing-img {
+	height: 445px;
+}

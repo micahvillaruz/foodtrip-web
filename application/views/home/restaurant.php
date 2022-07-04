@@ -24,13 +24,13 @@
               <a class="nav-link fs-14" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-14" href="#plans">Plans</a>
+              <a class="nav-link fs-14" href="#faq">FAQs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-14" href="#reviews">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-14" href="#team">Team</a>
+              <a class="nav-link fs-14" href="#usecase">Use Cases</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-14" href="#contact">Contact</a>
@@ -54,12 +54,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-sm-10">
             <div class="text-center mt-lg-5 pt-5">
-              <h1 class="display-6 fw-semibold mb-3 lh-base">The better way to order your foods with <span class="text-success"> FoodTrip </span></h1>
-              <p class="lead text-muted lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum accusamus saepe ut nobis ullam quidem aliquam repellat sed delectus cum eos, architecto, explicabo distinctio suscipit dicta sint deleniti. Blanditiis.</p>
+              <h1 class="display-6 fw-semibold mb-3 lh-base">Deliver success to your business with <span class="text-success"> FoodTrip </span></h1>
+              <p class="lead text-muted lh-base">Grow your business by getting your food out the door and onto the tables of hungry customers. FoodTrip's fast-checkout process increase average order value by 20%, save 15 minutes per table and generate 40% more tips.</p>
 
               <div class="d-flex gap-2 justify-content-center mt-4">
-                <a href="auth-signup-basic.html" class="btn btn-primary">Get Started <i class="ri-arrow-right-line align-middle ms-1"></i></a>
-                <a href="pages-pricing.html" class="btn btn-danger">View Plans <i class="ri-eye-line align-middle ms-1"></i></a>
+                <a href="#" class="btn btn-primary">Register Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="#" class="btn btn-danger">Book a Demo <i class="ri-booklet-line align-middle ms-1"></i></a>
               </div>
             </div>
 
@@ -73,25 +73,25 @@
               <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner shadow-lg p-2 bg-white rounded">
                   <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/default.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-1.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/saas.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-2.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/material.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-3.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/minimal.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-4.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/creative.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-5.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/modern.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-6.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="<?php echo base_url('public/assets') ?>/images/demos/interactive.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('public/assets') ?>/images/landing/img-7.jpg" class="d-block w-100 resto-landing-img" alt="...">
                   </div>
                 </div>
               </div>
@@ -120,39 +120,40 @@
           <div class="col-lg-12">
 
             <div class="text-center mt-5">
-              <h5 class="fs-20">Trusted <span class="text-primary text-decoration-underline">by</span> the world's best</h5>
+              <h5 class="fs-20">Trusted by the Leading Businesses Around the World
+              </h5>
 
               <!-- Swiper -->
               <div class="swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4" dir="ltr">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="client-images">
-                      <img src="<?php echo base_url('public/assets') ?>/images/clients/amazon.svg" alt="client-img" class="mx-auto img-fluid d-block">
+                      <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="client-img" class="mx-auto img-fluid d-block">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="client-images">
-                      <img src="<?php echo base_url('public/assets') ?>/images/clients/walmart.svg" alt="client-img" class="mx-auto img-fluid d-block">
+                      <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kfc.png" alt="client-img" class="mx-auto img-fluid d-block">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="client-images">
-                      <img src="<?php echo base_url('public/assets') ?>/images/clients/lenovo.svg" alt="client-img" class="mx-auto img-fluid d-block">
+                      <img src="<?php echo base_url('public/assets') ?>/images/restaurants/chowking.jpg" alt="client-img" class="mx-auto img-fluid d-block">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="client-images">
-                      <img src="<?php echo base_url('public/assets') ?>/images/clients/paypal.svg" alt="client-img" class="mx-auto img-fluid d-block">
+                      <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jco.png" alt="client-img" class="mx-auto img-fluid d-block">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="client-images">
-                      <img src="<?php echo base_url('public/assets') ?>/images/clients/shopify.svg" alt="client-img" class="mx-auto img-fluid d-block">
+                      <img src="<?php echo base_url('public/assets') ?>/images/restaurants/goldilocks.png" alt="client-img" class="mx-auto img-fluid d-block">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="client-images">
-                      <img src="<?php echo base_url('public/assets') ?>/images/clients/verizon.svg" alt="client-img" class="mx-auto img-fluid d-block">
+                      <img src="<?php echo base_url('public/assets') ?>/images/restaurants/burger-king.png" alt="client-img" class="mx-auto img-fluid d-block">
                     </div>
                   </div>
                 </div>
@@ -173,13 +174,14 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="text-center mb-5">
-              <h1 class="mb-3 ff-secondary fw-semibold lh-base">A Digital web design studio creating modern & engaging online</h1>
-              <p class="text-muted">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce the grammar</p>
+              <h1 class="mb-3 ff-secondary fw-semibold lh-base">Streamline your operations and increase revenues</h1>
+              <p class="text-muted">No matter how much your business grows, you will always be able to take free unlimited orders with zero costs. Power your business with FoodTrip & you'll never have to worry about fees or commissions.</p>
             </div>
           </div>
           <!-- end col -->
         </div>
         <!-- end row -->
+
 
         <div class="row g-3">
           <div class="col-lg-4">
@@ -187,13 +189,13 @@
               <div class="flex-shrink-0 me-3">
                 <div class="avatar-sm icon-effect">
                   <div class="avatar-title bg-transparent text-success rounded-circle">
-                    <i class="ri-pencil-ruler-2-line fs-36"></i>
+                    <i class="bx bx-bowl-hot fs-36"></i>
                   </div>
                 </div>
               </div>
               <div class="flex-grow-1">
-                <h5 class="fs-18">Creative Design</h5>
-                <p class="text-muted my-3 ff-secondary">The creative design includes designs that are unique, effective and memorable.</p>
+                <h5 class="fs-18">Best Dinning Experience</h5>
+                <p class="text-muted my-3 ff-secondary">Offer an elegant, simple and high-quality menu with your branding. Simply choose a paper menu layout or include eye-catching visuals of your dishes to enhance the dining experience. Match the aesthetic of your food with your menu.</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -206,13 +208,13 @@
               <div class="flex-shrink-0 me-3">
                 <div class="avatar-sm icon-effect">
                   <div class="avatar-title bg-transparent text-success rounded-circle">
-                    <i class="ri-palette-line fs-36"></i>
+                    <i class="bx bx-brain fs-36"></i>
                   </div>
                 </div>
               </div>
               <div class="flex-grow-1">
-                <h5 class="fs-18">Unlimited Colors</h5>
-                <p class="text-muted my-3 ff-secondary">The collection of rules and guidelines which designers use to communicate with users through appealing.</p>
+                <h5 class="fs-18">Make Smarter Decisions</h5>
+                <p class="text-muted my-3 ff-secondary">While you offer high-quality food and exceptional dining experience, understand your restaurant's trends and make smart, data-driven business decisions. Track restaurant sales and understand your customer's purchasing patterns.</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -231,7 +233,7 @@
               </div>
               <div class="flex-grow-1">
                 <h5 class="fs-18">Strategy Solutions</h5>
-                <p class="text-muted my-3 ff-secondary">Business development firm that provides strategic planning, market research services and project.</p>
+                <p class="text-muted my-3 ff-secondary">Compare sales, orders & measure customer satisfaction. Analyze the latest trends and understand the dynamics of your operations for a better strategy.</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -244,13 +246,13 @@
               <div class="flex-shrink-0 me-3">
                 <div class="avatar-sm icon-effect">
                   <div class="avatar-title bg-transparent text-success rounded-circle">
-                    <i class="ri-customer-service-line fs-36"></i>
+                    <i class="las la-handshake fs-36"></i>
                   </div>
                 </div>
               </div>
               <div class="flex-grow-1">
                 <h5 class="fs-18">Awesome Support</h5>
-                <p class="text-muted my-3 ff-secondary">Awesome Support is the most versatile and feature-rich support plugin for all version.</p>
+                <p class="text-muted my-3 ff-secondary">FoodTrip's support team is available on 24/7 to support and guide you if you have any inquiries. Our experienced team has a hands-on approach to solve your problem.</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -263,13 +265,13 @@
               <div class="flex-shrink-0 me-3">
                 <div class="avatar-sm icon-effect">
                   <div class="avatar-title bg-transparent text-success rounded-circle">
-                    <i class="ri-stack-line fs-36"></i>
+                    <i class="bx bx-laptop fs-36"></i>
                   </div>
                 </div>
               </div>
               <div class="flex-grow-1">
                 <h5 class="fs-18">Truly Multipurpose</h5>
-                <p class="text-muted my-3 ff-secondary">You usually get a broad range of options to play with. This enables you to use a single theme across multiple.</p>
+                <p class="text-muted my-3 ff-secondary">Have a single platform where you can control your operations. Edit and update your menu, view sales and orders on one platform. With our easy-to-use interface, your customers can view, browse and select menu items, add notes and confirm their order in seconds!</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -288,7 +290,7 @@
               </div>
               <div class="flex-grow-1">
                 <h5 class="fs-18">Easy to customize</h5>
-                <p class="text-muted my-3 ff-secondary">Personalise your own website, no matter what theme and what customization options.</p>
+                <p class="text-muted my-3 ff-secondary">You can make quick changes to your menu, add or remove items, and include weekday specials such as Chicken Pasta or Boneless Wings with one click. Your menu will be updated automatically across your restaurant</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -308,7 +310,7 @@
               </div>
               <div class="flex-grow-1">
                 <h5 class="fs-18">Responsive & Clean Design</h5>
-                <p class="text-muted my-3 ff-secondary">Responsive design is a graphic user interface (GUI) design approach used to create content.</p>
+                <p class="text-muted my-3 ff-secondary">Include eye-catchy images of your delicious foods and beverages. Add enticing product descriptions and increase customer satisfaction by eliminating errors in communication. </p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -321,13 +323,13 @@
               <div class="flex-shrink-0 me-3">
                 <div class="avatar-sm icon-effect">
                   <div class="avatar-title bg-transparent text-success rounded-circle">
-                    <i class="ri-google-fill fs-36"></i>
+                    <i class="mdi mdi-cash-multiple fs-36"></i>
                   </div>
                 </div>
               </div>
               <div class="flex-grow-1">
-                <h5 class="fs-18">Google Font Collection</h5>
-                <p class="text-muted my-3 ff-secondary">Google Fonts is a collection of 915 fonts, all available to use for free on your website.</p>
+                <h5 class="fs-18">Maximize Profit</h5>
+                <p class="text-muted my-3 ff-secondary">Your food, your customer, your revenue. Keep all your revenue to yourself by paying zero commission to FoodTrip. Own your customer data, create engagement and reach out to new customers.</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -340,13 +342,13 @@
               <div class="flex-shrink-0 me-3">
                 <div class="avatar-sm icon-effect">
                   <div class="avatar-title bg-transparent text-success rounded-circle">
-                    <i class="ri-briefcase-5-line fs-36"></i>
+                    <i class="lab la-cc-paypal fs-36"></i>
                   </div>
                 </div>
               </div>
               <div class="flex-grow-1">
-                <h5 class="fs-18">Top Industry Specialists</h5>
-                <p class="text-muted my-3 ff-secondary">An industrial specialist works with industrial operations to ensure that manufacturing facilities work.</p>
+                <h5 class="fs-18">Mobile Payment</h5>
+                <p class="text-muted my-3 ff-secondary">Keep your traditional service experience while offering an easy payment process. Spend less time settling and splitting the bills, turn tables faster and collect more tips. Integrated with the world's leading payment systems - no app needed.</p>
                 <div>
                   <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
                 </div>
@@ -361,13 +363,37 @@
     </section>
     <!-- end services -->
 
+    <!-- start cta -->
+    <section class="py-5 bg-primary position-relative">
+      <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-sm">
+            <div>
+              <h4 class="text-white mb-0 fw-semibold">Keep Your Business Up and Profitable</h4>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-sm-auto">
+            <div>
+              <a href="#" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-hand-coin-line align-middle me-1"></i> Partner with Us</a>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end cta -->
+
     <!-- start features -->
-    <section class="section bg-light py-5" id="features">
+    <section class="section py-5" id="features">
       <div class="container">
         <div class="row align-items-center gy-4">
           <div class="col-lg-6 col-sm-7 mx-auto">
             <div>
-              <img src="<?php echo base_url('public/assets') ?>/images/landing/features/img-1.png" alt="" class="img-fluid mx-auto">
+              <img src="https://i.pinimg.com/originals/fc/71/63/fc71635c7f1b09ed30413f59bb749582.gif" alt="" class="img-fluid mx-auto">
             </div>
           </div>
           <div class="col-lg-6">
@@ -377,26 +403,43 @@
                   <i class="ri-collage-line fs-36"></i>
                 </div>
               </div>
-              <h3 class="mb-3 fs-20">Huge collection of widgets</h3>
-              <p class="mb-4 ff-secondary fs-16">Collection widgets specialize in displaying many elements of the same type, such as a collection of pictures from a collection of articles from a news app or a collection of messages from a communication app.</p>
-
-              <div class="row pt-3">
-                <div class="col-3">
-                  <div class="text-center">
-                    <h4>5</h4>
-                    <p>Dashboards</p>
+              <h3 class="mb-3 fs-20">Well Designed Dashboard</h3>
+              <p class="mb-4 ff-secondary fs-16">The Dashboard is an actionable web-based application for sales reporting and product management that is integrated into the FoodTrip Food Ordering App.</p>
+              <div class="vstack gap-2">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Know your best selling item and filter by day, week, month.</p>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="text-center">
-                    <h4>150+</h4>
-                    <p>Pages</p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">View & manage restaurant remotely anytime, anywhere in real-time.</p>
                   </div>
                 </div>
-                <div class="col-4">
-                  <div class="text-center">
-                    <h4>7+</h4>
-                    <p>Functional Apps</p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Know your low periods and set up promotions.</p>
                   </div>
                 </div>
               </div>
@@ -410,107 +453,63 @@
     </section>
     <!-- end features -->
 
-    <!-- start cta -->
-    <section class="py-5 bg-primary position-relative">
-      <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
-      <div class="container">
-        <div class="row align-items-center gy-4">
-          <div class="col-sm">
-            <div>
-              <h4 class="text-white mb-0 fw-semibold">Build your web App/SaaS with dashboard</h4>
-            </div>
-          </div>
-          <!-- end col -->
-          <div class="col-sm-auto">
-            <div>
-              <a href="#" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-shopping-cart-2-line align-middle me-1"></i> Buy Now</a>
-            </div>
-          </div>
-          <!-- end col -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end cta -->
-
     <!-- start features -->
     <section class="section">
       <div class="container">
         <div class="row align-items-center gy-4">
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="text-muted">
-              <h5 class="fs-12 text-uppercase text-success">Design</h5>
-              <h4 class="mb-3">Well Designed Dashboards</h4>
-              <p class="mb-4 ff-secondary">Quality Dashboards (QD) is a condition-specific, actionable web-based application for quality reporting and population management that is integrated into the Electronic Health Record (EHR).</p>
+              <h5 class="fs-12 text-uppercase text-success">Excellent Customer Satisfactionn</h5>
+              <h4 class="mb-3">Cashless payments and Contactless ordering</h4>
+              <p class="mb-4 ff-secondary">Create a seamless food ordering app experience for your customers and generate more ROI from your business.</p>
 
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="vstack gap-2">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0 me-2">
-                        <div class="avatar-xs icon-effect">
-                          <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                            <i class="ri-check-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h5 class="fs-14 mb-0">Ecommerce</h5>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0 me-2">
-                        <div class="avatar-xs icon-effect">
-                          <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                            <i class="ri-check-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h5 class="fs-14 mb-0">Analytics</h5>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0 me-2">
-                        <div class="avatar-xs icon-effect">
-                          <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                            <i class="ri-check-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h5 class="fs-14 mb-0">CRM</h5>
+              <div class="vstack gap-2">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
                       </div>
                     </div>
                   </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Save manpower & hiring budget as your employees don't need to take orders manually</p>
+                  </div>
                 </div>
-                <div class="col-sm-5">
-                  <div class="vstack gap-2">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0 me-2">
-                        <div class="avatar-xs icon-effect">
-                          <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                            <i class="ri-check-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h5 class="fs-14 mb-0">Crypto</h5>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
                       </div>
                     </div>
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0 me-2">
-                        <div class="avatar-xs icon-effect">
-                          <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                            <i class="ri-check-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h5 class="fs-14 mb-0">Projects</h5>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Allow customers to add more items or reorder from the comfort of their homes.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
                       </div>
                     </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Update your menu anytime with just one click.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Shorten waiting time so you can serve more customers.</p>
                   </div>
                 </div>
               </div>
@@ -523,7 +522,7 @@
           <!-- end col -->
           <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
             <div>
-              <img src="<?php echo base_url('public/assets') ?>/images/landing/features/img-2.png" alt="" class="img-fluid">
+              <img src="https://cdn.dribbble.com/users/228367/screenshots/5469415/storytelling_assets_2_new_thumbnail.gif" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -532,14 +531,14 @@
         <div class="row align-items-center mt-5 pt-lg-5 gy-4">
           <div class="col-lg-6 col-sm-7 col-10 mx-auto">
             <div>
-              <img src="<?php echo base_url('public/assets') ?>/images/landing/features/img-3.png" alt="" class="img-fluid">
+              <img src="<?php echo base_url('public/assets') ?>/images/landing/resto.gif" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="text-muted ps-lg-5">
-              <h5 class="fs-12 text-uppercase text-success">structure</h5>
-              <h4 class="mb-3">Well Documented</h4>
-              <p class="mb-4">used to describe something that is known about or known to be true because there are many documents that describe it, prove it, etc.</p>
+              <h5 class="fs-12 text-uppercase text-success">Maximized Revenue</h5>
+              <h4 class="mb-3">Focus On What Really Matters</h4>
+              <p class="mb-4">Leave everything that can be automated to FoodTrip so that you can make use of the time and effort in providing the best service to your customers.</p>
 
               <div class="vstack gap-2">
                 <div class="d-flex align-items-center">
@@ -551,7 +550,7 @@
                     </div>
                   </div>
                   <div class="flex-grow-1">
-                    <p class="mb-0">Dynamic Conetnt</p>
+                    <p class="mb-0">Using the FoodTrip ordering system you can track which meals and beverages sell the most.</p>
                   </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -563,7 +562,7 @@
                     </div>
                   </div>
                   <div class="flex-grow-1">
-                    <p class="mb-0">Setup plugin's information.</p>
+                    <p class="mb-0">Find which meals and beverages provide the highest margin.</p>
                   </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -575,7 +574,19 @@
                     </div>
                   </div>
                   <div class="flex-grow-1">
-                    <p class="mb-0">Themes customization information</p>
+                    <p class="mb-0">Understand and analyze view/sales data to optimize your operations</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar-xs icon-effect">
+                      <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                        <i class="ri-check-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="mb-0">Improve your menu with the analytics and insights about your customer's sales patterns</p>
                   </div>
                 </div>
               </div>
@@ -587,506 +598,176 @@
       </div>
       <!-- end container -->
     </section>
+
     <!-- end features -->
 
-    <!-- start plan -->
-    <section class="section bg-light" id="plans">
+    <!-- start faq -->
+    <section class="section bg-light" id="faq">
       <div class="bg-overlay bg-overlay-pattern"></div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="text-center mb-5">
-              <h3 class="mb-3 fw-semibold">Choose the plan that's right for you</h3>
-              <p class="text-muted mb-4">Simple pricing. No hidden fees. Advanced features for you business.</p>
+          <!-- start faqs -->
+          <section class="section">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h3 class="mb-3 fw-semibold">Frequently Asked Questions</h3>
+                    <p class="text-muted mb-4 ff-secondary">If you can not find answer to your question in our FAQ, you can always contact us or email us. We will answer you shortly!</p>
 
-              <div class="d-flex justify-content-center align-items-center">
-                <div>
-                  <h5 class="fs-14 mb-0">Month</h5>
-                </div>
-                <div class="form-check form-switch fs-20 ms-3 " onclick="check()">
-                  <input class="form-check-input" type="checkbox" id="plan-switch">
-                  <label class="form-check-label" for="plan-switch"></label>
-                </div>
-                <div>
-                  <h5 class="fs-14 mb-0">Annual <span class="badge badge-soft-success">Save 20%</span></h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end col -->
-        </div>
-        <!-- end row -->
-
-        <div class="row gy-4">
-          <div class="col-lg-4">
-            <div class="card plan-box mb-0">
-              <div class="card-body p-4 m-2">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <h5 class="mb-1 fw-semibold">Basic Plan</h5>
-                    <p class="text-muted mb-0">For Startup</p>
-                  </div>
-                  <div class="avatar-sm">
-                    <div class="avatar-title bg-light rounded-circle text-primary">
-                      <i class="ri-book-mark-line fs-20"></i>
+                    <div class="">
+                      <button type="button" class="btn btn-primary btn-label rounded-pill"><i class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i> Email Us</button>
+                      <button type="button" class="btn btn-info btn-label rounded-pill"><i class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></i> Send Us Tweet</button>
                     </div>
                   </div>
                 </div>
-                <div class="py-4 text-center">
-                  <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">19</span> <span class="fs-13 text-muted">/Month</span></h1>
-                  <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">171</span> <span class="fs-13 text-muted">/Year</span></h1>
-                </div>
-
-                <div>
-                  <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Upto <b>3</b> Projects
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Upto <b>299</b> Customers
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Scalable Bandwidth
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>5</b> FTP Login
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-danger me-1">
-                          <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>24/7</b> Support
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-danger me-1">
-                          <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> Storage
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-danger me-1">
-                          <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Domain
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get Started</a>
-                  </div>
-                </div>
               </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-4">
-            <div class="card plan-box mb-0 ribbon-box right">
-              <div class="card-body p-4 m-2">
-                <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <h5 class="mb-1 fw-semibold">Pro Business</h5>
-                    <p class="text-muted mb-0">Professional plans</p>
-                  </div>
-                  <div class="avatar-sm">
-                    <div class="avatar-title bg-light rounded-circle text-primary">
-                      <i class="ri-medal-fill fs-20"></i>
+              <!-- end row -->
+
+              <div class="row g-lg-5 g-4">
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="flex-shrink-0 me-1">
+                      <i class="ri-question-line fs-24 align-middle text-success me-1"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0 fw-semibold">General Questions</h5>
                     </div>
                   </div>
-                </div>
-                <div class="py-4 text-center">
-                  <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">29</span> <span class="fs-13 text-muted">/Month</span></h1>
-                  <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">261</span> <span class="fs-13 text-muted">/Year</span></h1>
-                </div>
-
-                <div>
-                  <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Upto <b>15</b> Projects
+                  <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box" id="genques-accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="genques-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseOne" aria-expanded="true" aria-controls="genques-collapseOne">
+                          What is FoodTrip ?
+                        </button>
+                      </h2>
+                      <div id="genques-collapseOne" class="accordion-collapse collapse show" aria-labelledby="genques-headingOne" data-bs-parent="#genques-accordion">
+                        <div class="accordion-body ff-secondary">
+                          FoodTrip is a food ordering app that brings great food from local restaurants, straight to the doorsteps of hungry consumers.
                         </div>
                       </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> Customers
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Scalable Bandwidth
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="genques-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseTwo" aria-expanded="false" aria-controls="genques-collapseTwo">
+                          Why register your restaurant to FoodTrip ?
+                        </button>
+                      </h2>
+                      <div id="genques-collapseTwo" class="accordion-collapse collapse" aria-labelledby="genques-headingTwo" data-bs-parent="#genques-accordion">
+                        <div class="accordion-body ff-secondary">
+                          We help drive additional business to your restaurant or stall! Working with us allows you to tap into millions of hungry consumers on FoodTrip, allowing you to extend your business into the online space!
                         </div>
                       </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>12</b> FTP Login
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>24/7</b> Support
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="genques-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseThree" aria-expanded="false" aria-controls="genques-collapseThree">
+                          How do I become a FoodTrip Merchant-partner ?
+                        </button>
+                      </h2>
+                      <div id="genques-collapseThree" class="accordion-collapse collapse" aria-labelledby="genques-headingThree" data-bs-parent="#genques-accordion">
+                        <div class="accordion-body ff-secondary">
+                          Register your restaurant by clicking the Register Now button. Please ensure to fill in the restaurants details as accurately as possible. After submitting the form, you will be redirected to a sign up page for a restaurant admin that will handle your restaurant's account on the FoodTrip website. When done signing up, the restaurant admin can now sign in using the email address and password that they have provided on the form.
                         </div>
                       </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-danger me-1">
-                          <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> Storage
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-danger me-1">
-                          <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Domain
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="genques-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseFour" aria-expanded="false" aria-controls="genques-collapseFour">
+                          What is a restaurant admin ?
+                        </button>
+                      </h2>
+                      <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour" data-bs-parent="#genques-accordion">
+                        <div class="accordion-body ff-secondary">
+                          A restaurant admin is the person responsible in managing the account of the restaurant that has been registed on the FoodTrip website. They are the one who can access the dashboard, orders, invoices and products offered by the restaurant. They can also edit the restaurant details which the customer can see when they browse on the restaurant, update a particular order status and issue an invoice to customers.
                         </div>
                       </div>
-                    </li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get Started</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-4">
-            <div class="card plan-box mb-0">
-              <div class="card-body p-4 m-2">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <h5 class="mb-1 fw-semibold">Platinum Plan</h5>
-                    <p class="text-muted mb-0">Enterprise Businesses</p>
-                  </div>
-                  <div class="avatar-sm">
-                    <div class="avatar-title bg-light rounded-circle text-primary">
-                      <i class="ri-stack-fill fs-20"></i>
                     </div>
                   </div>
-                </div>
-                <div class="py-4 text-center">
-                  <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">39</span> <span class="fs-13 text-muted">/Month</span></h1>
-                  <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">351</span> <span class="fs-13 text-muted">/Year</span></h1>
-                </div>
+                  <!--end accordion-->
 
-                <div>
-                  <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> Projects
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> Customers
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Scalable Bandwidth
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> FTP Login
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>24/7</b> Support
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <b>Unlimited</b> Storage
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="d-flex">
-                        <div class="flex-shrink-0 text-success me-1">
-                          <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          Domain
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get Started</a>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end plan -->
+                <!-- end col -->
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="flex-shrink-0 me-1">
+                      <i class="las la-store-alt fs-24 align-middle text-success me-1"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0 fw-semibold">Restaurant Management</h5>
+                    </div>
+                  </div>
 
-    <!-- start faqs -->
-    <section class="section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="text-center mb-5">
-              <h3 class="mb-3 fw-semibold">Frequently Asked Questions</h3>
-              <p class="text-muted mb-4 ff-secondary">If you can not find answer to your question in our FAQ, you can always contact us or email us. We will answer you shortly!</p>
+                  <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box" id="privacy-accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="privacy-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseOne" aria-expanded="false" aria-controls="privacy-collapseOne">
+                          Can I cancel an order ?
+                        </button>
+                      </h2>
+                      <div id="privacy-collapseOne" class="accordion-collapse collapse" aria-labelledby="privacy-headingOne" data-bs-parent="#privacy-accordion">
+                        <div class="accordion-body ff-secondary">
+                          We understand that sometimes, your items run out quickly or your kitchen is too busy and you need to cancel an existing order. FoodTrip allows you to cancel an existing order directly from the app by editing its order status. In order to avoid upsetting customers with cancellation for upcoming orders, please change the item availability immediately if the item is no longer available. Once the order is cancelled successfully, the customers will be informed automatically.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="privacy-headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseTwo" aria-expanded="true" aria-controls="privacy-collapseTwo">
+                          Does my menu need to be the same price as it is in my store ?
+                        </button>
+                      </h2>
+                      <div id="privacy-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="privacy-headingTwo" data-bs-parent="#privacy-accordion">
+                        <div class="accordion-body ff-secondary">
+                          Yes, Merchant shall guarantee that all Retail Prices of Meals offered on the FoodTrip App are substantially similar to the prices offered by Merchant to consumers through its own platform, channel or facility.
 
-              <div class="">
-                <button type="button" class="btn btn-primary btn-label rounded-pill"><i class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i> Email Us</button>
-                <button type="button" class="btn btn-info btn-label rounded-pill"><i class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></i> Send Us Tweet</button>
+                          If you choose to list combo/set menus to sell on FoodTrip, please ensure that the items are available as ala-carte items in your in-store menu. Combo prices should be consistent as the sum of the ala carte prices in store.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="privacy-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseThree" aria-expanded="false" aria-controls="privacy-collapseThree">
+                          How do I modify/update my menu ?
+                        </button>
+                      </h2>
+                      <div id="privacy-collapseThree" class="accordion-collapse collapse" aria-labelledby="privacy-headingThree" data-bs-parent="#privacy-accordion">
+                        <div class="accordion-body ff-secondary">
+                          You can edit, add or remove products and categories from your menu on the FoodTrip App. Simply tap Products at the sidebar of your app to view the products list view, details and add product page. If adding an item, fill in all the mandatory fields (Item name, Price, Category) and add a photo of the item with description. Customers are more likely to choose dishes that are visually appealing. If editing an item, go to the product you wish to upadate and edit the details you have to revise. Upon successful completion, this message will appear: Item details updated. To permanently delete the item from the menu, choose Delete to confirm and a message will appear The item has been deleted.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="privacy-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseFour" aria-expanded="false" aria-controls="privacy-collapseFour">
+                          How to search for items or orders in FoodTrip website ?
+                        </button>
+                      </h2>
+                      <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour" data-bs-parent="#privacy-accordion">
+                        <div class="accordion-body ff-secondary">
+                          As your orders increase, it can also get challenging to manage them. That's why we've enhanced the Search feature in the FoodTrip app so that you can find the right item or order easily, save time, and be more efficient in managing your store. In the Orders page, tap the Search icon to look for an order. The search results will display in their corresponding status tabs (In Process, On the Way, Delivered, Rejected). You can also start typing in the Search bar to look for an item in your menu/catalog. Tooltips will be available to guide you through this feature.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end accordion-->
+                </div>
+                <!-- end col -->
               </div>
+              <!-- end row -->
             </div>
-          </div>
-        </div>
-        <!-- end row -->
-
-        <div class="row g-lg-5 g-4">
-          <div class="col-lg-6">
-            <div class="d-flex align-items-center mb-2">
-              <div class="flex-shrink-0 me-1">
-                <i class="ri-question-line fs-24 align-middle text-success me-1"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-0 fw-semibold">General Questions</h5>
-              </div>
-            </div>
-            <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box" id="genques-accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="genques-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseOne" aria-expanded="true" aria-controls="genques-collapseOne">
-                    What is the purpose of using themes ?
-                  </button>
-                </h2>
-                <div id="genques-collapseOne" class="accordion-collapse collapse show" aria-labelledby="genques-headingOne" data-bs-parent="#genques-accordion">
-                  <div class="accordion-body ff-secondary">
-                    A theme is a set of colors, fonts, effects, and more that can be applied to your entire presentation to give it a
-                    consistent, professional look. You've already been using a theme, even if you didn't know it: the default Office theme, which consists.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="genques-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseTwo" aria-expanded="false" aria-controls="genques-collapseTwo">
-                    Can a theme have more than one theme?
-                  </button>
-                </h2>
-                <div id="genques-collapseTwo" class="accordion-collapse collapse" aria-labelledby="genques-headingTwo" data-bs-parent="#genques-accordion">
-                  <div class="accordion-body ff-secondary">
-                    A story can have as many themes as the reader can identify based on recurring patterns and parallels within the story
-                    itself. In looking at ways to separate themes into a hierarchy, we might find it useful to follow the example of a single book.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="genques-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseThree" aria-expanded="false" aria-controls="genques-collapseThree">
-                    What are theme features?
-                  </button>
-                </h2>
-                <div id="genques-collapseThree" class="accordion-collapse collapse" aria-labelledby="genques-headingThree" data-bs-parent="#genques-accordion">
-                  <div class="accordion-body ff-secondary">
-                    Theme features is a set of specific functionality that may be enabled by theme authors. Themes must register each
-                    individual Theme Feature that the author wishes to support. Theme support functions should be called in the theme's functions.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="genques-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseFour" aria-expanded="false" aria-controls="genques-collapseFour">
-                    What is simple theme?
-                  </button>
-                </h2>
-                <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour" data-bs-parent="#genques-accordion">
-                  <div class="accordion-body ff-secondary">
-                    Simple is a free WordPress theme, by Themify, built exactly what it is named for: simplicity. Immediately upgrade the
-                    quality of your WordPress site with the simple theme To use the built-in Chrome theme editor.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end accordion-->
-
-          </div>
-          <!-- end col -->
-          <div class="col-lg-6">
-            <div class="d-flex align-items-center mb-2">
-              <div class="flex-shrink-0 me-1">
-                <i class="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></i>
-              </div>
-              <div class="flex-grow-1">
-                <h5 class="mb-0 fw-semibold">Privacy &amp; Security</h5>
-              </div>
-            </div>
-
-            <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box" id="privacy-accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="privacy-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseOne" aria-expanded="false" aria-controls="privacy-collapseOne">
-                    Does Word have night mode?
-                  </button>
-                </h2>
-                <div id="privacy-collapseOne" class="accordion-collapse collapse" aria-labelledby="privacy-headingOne" data-bs-parent="#privacy-accordion">
-                  <div class="accordion-body ff-secondary">
-                    You can run Microsoft Word in dark mode, which uses a dark color palette to help reduce eye strain in low light
-                    settings. You can choose to make the document white or black using the Switch Modes button in the ribbon's View tab.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="privacy-headingTwo">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseTwo" aria-expanded="true" aria-controls="privacy-collapseTwo">
-                    Is theme an opinion?
-                  </button>
-                </h2>
-                <div id="privacy-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="privacy-headingTwo" data-bs-parent="#privacy-accordion">
-                  <div class="accordion-body ff-secondary">
-                    A theme is an opinion the author expresses on the subject, for instance, the author's dissatisfaction with the narrow
-                    confines of French bourgeois marriage during that period theme is an idea that a writer repeats.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="privacy-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseThree" aria-expanded="false" aria-controls="privacy-collapseThree">
-                    How do you develop a theme?
-                  </button>
-                </h2>
-                <div id="privacy-collapseThree" class="accordion-collapse collapse" aria-labelledby="privacy-headingThree" data-bs-parent="#privacy-accordion">
-                  <div class="accordion-body ff-secondary">
-                    A short story, novella, or novel presents a narrative to its reader. Perhaps that narrative involves mystery, terror,
-                    romance, comedy, or all of the above. These works of fiction may also contain memorable characters, vivid
-                    world-building, literary devices.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="privacy-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseFour" aria-expanded="false" aria-controls="privacy-collapseFour">
-                    Do stories need themes?
-                  </button>
-                </h2>
-                <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour" data-bs-parent="#privacy-accordion">
-                  <div class="accordion-body ff-secondary">
-                    A story can have as many themes as the reader can identify based on recurring patterns and parallels within the story
-                    itself. In looking at ways to separate themes into a hierarchy, we might find it useful to follow the example of a
-                    single book.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end accordion-->
-          </div>
+            <!-- end container -->
+          </section>
+          <!-- end faqs -->
           <!-- end col -->
         </div>
         <!-- end row -->
       </div>
       <!-- end container -->
     </section>
-    <!-- end faqs -->
+    <!-- end faq -->
+
+
 
     <!-- start review -->
     <section class="section bg-primary" id="reviews">
@@ -1107,11 +788,9 @@
                     <div class="row justify-content-center">
                       <div class="col-10">
                         <div class="text-white-50">
-                          <p class="fs-20 ff-secondary mb-4">" I am givng 5 stars. Theme is great and everyone one stuff everything in theme. Future request should not affect current state of theme. "</p>
-
+                          <p class="fs-20 ff-secondary mb-4">" FoodTrip has helped our customers be aware of our menu items, in terms of bestsellers and different menu pairings. It has also given us a better understanding of our customers' feedback and most viewed products. Updating the menu is also very easy as we can update our menu instantaneously with one click of a button. "</p>
                           <div>
-                            <h5 class="text-white">gregoriusus</h5>
-                            <p>- Skote User</p>
+                            <h5 class="text-white">D' Original Pares</h5>
                           </div>
                         </div>
                       </div>
@@ -1122,11 +801,9 @@
                     <div class="row justify-content-center">
                       <div class="col-10">
                         <div class="text-white-50">
-                          <p class="fs-20 ff-secondary mb-4">" Awesome support. Had few issues while setting up because of my device, the support team helped me fix them up in a day. Everything looks clean and good. Highly recommended! "</p>
-
+                          <p class="fs-20 ff-secondary mb-4">" As our brand Papa John's Pizza is growing, FoodTrip allowed us to simplify the ordering process and overall menu presentation to our customers. FoodTrip has been an integral part of Papa John's Pizza since our very first outlet in Quezon City. "</p>
                           <div>
-                            <h5 class="text-white">GeekyGreenOwl</h5>
-                            <p>- Skote User</p>
+                            <h5 class="text-white">Papa John's Pizza</h5>
                           </div>
                         </div>
                       </div>
@@ -1137,11 +814,10 @@
                     <div class="row justify-content-center">
                       <div class="col-10">
                         <div class="text-white-50">
-                          <p class="fs-20 ff-secondary mb-4">" Amazing template, Redux store and components is nicely designed. It's a great start point for an admin based project. Clean Code and good documentation. Template is completely in React and absolutely no usage of jQuery "</p>
+                          <p class="fs-20 ff-secondary mb-4">" Phenomenal app - gives you such control over your menu for adding/removing items, amending prices, adding specials etc without having to go to the massive expense of a reprint each time. Our sales and tips increased by 20% - 30% using FoodTrip. Some days I don't understand how I get through without FoodTrip."</p>
 
                           <div>
-                            <h5 class="text-white">sreeks456</h5>
-                            <p>- Veltrix User</p>
+                            <h5 class="text-white">Zark's Burgers</h5>
                           </div>
                         </div>
                       </div>
@@ -1151,7 +827,7 @@
                 </div>
                 <div class="swiper-button-next bg-white rounded-circle"></div>
                 <div class="swiper-button-prev bg-white rounded-circle"></div>
-                <div class="swiper-pagination position-relative mt-2"></div>
+                <div class="swiper-pagination position-relative mt-5"></div>
               </div>
               <!-- end slider -->
             </div>
@@ -1170,8 +846,8 @@
         <div class="row text-center gy-4">
           <div class="col-lg-3 col-6">
             <div>
-              <h2 class="mb-2"><span class="counter-value" data-target="100">0</span>+</h2>
-              <div class="text-muted">Projects Completed</div>
+              <h2 class="mb-2"><span class="counter-value" data-target="50">0</span>k+</h2>
+              <div class="text-muted">Orders Completed</div>
             </div>
           </div>
           <!-- end col -->
@@ -1212,7 +888,8 @@
           <div class="col-lg-8">
             <div class="text-center mb-5">
               <h3 class="mb-3 fw-semibold">Our Work Process</h3>
-              <p class="text-muted mb-4 ff-secondary">In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the Proin vitae ipsum vel ex finibus semper design starts.</p>
+              <p class="text-muted mb-4 ff-secondary">It's simple: we list your menu and products online, help you process orders, and deliver them to hungry customers - all in a heartbeat!
+                Interested? Let's start your FoodTrip partnership today</p>
             </div>
           </div>
         </div>
@@ -1230,8 +907,9 @@
                 </div>
               </div>
 
-              <h5>Tell us what you need</h5>
-              <p class="text-muted ff-secondary">The profession and the employer and your desire to make your mark.</p>
+              <h5>Register your restaurant.</h5>
+              <p class="text-muted ff-secondary">Sign up your restaurant on the FoodTrip website by clicking the Register Now / Sign Up button. Make sure to type the restaurant details as accurately as possible.</p>
+              <a href="#" class="btn btn-primary">Register <i class="ri-arrow-right-line ms-1 align-bottom"></i></a>
             </div>
           </div>
           <!-- end col -->
@@ -1246,8 +924,8 @@
                 </div>
               </div>
 
-              <h5>Get free quotes</h5>
-              <p class="text-muted ff-secondary">The most important aspect of beauty was, therefore, an inherent part.</p>
+              <h5>Sign Up a Restaurant Admin</h5>
+              <p class="text-muted ff-secondary">After submitting the form, you will be redirected to register a restaurant admin. Type the details of the restaurant admin on the form. The restaurant admin will be the one to manage your restaurant's products, orders and invoices on the FoodTrip website.</p>
             </div>
           </div>
           <!-- end col -->
@@ -1255,12 +933,12 @@
             <div class="process-card mt-4">
               <div class="avatar-sm icon-effect mx-auto mb-4">
                 <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                  <i class="ri-book-mark-line"></i>
+                  <i class="mdi mdi-presentation-play"></i>
                 </div>
               </div>
 
-              <h5>Deliver high quality product</h5>
-              <p class="text-muted ff-secondary">We quickly learn to fear and thus automatically avoid potentially.</p>
+              <h5>GO LIVE on FoodTrip</h5>
+              <p class="text-muted ff-secondary">Congratulations! You are now a FoodTrip merchant-partner. You can now login to the FoodTrip website and gain access to your restaurant's account.</p>
             </div>
           </div>
           <!-- end col -->
@@ -1271,14 +949,14 @@
     </section>
     <!-- end Work Process -->
 
-    <!-- start team -->
-    <section class="section bg-light" id="team">
+    <!-- start usecase -->
+    <section class="section bg-light" id="usecase">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="text-center mb-5">
-              <h3 class="mb-3 fw-semibold">Our <span class="text-danger">Team</span></h3>
-              <p class="text-muted mb-4 ff-secondary">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce the grammar.</p>
+              <h3 class="mb-3 fw-semibold">Our <span class="text-danger">Use Case</span></h3>
+              <p class="text-muted mb-4 ff-secondary">Awesome features to streamline your restaurant business. Check them below.</p>
             </div>
           </div>
         </div>
@@ -1287,17 +965,12 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-2.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
+                <div class="mx-auto mb-4 position-relative">
+                  <img src="https://www.gifcen.com/wp-content/uploads/2021/07/ramen-gif-3.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Nancy Martino</a></h5>
-                <p class="text-muted mb-0 ff-secondary">Team Leader</p>
+                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Menu Management</a></h5>
+                <p class="text-muted mb-0 ff-secondary">Build and edit your menu anytime by yourself with one click. Customize your menu to reflect your branding. A faster and easier experience for all restaurant managers</p>
               </div>
             </div>
             <!-- end card -->
@@ -1306,17 +979,12 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-10.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
+                <div class="mx-auto mb-4 position-relative">
+                  <img src="https://delivery.namkalam.in/wp-content/uploads/2021/03/delivery.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Henry Baird</a></h5>
-                <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>
+                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Order Management</a></h5>
+                <p class="text-muted mb-0 ff-secondary">Customers place their orders on FoodTrip without any help. The orders are reflected on the client side and can be managed by the restaurant admin.</p>
               </div>
             </div>
             <!-- end card -->
@@ -1325,17 +993,12 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-3.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
+                <div class="mx-auto mb-4 position-relative">
+                  <img src="https://cdn.dribbble.com/users/520375/screenshots/3645713/weblet-animation.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Frank Hook</a></h5>
-                <p class="text-muted mb-0 ff-secondary">Project Manager</p>
+                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Payment Management</a></h5>
+                <p class="text-muted mb-0 ff-secondary">52 % of the consumers want to make ordering and payment easier during dining activities. FoodTrip's payment module allows you to take online payments.</p>
               </div>
             </div>
             <!-- end card -->
@@ -1344,97 +1007,12 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-8.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
+                <div class="mx-auto mb-4 position-relative">
+                  <img src="https://images.ctfassets.net/pnliwdxhy0tx/4BObUpGsDEaSOiUjoKGd68/a0991616b97aec2c7a9e4692f96f62b2/img.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Donald Palmer</a></h5>
-                <p class="text-muted mb-0 ff-secondary">UI/UX Designer</p>
-              </div>
-            </div>
-            <!-- end card -->
-          </div>
-          <!-- end col -->
-        </div>
-        <!-- end row -->
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="card">
-              <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-5.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
-                </div>
-                <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Erica Kernan</a></h5>
-                <p class="text-muted mb-0 ff-secondary">Web Designer</p>
-              </div>
-            </div>
-            <!-- end card -->
-          </div>
-          <!-- end col -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="card">
-              <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-4.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
-                </div>
-                <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Alexis Clarke</a></h5>
-                <p class="text-muted mb-0 ff-secondary">Backend Developer</p>
-              </div>
-            </div>
-            <!-- end card -->
-          </div>
-          <!-- end col -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="card">
-              <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-6.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
-                </div>
-                <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Marie Ward</a></h5>
-                <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>
-              </div>
-            </div>
-            <!-- end card -->
-          </div>
-          <!-- end col -->
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="card">
-              <div class="card-body text-center p-4">
-                <div class="avatar-xl mx-auto mb-4 position-relative">
-                  <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-7.jpg" alt="" class="img-fluid rounded-circle">
-                  <a href="apps-mailbox.html" class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                    <div class="avatar-title bg-transparent">
-                      <i class="ri-mail-fill align-bottom"></i>
-                    </div>
-                  </a>
-                </div>
-                <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Jack Gough</a></h5>
-                <p class="text-muted mb-0 ff-secondary">React Js Developer</p>
+                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Data Management</a></h5>
+                <p class="text-muted mb-0 ff-secondary">The actions your guests make on your menu is precious. FoodTrip gives you a summary of the most/least sold items and revenue share across sections.</p>
               </div>
             </div>
             <!-- end card -->
@@ -1445,7 +1023,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="text-center mt-2">
-              <a href="pages-team.html" class="btn btn-primary">View All Members <i class="ri-arrow-right-line ms-1 align-bottom"></i></a>
+              <a href="#" class="btn btn-primary">View More <i class="ri-arrow-right-line ms-1 align-bottom"></i></a>
             </div>
           </div>
         </div>
@@ -1453,7 +1031,7 @@
       </div>
       <!-- end container -->
     </section>
-    <!-- end team -->
+    <!-- end usecase -->
 
     <!-- start contact -->
     <section class="section" id="contact">
@@ -1462,7 +1040,7 @@
           <div class="col-lg-8">
             <div class="text-center mb-5">
               <h3 class="mb-3 fw-semibold">Get In Touch</h3>
-              <p class="text-muted mb-4 ff-secondary">We thrive when coming up with innovative ideas but also understand that a smart concept should be supported with faucibus sapien odio measurable results.</p>
+              <p class="text-muted mb-4 ff-secondary">Contact us today to learn how FoodTrip can support your business. Fill out the form below and we'll be in touch as soon as possible.</p>
             </div>
           </div>
         </div>
@@ -1473,11 +1051,12 @@
             <div>
               <div class="mt-4">
                 <h5 class="fs-13 text-muted text-uppercase">Office Address 1:</h5>
-                <div class="ff-secondary fw-semibold">4461 Cedar Street Moro, <br />AR 72368</div>
+                <div class="ff-secondary fw-semibold">Don Fabian St., Commonwealth, <br />Quezon City Philippines</div>
               </div>
               <div class="mt-4">
                 <h5 class="fs-13 text-muted text-uppercase">Office Address 2:</h5>
-                <div class="ff-secondary fw-semibold">2467 Swick Hill Street <br />New Orleans, LA</div>
+                <div class="ff-secondary fw-semibold">A. Mabini Campus, Anonas Street, <br />Sta. Mesa
+                  Manila, Philippines</div>
               </div>
               <div class="mt-4">
                 <h5 class="fs-13 text-muted text-uppercase">Working Hours:</h5>
@@ -1541,13 +1120,13 @@
         <div class="row align-items-center gy-4">
           <div class="col-sm">
             <div>
-              <h4 class="text-white mb-0 fw-semibold">Build your web App/SaaS with dashboard</h4>
+              <h4 class="text-white mb-0 fw-semibold">Keep Your Business Up and Profitable</h4>
             </div>
           </div>
           <!-- end col -->
           <div class="col-sm-auto">
             <div>
-              <a href="#" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-shopping-cart-2-line align-middle me-1"></i> Buy Now</a>
+              <a href="#" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-hand-coin-line align-middle me-1"></i> Partner with Us</a>
             </div>
           </div>
           <!-- end col -->
@@ -1567,9 +1146,9 @@
               <div>
                 <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" alt="logo light" height="50">
               </div>
-              <div class="mt-4 fs-13">
-                <p>Premium Multipurpose Admin & Dashboard Template</p>
-                <p class="ff-secondary">You can build any type of web application like eCommerce, CRM, CMS, Project management apps, Admin Panels, etc using Velzon.</p>
+              <div class="mt-4">
+                <p>A Food Ordering Web Application</p>
+                <p>FoodTrip's easy-to-use platform increases table turn turnover, improves dining experience, and streamlines operations of casual restaurants.</p>
               </div>
             </div>
           </div>
@@ -1577,25 +1156,31 @@
           <div class="col-lg-7 ms-lg-auto">
             <div class="row">
               <div class="col-sm-4 mt-4">
-                <h5 class="text-white mb-0">Company</h5>
+                <h5 class="text-white mb-0">Partner Restaurants</h5>
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list fs-14">
-                    <li><a href="pages-profile.html">About Us</a></li>
-                    <li><a href="pages-gallery.html">Gallery</a></li>
-                    <li><a href="apps-projects-overview.html">Projects</a></li>
-                    <li><a href="pages-timeline.html">Timeline</a></li>
+                    <li><a href="#">Bonchon</a></li>
+                    <li><a href="#">Chowking</a></li>
+                    <li><a href="#">Greenwich</a></li>
+                    <li><a href="#">Jollibee</a></li>
+                    <li><a href="#">KFC</a></li>
+                    <li><a href="#">McDonald's</a></li>
+                    <li><a href="#">PizzaHut</a></li>
+                    <li><a href="#">Shakeys</a></li>
+                    <li><a href="#">Yellow Cab</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-sm-4 mt-4">
-                <h5 class="text-white mb-0">Apps Pages</h5>
+                <h5 class="text-white mb-0">Popular Cuisines</h5>
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list fs-14">
-                    <li><a href="pages-pricing.html">Calendar</a></li>
-                    <li><a href="apps-mailbox.html">Mailbox</a></li>
-                    <li><a href="apps-chat.html">Chat</a></li>
-                    <li><a href="apps-crm-deals.html">Deals</a></li>
-                    <li><a href="apps-tasks-kanban.html">Kanban Board</a></li>
+                    <li><a href="#">Chinese Food</a></li>
+                    <li><a href="#">Fast Food</a></li>
+                    <li><a href="#">Filipino Food</a></li>
+                    <li><a href="#">Japanese Food</a></li>
+                    <li><a href="#">Mexican Food</a></li>
+                    <li><a href="#">Seafood</a></li>
                   </ul>
                 </div>
               </div>
@@ -1603,8 +1188,9 @@
                 <h5 class="text-white mb-0">Support</h5>
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list fs-14">
-                    <li><a href="pages-faqs.html">FAQ</a></li>
-                    <li><a href="pages-faqs.html">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Be a FoodTrip Merchant</a></li>
                   </ul>
                 </div>
               </div>
