@@ -36,19 +36,19 @@ TableProductListAll &&
 					component: gridjs.plugins.selection.RowSelection,
 					props: {
 						id: function (e) {
-							return e.cell(6).data;
+							return e.cell(4).data;
 						},
 					},
 				},
 			},
 			{
-				name: "Product",
+				name: "Dish",
 				width: "360px",
 				formatter: function (e) {
 					return gridjs.html(
-						`<div class="d-flex align-items-center"><div class="flex-shrink-0 me-3"><div class="avatar-sm bg-light rounded p-1"><img src="${baseURL}public/assets/images/products/` +
+						`<div class="d-flex align-items-center"><div class="flex-shrink-0 me-3"><div class="avatar-sm bg-light rounded p-1"><img src="${baseURL}public/assets/images/food/jollibee/` +
 							e[0] +
-							'" alt="" class="img-fluid d-block"></div></div><div class="flex-grow-1"><h5 class="fs-14 mb-1"><a href="apps-ecommerce-product-details.html" class="text-dark">' +
+							'" alt="" class="img-fluid d-block"></div></div><div class="flex-grow-1"><h5 class="fs-14 mb-1"><a href="#" class="text-dark">' +
 							e[1] +
 							'</a></h5><p class="text-muted mb-0">Category : <span class="fw-medium">' +
 							e[2] +
@@ -56,18 +56,25 @@ TableProductListAll &&
 					);
 				},
 			},
-			{ name: "Stock", width: "94px" },
 			{ name: "Price", width: "101px" },
-			{ name: "Orders", width: "84px" },
 			{
-				name: "Rating",
+				name: "Status",
 				width: "105px",
 				formatter: function (e) {
-					return gridjs.html(
-						'<span class="badge bg-light text-body fs-12 fw-medium"><i class="mdi mdi-star text-warning me-1"></i>' +
-							e +
-							"</span></td>"
-					);
+					switch (e) {
+						case "Available":
+							return gridjs.html(
+								'<span class="badge badge-soft-success text-uppercase">' +
+									e +
+									"</span></td>"
+							);
+						case "Unavailable":
+							return gridjs.html(
+								'<span class="badge badge-soft-danger text-uppercase">' +
+									e +
+									"</span></td>"
+							);
+					}
 				},
 			},
 			{
@@ -95,111 +102,79 @@ TableProductListAll &&
 		sort: !0,
 		data: [
 			[
-				["img-1.png", "Half Sleeve Round Neck T-Shirts", "Clothes"],
-				"12",
-				"$ 115.00",
-				"48",
-				"4.2",
+				[
+					"img-1.png",
+					"1 - pc. Chickenjoy w/ Half Jolly Spaghetti & Shanghai Super Meal",
+					"Super Meals",
+				],
+				"₱ 185.00",
+				"Available",
 				["12 Oct, 2021", "10:05 AM"],
 			],
 			[
-				["img-2.png", "Urban Ladder Pashe Chair", "Furniture"],
-				"06",
-				"$ 160.00",
-				"30",
-				"4.3",
+				["img-2.png", "Jolly Spaghetti Family Pan", "Jolly Spaghetti"],
+				"₱ 210.00",
+				"Available",
 				["06 Jan, 2021", "01:31 PM"],
 			],
 			[
-				[
-					"img-3.png",
-					"350 ml Glass Grocery Container",
-					"Kitchen Storage & Containers",
-				],
-				"10",
-				"$ 25.00",
-				"48",
-				"4.5",
+				["img-3.png", "Chicken Sandwich", "Chicken Sandwich"],
+				"₱ 158.00",
+				"Unavailable",
 				["26 Mar, 2021", "11:40 AM"],
 			],
 			[
-				["img-4.png", "Fabric Dual Tone Living Room Chair", "Furniture"],
-				"15",
-				"$ 140.00",
-				"40",
-				"4.2",
+				["img-4.png", "Cheesy Classic Jolly Hotdog", "Jolly Hotdog & Pies"],
+				"₱ 64.00",
+				"Available",
 				["19 Apr, 2021", "02:51 PM"],
 			],
 			[
-				["img-5.png", "Crux Motorsports Helmet", "Bike Accessories"],
-				"08",
-				"$ 135.00",
-				"55",
-				"4.4",
+				["img-5.png", "6 - pc. Chickenjoy Solo", "Family Meals"],
+				"₱ 399.00",
+				"Unavailable",
 				["30 Mar, 2021", "09:42 AM"],
 			],
 			[
-				["img-6.png", "Half Sleeve T-Shirts (Blue)", "Clothes"],
-				"15",
-				"$ 125.00",
-				"48",
-				"4.2",
+				["img-6.png", "Palabok", "Palabok"],
+				"₱ 117.00",
+				"Available",
 				["12 Oct, 2021", "04:55 PM"],
 			],
 			[
-				["img-7.png", "Noise Evolve Smartwatch", "Watches"],
-				"12",
-				"$ 95.00",
-				"45",
-				"4.3",
+				["img-7.png", "Ultimate Burger Steak w/ Egg", "Burger Steak"],
+				"₱ 207.00",
+				"Available",
 				["15 May, 2021", "03:40 PM"],
 			],
 			[
-				["img-8.png", "Sweatshirt for Men (Pink)", "Clothes"],
-				"20",
-				"$ 120.00",
-				"48",
-				"4.2",
+				["img-8.png", "Double Bacon Champ Jr.", "Burgers"],
+				"₱ 181.00",
+				"Available",
 				["21 Jun, 2021", "12:18 PM"],
 			],
 			[
-				[
-					"img-9.png",
-					"Reusable Ecological Coffee Cup",
-					"Tableware & Dinnerware",
-				],
-				"14",
-				"$ 125.00",
-				"55",
-				"4.3",
+				["img-9.png", "3 Pies To-Go", "Desserts"],
+				"₱ 106.00",
+				"Unavailable",
 				["15 Jan, 2021", "10:29 AM"],
 			],
 			[
-				[
-					"img-10.png",
-					"Travel Carrying Pouch Bag",
-					"Bags, Wallets and Luggage",
-				],
-				"20",
-				"$ 115.00",
-				"60",
-				"4.3",
+				["img-10.png", "1 - pc. Chickenjoy", "Chickenjoy"],
+				"₱ 79.00",
+				"Available",
 				["15 Jun, 2021", "03:51 Pm"],
 			],
 			[
-				["img-1.png", "Half Sleeve Round Neck T-Shirts", "Clothes"],
-				"12",
-				"$ 115.00",
-				"48",
-				"4.2",
+				["img-11.png", "Jolly Crispy Fries", "Fries & Sides"],
+				"₱ 48.00",
+				"Available",
 				["12 Oct, 2021", "10:05 AM"],
 			],
 			[
-				["img-2.png", "Urban Ladder Pashe Chair", "Furniture"],
-				"06",
-				"$ 160.00",
-				"30",
-				"4.3",
+				["img-12.png", "Chocolate Sundae Twirl", "Desserts"],
+				"₱ 48.00",
+				"Available",
 				["06 Jan, 2021", "01:31 PM"],
 			],
 		],
@@ -277,12 +252,12 @@ linechartcustomerColors &&
 				},
 				{
 					formatter: function (e) {
-						return void 0 !== e ? "$" + e.toFixed(2) + "k" : e;
+						return void 0 !== e ? "₱" + e.toFixed(2) + "k" : e;
 					},
 				},
 				{
 					formatter: function (e) {
-						return void 0 !== e ? e.toFixed(0) + " Sales" : e;
+						return void 0 !== e ? e.toFixed(0) : e;
 					},
 				},
 			],
