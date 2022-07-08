@@ -2,157 +2,134 @@ var productListAllData = [
 		{
 			id: 1,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-1.png`,
-				title: "Half Sleeve Round Neck T-Shirts",
-				category: "Fashion",
+				img: `${baseURL}public/assets/images/food/jollibee/img-1.png`,
+				title:
+					"1 - pc. Chickenjoy w/ Half Jolly Spaghetti & Shanghai Super Meal",
+				category: "Super Meals",
 			},
-			stock: "12",
-			price: "215.00",
-			orders: "48",
-			rating: "4.2",
+			price: "185.00",
+			status: "Available",
 			published: { publishDate: "12 Oct, 2021", publishTime: "10:05 AM" },
 		},
 		{
 			id: 2,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-2.png`,
-				title: "Urban Ladder Pashe Chair",
-				category: "Furniture",
+				img: `${baseURL}public/assets/images/food/jollibee/img-2.png`,
+				title: "Jolly Spaghetti Family Pan",
+				category: "Jolly Spaghetti",
 			},
-			stock: "06",
-			price: "160.00",
-			orders: "30",
-			rating: "4.3",
+			price: "210.00",
+			status: "Available",
 			published: { publishDate: "06 Jan, 2021", publishTime: "01:31 PM" },
 		},
 		{
 			id: 3,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-3.png`,
-				title: "350 ml Glass Grocery Container",
-				category: "Grocery",
+				img: `${baseURL}public/assets/images/food/jollibee/img-3.png`,
+				title: "Chicken Sandwich",
+				category: "Chicken Sandwich",
 			},
-			stock: "10",
-			price: "125.00",
-			orders: "48",
-			rating: "4.5",
+			price: "158.00",
+			status: "Unavailable",
 			published: { publishDate: "26 Mar, 2021", publishTime: "11:40 AM" },
 		},
 		{
 			id: 4,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-4.png`,
-				title: "Fabric Dual Tone Living Room Chair",
-				category: "Furniture",
+				img: `${baseURL}public/assets/images/food/jollibee/img-4.png`,
+				title: "Cheesy Classic Jolly Hotdog",
+				category: "Jolly Hotdog and Pies",
 			},
-			stock: "15",
-			price: "340.00",
-			orders: "40",
-			rating: "4.2",
+			price: "64.00",
+			status: "Unavailable",
 			published: { publishDate: "19 Apr, 2021", publishTime: "02:51 PM" },
 		},
 		{
 			id: 5,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-5.png`,
-				title: "Crux Motorsports Helmet",
-				category: "Automotive Accessories",
+				img: `${baseURL}public/assets/images/food/jollibee/img-5.png`,
+				title: "6 - pc. Chickenjoy Solo",
+				category: "Family Meals",
 			},
-			stock: "08",
-			price: "175.00",
-			orders: "55",
-			rating: "4.4",
+			price: "399.00",
+			status: "Unavailable",
 			published: { publishDate: "30 Mar, 2021", publishTime: "09:42 AM" },
 		},
 		{
 			id: 6,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-6.png`,
-				title: "Half Sleeve T-Shirts (Blue)",
-				category: "Fashion",
+				img: `${baseURL}public/assets/images/food/jollibee/img-6.png`,
+				title: "Palabok",
+				category: "Palabok",
 			},
-			stock: "15",
-			price: "225.00",
-			orders: "48",
-			rating: "4.2",
+			price: "117.00",
+			status: "Available",
 			published: { publishDate: "12 Oct, 2021", publishTime: "04:55 PM" },
 		},
 		{
 			id: 7,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-7.png`,
-				title: "Noise Evolve Smartwatch",
-				category: "Watches",
+				img: `${baseURL}public/assets/images/food/jollibee/img-7.png`,
+				title: "Ultimate Burger Steak w/ Egg",
+				category: "Burger Steak",
 			},
-			stock: "12",
-			price: "105.00",
-			orders: "45",
-			rating: "4.3",
+			price: "207.00",
+			status: "Available",
 			published: { publishDate: "15 May, 2021", publishTime: "03:40 PM" },
 		},
 		{
 			id: 8,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-8.png`,
-				title: "Sweatshirt for Men (Pink)",
-				category: "Fashion",
+				img: `${baseURL}public/assets/images/food/jollibee/img-8.png`,
+				title: "Double Bacon Champ Jr.",
+				category: "Burgers",
 			},
-			stock: "20",
-			price: "120.00",
-			orders: "48",
-			rating: "4.2",
+			price: "181.00",
+			status: "Available",
 			published: { publishDate: "21 Jun, 2021", publishTime: "12:18 PM" },
 		},
 		{
 			id: 9,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-9.png`,
-				title: "Reusable Ecological Coffee Cup",
-				category: "Grocery",
+				img: `${baseURL}public/assets/images/food/jollibee/img-9.png`,
+				title: "3 Pies To-Go",
+				category: "Desserts",
 			},
-			stock: "14",
-			price: "325.00",
-			orders: "55",
-			rating: "4.3",
-			published: { publishDate: "15 Jan, 2021", publishTime: "10:29 PM" },
+			price: "106.00",
+			status: "Unavailable",
+			published: { publishDate: "15 Jan, 2021", publishTime: "10:29 AM" },
 		},
 		{
 			id: 10,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-10.png`,
-				title: "Travel Carrying Pouch Bag",
-				category: "Kids",
+				img: `${baseURL}public/assets/images/food/jollibee/img-10.png`,
+				title: "1 - pc. Chickenjoy",
+				category: "Chickenjoy",
 			},
-			stock: "20",
-			price: "180.00",
-			orders: "60",
-			rating: "4.3",
+			price: "79.00",
+			status: "Available",
 			published: { publishDate: "15 Jun, 2021", publishTime: "03:51 PM" },
 		},
 		{
 			id: 11,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-1.png`,
-				title: "Half Sleeve Round Neck T-Shirts",
-				category: "Fashion",
+				img: `${baseURL}public/assets/images/food/jollibee/img-11.png`,
+				title: "Jolly Crispy Fries",
+				category: "Fries and Sides",
 			},
-			stock: "12",
-			price: "215.00",
-			orders: "48",
-			rating: "4.2",
+			price: "48.00",
+			status: "Available",
 			published: { publishDate: "12 Oct, 2021", publishTime: "10:05 AM" },
 		},
 		{
 			id: 12,
 			product: {
-				img: `${baseURL}public/assets/images/products/img-2.png`,
-				title: "Urban Ladder Pashe Chair",
-				category: "Furniture",
+				img: `${baseURL}public/assets/images/food/jollibee/img-12.png`,
+				title: "Chocolate Sundae Twirl",
+				category: "Desserts",
 			},
-			stock: "06",
-			price: "160.00",
-			orders: "30",
-			rating: "4.3",
+			price: "48.00",
+			status: "Available",
 			published: { publishDate: "06 Jan, 2021", publishTime: "01:31 PM" },
 		},
 	],
@@ -191,7 +168,7 @@ var productListAll = new gridjs.Grid({
 				},
 			},
 			{
-				name: "Product",
+				name: "Dish",
 				width: "360px",
 				data: function (e) {
 					return gridjs.html(
@@ -205,24 +182,31 @@ var productListAll = new gridjs.Grid({
 					);
 				},
 			},
-			{ name: "Stock", width: "94px" },
 			{
 				name: "Price",
 				width: "101px",
 				formatter: function (e) {
-					return gridjs.html("$" + e);
+					return gridjs.html("₱" + e);
 				},
 			},
-			{ name: "Orders", width: "84px" },
 			{
-				name: "Rating",
+				name: "Status",
 				width: "105px",
 				formatter: function (e) {
-					return gridjs.html(
-						'<span class="badge bg-light text-body fs-12 fw-medium"><i class="mdi mdi-star text-warning me-1"></i>' +
-							e +
-							"</span></td>"
-					);
+					switch (e) {
+						case "Available":
+							return gridjs.html(
+								'<span class="badge badge-soft-success text-uppercase">' +
+									e +
+									"</span></td>"
+							);
+						case "Unavailable":
+							return gridjs.html(
+								'<span class="badge badge-soft-danger text-uppercase">' +
+									e +
+									"</span></td>"
+							);
+					}
 				},
 			},
 			{
@@ -262,156 +246,6 @@ var productListAll = new gridjs.Grid({
 		sort: !0,
 		data: productListAllData,
 	}).render(document.getElementById("table-product-list-all")),
-	productListPublishedData = [
-		{
-			id: 1,
-			product: {
-				img: `${baseURL}public/assets/images/products/img-2.png`,
-				title: "Urban Ladder Pashe Chair",
-				category: "Furniture",
-			},
-			stock: "06",
-			price: "160.00",
-			orders: "30",
-			rating: "4.3",
-			published: { publishDate: "06 Jan, 2021", publishTime: "01:31 PM" },
-		},
-		{
-			id: 2,
-			product: {
-				img: `${baseURL}public/assets/images/products/img-6.png`,
-				title: "Half Sleeve T-Shirts (Blue)",
-				category: "Fashion",
-			},
-			stock: "15",
-			price: "125.00",
-			orders: "48",
-			rating: "4.2",
-			published: { publishDate: "12 Oct, 2021", publishTime: "04:55 PM" },
-		},
-		{
-			id: 3,
-			product: {
-				img: `${baseURL}public/assets/images/products/img-4.png`,
-				title: "Fabric Dual Tone Living Room Chair",
-				category: "Furniture",
-			},
-			stock: "15",
-			price: "140.00",
-			orders: "40",
-			rating: "4.2",
-			published: { publishDate: "19 Apr, 2021", publishTime: "02:51 PM" },
-		},
-		{
-			id: 4,
-			product: {
-				img: `${baseURL}public/assets/images/products/img-4.png`,
-				title: "350 ml Glass Grocery Container",
-				category: "Grocery",
-			},
-			stock: "10",
-			price: "125.00",
-			orders: "48",
-			rating: "4.5",
-			published: { publishDate: "26 Mar, 2021", publishTime: "11:40 AM" },
-		},
-		{
-			id: 5,
-			product: {
-				img: `${baseURL}public/assets/images/products/img-5.png`,
-				title: "Crux Motorsports Helmet",
-				category: "Automotive Accessories",
-			},
-			stock: "08",
-			price: "135.00",
-			orders: "55",
-			rating: "4.4",
-			published: { publishDate: "30 Mar, 2021", publishTime: "09:42 AM" },
-		},
-	],
-	productListPublished = new gridjs.Grid({
-		columns: [
-			{
-				name: "#",
-				width: "40px",
-				sort: { enabled: !1 },
-				formatter: function (e) {
-					return gridjs.html(
-						'<div class="form-check checkbox-product-list">\t\t\t\t\t<input class="form-check-input" type="checkbox" value="' +
-							e +
-							'" id="checkboxpublished-' +
-							e +
-							'">\t\t\t\t\t<label class="form-check-label" for="checkbox-' +
-							e +
-							'"></label>\t\t\t\t  </div>'
-					);
-				},
-			},
-			{
-				name: "Product",
-				width: "360px",
-				data: function (e) {
-					return gridjs.html(
-						'<div class="d-flex align-items-center"><div class="flex-shrink-0 me-3"><div class="avatar-sm bg-light rounded p-1"><img src="' +
-							e.product.img +
-							'" alt="" class="img-fluid d-block"></div></div><div class="flex-grow-1"><h5 class="fs-14 mb-1"><a href="apps-ecommerce-product-details.html" class="text-dark">' +
-							e.product.title +
-							'</a></h5><p class="text-muted mb-0">Category : <span class="fw-medium">' +
-							e.product.category +
-							"</span></p></div></div>"
-					);
-				},
-			},
-			{ name: "Stock", width: "94px" },
-			{
-				name: "Price",
-				width: "101px",
-				formatter: function (e) {
-					return gridjs.html("$" + e);
-				},
-			},
-			{ name: "Orders", width: "84px" },
-			{
-				name: "Rating",
-				width: "105px",
-				formatter: function (e) {
-					return gridjs.html(
-						'<span class="badge bg-light text-body fs-12 fw-medium"><i class="mdi mdi-star text-warning me-1"></i>' +
-							e +
-							"</span></td>"
-					);
-				},
-			},
-			{
-				name: "Published",
-				width: "220px",
-				data: function (e) {
-					return gridjs.html(
-						e.published.publishDate +
-							'<small class="text-muted ms-1">' +
-							e.published.publishTime +
-							"</small>"
-					);
-				},
-			},
-			{
-				name: "Action",
-				width: "80px",
-				sort: { enabled: !1 },
-				formatter: function (e, t) {
-					return gridjs.html(
-						'<div class="dropdown"><button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="apps-ecommerce-product-details.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li><li><a class="dropdown-item" href="apps-ecommerce-add-product.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li><li class="dropdown-divider"></li><li><a class="dropdown-item remove-list" href="#" data-id=' +
-							t._cells[0].data +
-							' data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li></ul></div>'
-					);
-				},
-			},
-		],
-		className: { th: "text-muted" },
-		pagination: { limit: 10 },
-		sort: !0,
-		data: productListPublishedData,
-	}).render(document.getElementById("table-product-list-published")),
 	searchProductList = document.getElementById("searchProductList");
 searchProductList.addEventListener("keyup", function () {
 	var e = searchProductList.value.toLowerCase();
@@ -420,22 +254,19 @@ searchProductList.addEventListener("keyup", function () {
 			return -1 !== e.product.title.toLowerCase().indexOf(t.toLowerCase());
 		});
 	}
-	var i = t(productListAllData, e),
-		e = t(productListPublishedData, e);
-	productListAll.updateConfig({ data: i }).forceRender(),
-		productListPublished.updateConfig({ data: e }).forceRender(),
-		checkRemoveItem();
+	var i = t(productListAllData, e);
+	productListAll.updateConfig({ data: i }).forceRender(), checkRemoveItem();
 }),
 	document.querySelectorAll(".filter-list a").forEach(function (r) {
 		r.addEventListener("click", function () {
 			var e = document.querySelector(".filter-list a.active");
 			e && e.classList.remove("active"), r.classList.add("active");
 			var t = r.querySelector(".listname").innerHTML,
-				i = productListAllData.filter((e) => e.product.category === t),
-				e = productListPublishedData.filter((e) => e.product.category === t);
-			productListAll.updateConfig({ data: i }).forceRender(),
-				productListPublished.updateConfig({ data: e }).forceRender(),
-				checkRemoveItem();
+				i = productListAllData.filter((e) => e.product.category === t);
+			if (t === "All") {
+				i = productListAllData;
+			}
+			productListAll.updateConfig({ data: i }).forceRender(), checkRemoveItem();
 		});
 	});
 var slider = document.getElementById("product-price-range");
@@ -446,28 +277,20 @@ noUiSlider.create(slider, {
 	connect: !0,
 	behaviour: "tap-drag",
 	range: { min: 0, max: 2e3 },
-	format: wNumb({ decimals: 0, prefix: "$ " }),
+	format: wNumb({ decimals: 0, prefix: "₱ " }),
 });
 var minCostInput = document.getElementById("minCost"),
 	maxCostInput = document.getElementById("maxCost"),
-	filterDataAll = "",
-	filterDataPublished = "";
+	filterDataAll = "";
 slider.noUiSlider.on("update", function (e, t) {
-	var i = productListAllData,
-		r = productListPublishedData;
+	var i = productListAllData;
 	t ? (maxCostInput.value = e[t]) : (minCostInput.value = e[t]);
 	var s = maxCostInput.value.substr(2),
 		a = minCostInput.value.substr(2);
 	(filterDataAll = i.filter(
 		(e) => parseFloat(e.price) >= a && parseFloat(e.price) <= s
 	)),
-		(filterDataPublished = r.filter(
-			(e) => parseFloat(e.price) >= a && parseFloat(e.price) <= s
-		)),
 		productListAll.updateConfig({ data: filterDataAll }).forceRender(),
-		productListPublished
-			.updateConfig({ data: filterDataPublished })
-			.forceRender(),
 		checkRemoveItem();
 }),
 	minCostInput.addEventListener("change", function () {
@@ -529,9 +352,6 @@ document
 									0 < s ? "block" : "none"),
 								productListAll
 									.updateConfig({ data: productListAllData })
-									.forceRender(),
-								productListPublished
-									.updateConfig({ data: productListPublishedData })
 									.forceRender();
 						});
 			});
@@ -599,9 +419,7 @@ function removeItems() {
 							e.classList.contains("gridjs-tr-selected") &&
 								((t = e.querySelector(".form-check-input").value),
 								(i = r(productListAllData, t)),
-								(t = r(productListPublishedData, t)),
 								(productListAllData = i),
-								(productListPublishedData = t),
 								e.remove());
 						}),
 							document.getElementById("btn-close").click(),
@@ -625,11 +443,8 @@ function removeSingleItem() {
 								return e.id != t;
 							});
 						}
-						var t = e(productListAllData, s),
-							i = e(productListPublishedData, s);
-						(productListAllData = t),
-							(productListPublishedData = i),
-							r.closest(".gridjs-tr").remove();
+						var t = e(productListAllData, s);
+						(productListAllData = t), r.closest(".gridjs-tr").remove();
 					});
 		});
 	});
