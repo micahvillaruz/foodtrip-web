@@ -30,14 +30,9 @@
                                         <div class="text-muted">Published : <span class="text-body fw-medium">12 Oct, 2021</span></div>
                                     </div>
                                 </div>
-                                <div class="flex-shrink-0">
-                                    <div>
-                                        <a href="apps-ecommerce-add-product.html" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="ri-pencil-fill align-bottom"></i></a>
-                                    </div>
-                                </div>
                             </div>
                             <div class="row mt-4">
-                                <div class="col-lg-4 col-sm-4">
+                                <div class="col-lg-3 col-sm-6">
                                     <div class="p-2 border border-dashed rounded">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar-sm me-2">
@@ -53,7 +48,7 @@
                                     </div>
                                 </div>
                                 <!-- end col -->
-                                <div class="col-lg-4 col-sm-4">
+                                <div class="col-lg-3 col-sm-6">
                                     <div class="p-2 border border-dashed rounded">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar-sm me-2">
@@ -69,17 +64,33 @@
                                     </div>
                                 </div>
                                 <!-- end col -->
-                                <div class="col-lg-4 col-sm-4">
+                                <div class="col-lg-3 col-sm-6">
                                     <div class="p-2 border border-dashed rounded">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar-sm me-2">
                                                 <div class="avatar-title rounded bg-transparent text-success fs-24">
-                                                    <i class="las la-edit"></i>
+                                                    <i class="mdi mdi-book-cog"></i>
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
                                                 <p class="text-muted mb-1">Status :</p>
                                                 <h5 class="mb-0">Available</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="p-2 border border-dashed rounded">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-sm me-2">
+                                                <div class="avatar-title rounded bg-transparent text-success fs-24">
+                                                    <i class="ri-inbox-archive-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted mb-1">Total Revenue :</p>
+                                                <h5 class="mb-0">₱60,645</h5>
                                             </div>
                                         </div>
                                     </div>

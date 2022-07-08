@@ -171,6 +171,6 @@ class Admin extends CI_Controller
 		$this->load->view('admin/restaurant-admins-management/pages/restaurant-admins');
 		$this->load->view('partials/footer');
 		$this->load->view('partials/foot-scripts');
-		$this->load->view('admin/restaurant-admins-management/pages/scripts/resttaurant-admins-scripts');
+		$this->load->view('admin/restaurant-admins-management/pages/scripts/restaurant-admins-scripts');
 	}
 }

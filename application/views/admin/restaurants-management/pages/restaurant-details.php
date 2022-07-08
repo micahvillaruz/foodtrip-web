@@ -50,16 +50,13 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="text-end mb-5">
-                        <button type="submit" class="btn btn-info"><i class="ri-store-3-line align-bottom me-1"></i> Edit Restaurant</button>
-                    </div>
                 </div>
             </div>
             <!--end card-body-->
             <div class="card-body p-4 border-top border-top-dashed">
-                <h6 class="text-muted text-uppercase fw-semibold mt-5 mb-4">Contact Support</h6>
+                <h6 class="text-muted text-uppercase fw-semibold mb-4">Contact Support</h6>
                 <form action="#">
-                    <div class="mb-3">
+                    <div class="mb-5">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter your messages..."></textarea>
                     </div>
                     <div class="text-end">
@@ -127,11 +124,6 @@
         </div><!-- end card -->
 
         <div class="row g-4 mb-3">
-            <div class="col-sm-auto">
-                <div>
-                    <a href="apps-ecommerce-add-product.html" class="btn btn-success"><i class="ri-add-line align-bottom me-1"></i> Add New</a>
-                </div>
-            </div>
             <div class="col-sm">
                 <div class="d-flex justify-content-sm-end">
                     <div class="search-box ms-2">

@@ -78,7 +78,6 @@ $route['admin/restaurants']                         = 'admin/restaurants';
 $route['admin/restaurants/restaurant-details']      = 'admin/restaurant_details';
 $route['admin/products']                            = 'admin/products';
 $route['admin/products/product-details']            = 'admin/product_details';
-$route['admin/products/add-product']                = 'admin/add_product';
 $route['admin/customers']                           = 'admin/customers';
 $route['admin/orders']                              = 'admin/orders'; // remove add order
 $route['admin/orders/order-details']                = 'admin/order_details'; // edit order status, courier etc
