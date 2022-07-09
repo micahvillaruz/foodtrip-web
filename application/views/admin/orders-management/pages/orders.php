@@ -37,10 +37,10 @@
                             <td>Jollibee</td>
                             <td>₱550.00</td>
                             <td>09 Jul,2022 2:01 PM</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Delivered</span></td>
-                            <td>09 Jul,2022 2:20 PM</td>
-                            <td><span class="badge bg-danger text-uppercase">Not Applicable</span></td>
-                            <td>09 Jul,2022 2:55 PM</td>
+                            <td><span class="badge badge-soft-warning text-uppercase">In Process</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <button class="btn btn-sm btn-soft-info">View</button>
                             </td>
@@ -63,12 +63,12 @@
                             <td>12408506525</td>
                             <td>Akihiro Leonel Juarez</td>
                             <td>KFC</td>
-                            <td>₱840.00</td>
+                            <td>₱1,458.00</td>
                             <td>09 Jul,2022 2:05 PM</td>
-                            <td><span class="badge badge-soft-warning text-uppercase">In Process</span></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><span class="badge badge-soft-success text-uppercase">Delivered</span></td>
+                            <td>09 Jul,2022 2:48 PM</td>
+                            <td><span class="badge bg-danger text-uppercase">Not Applicable</span></td>
+                            <td>09 Jul,2022 3:29 PM</td>
                             <td>
                                 <button class="btn btn-sm btn-soft-info">View</button>
                             </td>
