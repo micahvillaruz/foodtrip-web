@@ -27,6 +27,10 @@ File: Custom Css File
 	height: 445px;
 }
 
+.menu-img {
+	max-height: 200px;
+}
+
 .was-validated .form-select:invalid + .select2 .select2-selection {
 	border-color: #dc3545 !important;
 }
