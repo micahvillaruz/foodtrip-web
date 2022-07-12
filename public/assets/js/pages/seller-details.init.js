@@ -57,6 +57,7 @@ TableProductListAll &&
 				},
 			},
 			{ name: "Price", width: "101px" },
+<<<<<<< Updated upstream
 			{
 				name: "Status",
 				width: "105px",
@@ -77,6 +78,8 @@ TableProductListAll &&
 					}
 				},
 			},
+=======
+>>>>>>> Stashed changes
 			{
 				name: "Published",
 				width: "220px",
@@ -102,6 +105,7 @@ TableProductListAll &&
 		sort: !0,
 		data: [
 			[
+<<<<<<< Updated upstream
 				[
 					"img-1.png",
 					"1 - pc. Chickenjoy w/ Half Jolly Spaghetti & Shanghai Super Meal",
@@ -175,6 +179,77 @@ TableProductListAll &&
 				["img-12.png", "Chocolate Sundae Twirl", "Desserts"],
 				"₱ 48.00",
 				"Available",
+=======
+				["img-1.png", "Half Sleeve Round Neck T-Shirts", "Clothes"],
+				"$ 115.00",
+				["12 Oct, 2021", "10:05 AM"],
+			],
+			[
+				["img-2.png", "Urban Ladder Pashe Chair", "Furniture"],
+				"$ 160.00",
+				["06 Jan, 2021", "01:31 PM"],
+			],
+			[
+				[
+					"img-3.png",
+					"350 ml Glass Grocery Container",
+					"Kitchen Storage & Containers",
+				],
+				"$ 25.00",
+				["26 Mar, 2021", "11:40 AM"],
+			],
+			[
+				["img-4.png", "Fabric Dual Tone Living Room Chair", "Furniture"],
+				"$ 140.00",
+				["19 Apr, 2021", "02:51 PM"],
+			],
+			[
+				["img-5.png", "Crux Motorsports Helmet", "Bike Accessories"],
+				"$ 135.00",
+				["30 Mar, 2021", "09:42 AM"],
+			],
+			[
+				["img-6.png", "Half Sleeve T-Shirts (Blue)", "Clothes"],
+				"$ 125.00",
+				["12 Oct, 2021", "04:55 PM"],
+			],
+			[
+				["img-7.png", "Noise Evolve Smartwatch", "Watches"],
+				"$ 95.00",
+				["15 May, 2021", "03:40 PM"],
+			],
+			[
+				["img-8.png", "Sweatshirt for Men (Pink)", "Clothes"],
+				"$ 120.00",
+				["21 Jun, 2021", "12:18 PM"],
+			],
+			[
+				[
+					"img-9.png",
+					"Reusable Ecological Coffee Cup",
+					"Tableware & Dinnerware",
+				],
+				"$ 125.00",
+				["15 Jan, 2021", "10:29 AM"],
+			],
+			[
+				[
+					"img-10.png",
+					"Travel Carrying Pouch Bag",
+					"Bags, Wallets and Luggage",
+				],
+				"$ 115.00",
+				["15 Jun, 2021", "03:51 Pm"],
+			],
+			[
+				["img-1.png", "Half Sleeve Round Neck T-Shirts", "Clothes"],
+				"$ 115.00",
+				["12 Oct, 2021", "10:05 AM"],
+			],
+			[
+				["img-2.png", "Urban Ladder Pashe Chair", "Furniture"],
+				"$ 160.00",
+>>>>>>> Stashed changes
 				["06 Jan, 2021", "01:31 PM"],
 			],
 		],
