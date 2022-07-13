@@ -62,14 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}),
 	document.addEventListener("DOMContentLoaded", function () {
-		var table = $("#buttons-datatables").DataTable();
-
-		var buttons = new $.fn.dataTable.Buttons(table, {
+		new DataTable("#buttons-datatables", {
+			dom: "Bfrtip",
 			buttons: ["copy", "csv", "excel", "print", "pdf"],
-		})
-			.container()
-			.appendTo($("#export-buttons"));
+		});
 	}),
 	document.addEventListener("DOMContentLoaded", function () {
 		new DataTable("#ajax-datatables", { ajax: "assets/json/datatable.json" });
 	});
+
+$("#address-datatables").dataTable({
+	dom: "rtip",
+});
