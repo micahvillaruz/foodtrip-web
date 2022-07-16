@@ -38,24 +38,8 @@
         <div class="card ribbon-box right overflow-hidden">
             <div class="card-body text-center p-4">
                 <div class="ribbon ribbon-info ribbon-shape trending-ribbon"><i class="ri-flashlight-fill text-white align-bottom"></i> <span class="trending-ribbon-text">Trending</span></div>
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-1.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Force Medicines</a></h5>
-                <p class="text-muted mb-4">David Marshall</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller1" data-colors='["--vz-danger"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>452</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$45,415</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Jollibee</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -66,24 +50,8 @@
     <div class="col-xl-3 col-lg-6">
         <div class="card">
             <div class="card-body text-center p-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-2.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Micro Design</a></h5>
-                <p class="text-muted mb-4">Katia Stapleton</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller2" data-colors='["--vz-success"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>784</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$97,642</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/greenwich.png" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Greenwich</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -94,24 +62,8 @@
     <div class="col-xl-3 col-lg-6">
         <div class="card">
             <div class="card-body text-center p-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-3.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Nesta Technologies</a></h5>
-                <p class="text-muted mb-4">Harley Fuller</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller3" data-colors='["--vz-warning"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>320</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$27,102</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/mcdonalds.png" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">McDonalds</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -123,24 +75,8 @@
         <div class="card ribbon-box right overflow-hidden">
             <div class="card-body text-center p-4">
                 <div class="ribbon ribbon-info ribbon-shape trending-ribbon"><i class="ri-flashlight-fill text-white align-bottom"></i> <span class="trending-ribbon-text">Trending</span></div>
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-4.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">iTest Factory</a></h5>
-                <p class="text-muted mb-4">Oliver Tyler</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller4" data-colors='["--vz-success"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>159</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$14,933</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jco.png" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Jco</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -151,24 +87,8 @@
     <div class="col-xl-3 col-lg-6">
         <div class="card">
             <div class="card-body text-center p-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-5.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Meta4Systems</a></h5>
-                <p class="text-muted mb-4">Zoe Dennis</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller5" data-colors='["--vz-warning"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>363</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$73,426</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/yabu.png" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Yabu</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -180,24 +100,8 @@
         <div class="card ribbon-box right overflow-hidden">
             <div class="card-body text-center p-4">
                 <div class="ribbon ribbon-info ribbon-shape trending-ribbon"><i class="ri-flashlight-fill text-white align-bottom"></i> <span class="trending-ribbon-text">Trending</span></div>
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-6.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Digitech Galaxy</a></h5>
-                <p class="text-muted mb-4">John Roberts</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller6" data-colors='["--vz-success"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>412</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$34,241</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/subway.png" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Subway</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -209,24 +113,8 @@
         <div class="card ribbon-box right overflow-hidden">
             <div class="card-body text-center p-4">
                 <div class="ribbon ribbon-info ribbon-shape trending-ribbon"><i class="ri-flashlight-fill text-white align-bottom"></i> <span class="trending-ribbon-text">Trending</span></div>
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-7.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Syntyce Solutions</a></h5>
-                <p class="text-muted mb-4">Demi Allen</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller7" data-colors='["--vz-danger"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>945</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$17,200</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/starbucks.png" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Starbucks</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
@@ -237,24 +125,8 @@
     <div class="col-xl-3 col-lg-6">
         <div class="card">
             <div class="card-body text-center p-4">
-                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-8.png" alt="" height="45">
-                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">Zoetic Fashion</a></h5>
-                <p class="text-muted mb-4">James Bowen</p>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div id="chart-seller8" data-colors='["--vz-warning"]'></div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 border-end-dashed border-end">
-                        <h5>784</h5>
-                        <span class="text-muted">Item Stock</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>$97,642</h5>
-                        <span class="text-muted">Wallet Balance</span>
-                    </div>
-                </div>
+                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kuyaj.jpg" alt="" height="45">
+                <h5 class="mb-1 mt-4"><a href="apps-ecommerce-seller-details.html" class="link-primary">KuyaJ</a></h5>
                 <div class="mt-4">
                     <a href="apps-ecommerce-seller-details.html" class="btn btn-light w-100">View Details</a>
                 </div>
