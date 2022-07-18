@@ -475,7 +475,7 @@
                                     <div class="card-body">
 
                                         <div class="mb-4">
-                                            <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Add New Address</button>
+                                            <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#addAddressModal"><i class="ri-add-line align-bottom me-1"></i> Add New Address</button>
                                         </div>
 
                                         <table id="address-datatables" class="table nowrap align-middle" style="width:100%">
@@ -509,12 +509,12 @@
                                                         <div class="dropdown d-inline-block">
                                                             <div class=" d-flex gap-2 justify-content-end">
                                                                 <div class="edit">
-                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#addAddressModal">Edit</button>
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex justify-content-end">
                                                                 <div class="default mt-2">
-                                                                    <button class="btn btn-sm btn-info disabled" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Set As Default</button>
+                                                                    <button class="btn btn-sm btn-info disabled">Set As Default</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -549,15 +549,15 @@
                                                         <div class="dropdown d-inline-block">
                                                             <div class=" d-flex gap-2 justify-content-end">
                                                                 <div class="edit">
-                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#addAddressModal">Edit</button>
                                                                 </div>
                                                                 <div class="remove">
-                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Delete</button>
+                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#removeItemModal">Delete</button>
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex justify-content-end">
                                                                 <div class="default mt-2">
-                                                                    <button class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Set As Default</button>
+                                                                    <button class="btn btn-sm btn-info">Set As Default</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -592,15 +592,15 @@
                                                         <div class="dropdown d-inline-block">
                                                             <div class=" d-flex gap-2 justify-content-end">
                                                                 <div class="edit">
-                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#addAddressModal">Edit</button>
                                                                 </div>
                                                                 <div class="remove">
-                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Delete</button>
+                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#removeItemModal">Delete</button>
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex justify-content-end">
                                                                 <div class="default mt-2">
-                                                                    <button class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Set As Default</button>
+                                                                    <button class="btn btn-sm btn-info">Set As Default</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -635,15 +635,15 @@
                                                         <div class="dropdown d-inline-block">
                                                             <div class=" d-flex gap-2 justify-content-end">
                                                                 <div class="edit">
-                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#addAddressModal">Edit</button>
                                                                 </div>
                                                                 <div class="remove">
-                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Delete</button>
+                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#removeItemModal">Delete</button>
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex justify-content-end">
                                                                 <div class="default mt-2">
-                                                                    <button class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Set As Default</button>
+                                                                    <button class="btn btn-sm btn-info">Set As Default</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -678,15 +678,15 @@
                                                         <div class="dropdown d-inline-block">
                                                             <div class=" d-flex gap-2 justify-content-end">
                                                                 <div class="edit">
-                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                                                                    <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#addAddressModal">Edit</button>
                                                                 </div>
                                                                 <div class="remove">
-                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Delete</button>
+                                                                    <button class="btn btn-sm btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#removeItemModal">Delete</button>
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex justify-content-end">
                                                                 <div class="default mt-2">
-                                                                    <button class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Set As Default</button>
+                                                                    <button class="btn btn-sm btn-info">Set As Default</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -699,187 +699,6 @@
                                 <!--end card-->
                             </div>
                             <!--end tab-pane-->
-
-                            <div class="modal fade" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light p-3">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
-                                        </div>
-                                        <form>
-                                            <div class="modal-body">
-                                                <div class="mb-3" id="modal-id" style="display: none;">
-                                                    <label for="id-field" class="form-label">ID</label>
-                                                    <input type="text" id="id-field" class="form-control" placeholder="ID" readonly />
-                                                </div>
-
-                                                <div class="mb-3 form-floating">
-                                                    <input type="text" id="full_name" class="form-control" placeholder="Enter Full Name" required />
-                                                    <label for="full_name" class="form-label">Full Name </label>
-                                                </div>
-
-                                                <div class="mb-3 form-floating">
-                                                    <input type="number" id="phone_number" class="form-control" placeholder="Enter Phone Number" required />
-                                                    <label for="phone_number" class="form-label">Phone Number</label>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="region">Region</label>
-                                                    <select class="form-select" name="region" id="region">
-                                                        <option selected disabled value="">Select Region</option>
-                                                        <option value="1">Metro Manila</option>
-                                                        <option value="2">Mindanao</option>
-                                                        <option value="3">North Luzon</option>
-                                                        <option value="4">South Luzon</option>
-                                                        <option value="5">Visayas</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="province">Province</label>
-                                                    <select class="form-select" name="province" id="province">
-                                                        <option selected disabled value="">Select Province</option>
-                                                        <option value="1">Metro Manila</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="city">City</label>
-                                                    <select class="form-select" name="city" id="city">
-                                                        <option selected disabled value="">Select City</option>
-                                                        <option value="1">Binondo</option>
-                                                        <option value="2">Caloocan City</option>
-                                                        <option value="3">Ermita</option>
-                                                        <option value="4">Intramuros</option>
-                                                        <option value="5">Las Pinas City</option>
-                                                        <option value="6">Makati City</option>
-                                                        <option value="7">Malabon City</option>
-                                                        <option value="8">Malate</option>
-                                                        <option value="9">Mandaluyong City</option>
-                                                        <option value="10">Marikina City</option>
-                                                        <option value="11">Muntinlupa City</option>
-                                                        <option value="12">Navotas City</option>
-                                                        <option value="13">Paco</option>
-                                                        <option value="14">Pandacan</option>
-                                                        <option value="15">Paranaque City</option>
-                                                        <option value="16">Pasay City</option>
-                                                        <option value="17">Pasig City</option>
-                                                        <option value="18">Pateros</option>
-                                                        <option value="19">Port Area</option>
-                                                        <option value="20">Quezon City</option>
-                                                        <option value="21">Quiapo</option>
-                                                        <option value="22">Sampaloc</option>
-                                                        <option value="23">San Juan City</option>
-                                                        <option value="24">San Miguel</option>
-                                                        <option value="25">San Nicolas</option>
-                                                        <option value="26">Santa Ana</option>
-                                                        <option value="27">Santa Cruz</option>
-                                                        <option value="28">Taguig City</option>
-                                                        <option value="29">Tondo I / Ii</option>
-                                                        <option value="30">Valenzuela City</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="barangay">Barangay</label>
-                                                    <select class="form-select" name="barangay" id="barangay">
-                                                        <option selected disabled value="">Select Barangay</option>
-                                                        <option value="1">Alicia</option>
-                                                        <option value="2">Amihan</option>
-                                                        <option value="3">Apolonio Samson</option>
-                                                        <option value="4">Aurora</option>
-                                                        <option value="5">Baesa</option>
-                                                        <option value="6">Bagbag</option>
-                                                        <option value="7">Bagong Lipunan ng Crame</option>
-                                                        <option value="8">Bagong Pag-Asa</option>
-                                                        <option value="9">Bagong Silangan</option>
-                                                        <option value="10">Bagumbayan</option>
-                                                        <option value="11">Bagumbuhay</option>
-                                                        <option value="12">Bahay Toro</option>
-                                                        <option value="13">Balingasa</option>
-                                                        <option value="14">Balong Bato</option>
-                                                        <option value="15">Batasan Hills</option>
-                                                        <option value="16">Bayanihan</option>
-                                                        <option value="17">Blue Ridge A</option>
-                                                        <option value="18">Blue Ridge B</option>
-                                                        <option value="19">Botocan</option>
-                                                        <option value="20">Bungad</option>
-                                                        <option value="21">Camp Aguinaldo</option>
-                                                        <option value="22">Capri</option>
-                                                        <option value="23">Central</option>
-                                                        <option value="24">Claro</option>
-                                                        <option value="25">Commonwealth</option>
-                                                        <option value="26">Culiat</option>
-                                                        <option value="27">Damar</option>
-                                                        <option value="28">Damayan</option>
-                                                        <option value="29">Damayang Lagi</option>
-                                                        <option value="30">Del Monte</option>
-                                                        <option value="31">Dioquino Zobel</option>
-                                                        <option value="32">Don Manuel</option>
-                                                        <option value="33">Dona Imelda</option>
-                                                        <option value="34">Dona Josefa</option>
-                                                        <option value="35">Duyan-Duyan</option>
-                                                        <option value="36">E. Rodriguez</option>
-                                                        <option value="37">East Kamias</option>
-                                                        <option value="38">Escopa I</option>
-                                                        <option value="39">Escopa Ii</option>
-                                                        <option value="40">Escopa Iii</option>
-                                                        <option value="41">Escopa Iv</option>
-                                                        <option value="42">Fairview</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3 form-floating">
-                                                    <input type="number" class="form-control" id="zip_code" placeholder="Enter ZIP Code">
-                                                    <label for="zip_code">Zipcode</label>
-                                                </div>
-
-                                                <div class="mb-3 form-floating">
-                                                    <input type="text" id="address_1" class="form-control" placeholder="Enter Lot & Block No, House No, Street Name" required />
-                                                    <label for="address_1" class="form-label">Lot & Block No, House No, Street Name</label>
-                                                </div>
-
-                                                <div class="mb-3 form-floating">
-                                                    <input type="text" id="address_2" class="form-control" placeholder="Enter Bulding Name, Subdivision, Avenue" />
-                                                    <label for="address_2" class="form-label">Bulding Name, Subdivision, Avenue</label>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="add-btn">Add Address</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Modal -->
-                            <div class="modal fade zoomIn" id="deleteRecordModal" tabindex="-1" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mt-2 text-center">
-                                                <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
-                                                <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                                                    <h4>Are you Sure ?</h4>
-                                                    <p class="text-muted mx-4 mb-0">Are you sure you want to Delete this Address ?</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                                                <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn w-sm btn-danger " id="delete-record">Yes, Delete It!</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end modal -->
                         </div>
                         <!--end tab-content-->
                     </div>

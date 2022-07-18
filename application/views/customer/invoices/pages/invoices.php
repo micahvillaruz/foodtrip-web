@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <table id="buttons-datatables" class="table table-bordered nowrap table-striped align-middle" style="width:100%">
+                <table id="model-datatables" class="table table-bordered nowrap align-middle" style="width:100%">
                     <thead>
                         <tr>
                             <th>Payment No</th>
@@ -29,269 +29,138 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>6672791904</td>
-                            <td>48140400825</td>
-                            <td>Jollibee</td>
-                            <td>09 Jul,2022 2:01 PM</td>
-                            <td>₱550.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#60524012573</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#97464507680</a></td>
                             <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center fw-medium">
+                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="avatar-xs rounded-circle me-2">
+                                    <a href="javascript:void(0);" class="text-dark">Jollibee</a>
                                 </div>
+                            </td>
+                            <td class="date">18 Jul, 2022 <small class="text-muted">11:30 AM</small></td>
+                            <td>₱ 1,750.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-13 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td>81937715382</td>
-                            <td>61097516414</td>
-                            <td>McDonald's</a></td>
-                            <td>09 Jul,2022 2:03 PM</td>
-                            <td>₱249.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#86480774487</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#30823265449</a></td>
                             <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center fw-medium">
+                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/mcdonalds.png" alt="" class="avatar-xs rounded-circle me-2">
+                                    <a href="javascript:void(0);" class="text-dark">McDonald's</a>
                                 </div>
+                            </td>
+                            <td class="date">19 Jul, 2022 <small class="text-muted">06:15 PM</small></td>
+                            <td>₱ 1,280.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-13 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td>29863618971</td>
-                            <td>12408506525</td>
-                            <td>KFC</td>
-                            <td>09 Jul,2022 2:05 PM</td>
-                            <td>₱1,458.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#12201394280</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#47655229297</a></td>
                             <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center fw-medium">
+                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kenny-rogers-roasters.jpg" alt="" class="avatar-xs rounded-circle me-2">
+                                    <a href="javascript:void(0);" class="text-dark">Kenny Rogers Roasters</a>
                                 </div>
+                            </td>
+                            <td class="date">19 Jul, 2022 <small class="text-muted">04:55 PM</small></td>
+                            <td>₱ 1,980.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-13 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block" data-bs-toggle="modal" href="#deleteOrder">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td>87869410460</td>
-                            <td>49922144244</td>
-                            <td>Chowking</td>
-                            <td>09 Jul,2022 2:06 PM</td>
-                            <td>₱148.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#11368545495</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#16538545794</a></td>
                             <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center fw-medium">
+                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/burger-king.png" alt="" class="avatar-xs rounded-circle me-2">
+                                    <a href="javascript:void(0);" class="text-dark">Burger King</a>
                                 </div>
+                            </td>
+                            <td class="date">07 Jul, 2022 <small class="text-muted">04:52 PM</small></td>
+                            <td>₱ 4,430.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-13 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td>11072345863</td>
-                            <td>91103905867</td>
-                            <td>Mang Inasal</td>
-                            <td>09 Jul,2022 2:10 PM</td>
-                            <td>₱95.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#50911490329</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#31402861718</a></td>
                             <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center fw-medium">
+                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/starbucks.png" alt="" class="avatar-xs rounded-circle me-2">
+                                    <a href="javascript:void(0);" class="text-dark">Starbucks</a>
                                 </div>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>92086435439</td>
-                            <td>95121078447</td>
-                            <td>Max's Restaurant</td>
-                            <td>09 Jul,2022 2:15 PM</td>
-                            <td>₱689.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
+                            <td class="date">14 Jul, 2022 <small class="text-muted">09:35 AM</small></td>
+                            <td>₱ 1,235.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase fs-13 d-block">Rejected</span></td>
                             <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>60209233839</td>
-                            <td>51036233833</td>
-                            <td>Tropical Hut</td>
-                            <td>09 Jul,2022 2:30 PM</td>
-                            <td>₱171.00</td>
-                            <td><span class="badge badge-soft-primary text-uppercase">Refunded</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>29323362381</td>
-                            <td>31013186484</td>
-                            <td>BonChon Chicken</td>
-                            <td>09 Jul,2022 2:30 PM</td>
-                            <td>₱215.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>79062374590</td>
-                            <td>47604977923</td>
-                            <td>Kenny Rogers Roasters</td>
-                            <td>09 Jul,2022 2:48 PM</td>
-                            <td>₱1,130.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>18708869004</td>
-                            <td>38149334166</td>
-                            <td>Mister Donut</td>
-                            <td>09 Jul,2022 3:00 PM</td>
-                            <td>₱350.00</td>
-                            <td><span class="badge badge-soft-primary text-uppercase">Refunded</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>31036425211</td>
-                            <td>17324343906</td>
-                            <td>Giligan's Restaurant</td>
-                            <td>09 Jul,2022 2:58 PM</td>
-                            <td>₱1,107.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>96122220610</td>
-                            <td>16795163186</td>
-                            <td>Shakey's Pizza</td>
-                            <td>09 Jul,2022 3:00 PM</td>
-                            <td>₱305.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>73438489688</td>
-                            <td>22836983523</td>
-                            <td>David's Tea Hous</td>
-                            <td>09 Jul,2022 3:20 PM</td>
-                            <td>₱145.00</td>
-                            <td><span class="badge badge-soft-primary text-uppercase">Refunded</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>80396122101</td>
-                            <td>78787993808</td>
-                            <td>Classic Savory</td>
-                            <td>09 Jul,2022 3:35 PM</td>
-                            <td>₱305.00</td>
-                            <td><span class="badge badge-soft-success text-uppercase">Paid</span></td>
-                            <td>
-                                <div class="dropdown d-inline-block">
-                                    <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="ri-more-fill align-middle"></i>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item"><i class="ri-download-2-line align-bottom me-2 text-muted"></i> Download</a></li>
-                                    </ul>
-                                </div>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
                     </tbody>

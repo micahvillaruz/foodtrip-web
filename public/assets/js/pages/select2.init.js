@@ -27,23 +27,6 @@ function formatState(e) {
 $(document).ready(function () {
 	$(".js-example-basic-single").select2(),
 		$(".js-example-basic-multiple").select2();
-
-	$("#region").select2({
-		dropdownParent: $("#showModal"),
-	});
-
-	$("#barangay").select2({
-		dropdownParent: $("#showModal"),
-	});
-
-	$("#city").select2({
-		dropdownParent: $("#showModal"),
-	});
-
-	$("#province").select2({
-		dropdownParent: $("#showModal"),
-	});
-
 	$(".js-example-data-array").select2({
 		data: [
 			{ id: 0, text: "enhancement" },

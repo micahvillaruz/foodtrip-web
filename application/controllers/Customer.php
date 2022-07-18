@@ -28,6 +28,8 @@ class Customer extends CI_Controller
 		$this->load->view('partials/sidebar');
 		$this->load->view('customer/profile/pages/profile');
 		$this->load->view('partials/footer');
+		$this->load->view('customer/cart/components/modals/remove-address-modal');
+		$this->load->view('customer/cart/components/modals/edit-address-modal');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('customer/profile/pages/scripts/profile-scripts');
 	}
