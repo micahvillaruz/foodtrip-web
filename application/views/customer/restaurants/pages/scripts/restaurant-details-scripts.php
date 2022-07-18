@@ -8,8 +8,9 @@
 <!--Swiper slider js-->
 <script src="<?php echo base_url('public/assets') ?>/libs/swiper/swiper-bundle.min.js"></script>
 
-<!--seller-details init js -->
-<script src="<?php echo base_url('public/assets') ?>/js/pages/seller-details.init.js"></script>
+<script src="<?php echo base_url('public/assets') ?>/js/admin/filter-dishes.js"></script>
+
+<script src="<?php echo base_url('public/assets') ?>/js/pages/apps-nft-auction.init.js"></script>
 
 <!-- App js -->
 <script src="<?php echo base_url('public/assets') ?>/js/app.js"></script>

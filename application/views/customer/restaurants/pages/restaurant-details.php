@@ -1,319 +1,43 @@
 <div class="row">
-    <div class="col-xxl-3">
+    <div class="col-xxl-12">
         <div class="card">
             <div class="card-body p-4">
                 <div>
-                    <div class="flex-shrink-0 avatar-md mx-auto">
-                        <div class="avatar-title bg-light rounded">
-                            <img src="<?php echo base_url('public/assets') ?>/images/companies/img-2.png" alt="" height="50" />
-                        </div>
-                    </div>
-                    <div class="mt-4 text-center">
-                        <h5 class="mb-1">Force Medicines</h5>
-                        <p class="text-muted">Since 1987</p>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table mb-0 table-borderless">
-                            <tbody>
-                                <tr>
-                                    <th><span class="fw-medium">Owner Name</span></th>
-                                    <td>David Marshall</td>
-                                </tr>
-                                <tr>
-                                    <th><span class="fw-medium">Company Type</span></th>
-                                    <td>Partnership</td>
-                                </tr>
-                                <tr>
-                                    <th><span class="fw-medium">Email</span></th>
-                                    <td>forcemedicines@gamil.com</td>
-                                </tr>
-                                <tr>
-                                    <th><span class="fw-medium">Website</span></th>
-                                    <td><a href="javascript:void(0);" class="link-primary">www.forcemedicines.com</a></td>
-                                </tr>
-                                <tr>
-                                    <th><span class="fw-medium">Contact No.</span></th>
-                                    <td>+(123) 9876 654 321</td>
-                                </tr>
-                                <tr>
-                                    <th><span class="fw-medium">Fax</span></th>
-                                    <td>+1 999 876 5432</td>
-                                </tr>
-                                <tr>
-                                    <th><span class="fw-medium">Location</span></th>
-                                    <td>United Kingdom</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!--end card-body-->
-            <div class="card-body border-top border-top-dashed p-4">
-                <div>
-                    <h6 class="text-muted text-uppercase fw-semibold mb-4">Customer Reviews</h6>
-                    <div>
-                        <div>
-                            <div class="bg-light px-3 py-2 rounded-2 mb-2">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <div class="fs-16 align-middle text-warning">
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-half-fill"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <h6 class="mb-0">4.5 out of 5</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-muted">Total <span class="fw-medium">5.50k</span> reviews</div>
+                    <div class="hstack gap-5 flex-wrap">
+                        <div class="flex-shrink-0 avatar-md m-3">
+                            <div class="avatar-title bg-light rounded">
+                                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" height="100" />
                             </div>
                         </div>
-
-                        <div class="mt-3">
-                            <div class="row align-items-center g-2">
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0">5 star</h6>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="p-1">
-                                        <div class="progress animated-progress progress-sm">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 50.16%" aria-valuenow="50.16" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0 text-muted">2758</h6>
-                                    </div>
-                                </div>
+                        <div class="mt-4">
+                            <h1 class="mb-1 fw-bold">Jolibee</h1>
+                            <span class="d-block">Fast Food</span>
+                            <div class="hstack gap-5 my-2 flex-wrap">
+                                <div class="text-muted"> <i class="mdi mdi-cellphone text-success align-bottom me-1"></i> <span class="fw-medium"> Phone No</span> : <span class="text-body fw-medium">+63 917 131 8000</span></div>
+                                <div class="text-muted"> <i class="ri-phone-fill text-warning align-bottom me-1"></i> <span class="fw-medium"> Landline No</span> : <span class="text-body fw-medium">(02) 8-7000</span></div>
+                                <div class="text-muted"> <i class="mdi mdi-email-outline text-info align-bottom me-1"></i> <span class="fw-medium"> Email</span> : <span class="text-body fw-medium">feedback@jollibee.com.ph.</span></div>
                             </div>
-                            <!-- end row -->
-
-                            <div class="row align-items-center g-2">
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0">4 star</h6>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="p-1">
-                                        <div class="progress animated-progress progress-sm">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 29.32%" aria-valuenow="29.32" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0 text-muted">1063</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end row -->
-
-                            <div class="row align-items-center g-2">
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0">3 star</h6>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="p-1">
-                                        <div class="progress animated-progress progress-sm">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 18.12%" aria-valuenow="18.12" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0 text-muted">997</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end row -->
-
-                            <div class="row align-items-center g-2">
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0">2 star</h6>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="p-1">
-                                        <div class="progress animated-progress progress-sm">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 4.98%" aria-valuenow="4.98" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0 text-muted">227</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end row -->
-
-                            <div class="row align-items-center g-2">
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0">1 star</h6>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="p-1">
-                                        <div class="progress animated-progress progress-sm">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 7.42%" aria-valuenow="7.42" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="p-1">
-                                        <h6 class="mb-0 text-muted">408</h6>
-                                    </div>
-                                </div>
-                            </div><!-- end row -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end card-body-->
-            <div class="card-body p-4 border-top border-top-dashed">
-                <h6 class="text-muted text-uppercase fw-semibold mb-4">Products Reviews</h6>
-                <!-- Swiper -->
-                <div class="swiper vertical-swiper" style="height: 242px;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card border border-dashed shadow-none">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0 avatar-sm">
-                                            <div class="avatar-title bg-light rounded">
-                                                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-1.png" alt="" height="30">
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-3">
-                                            <div>
-                                                <p class="text-muted mb-1 fst-italic">" Great product and looks great, lots of features. "</p>
-                                                <div class="fs-11 align-middle text-warning">
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                </div>
-                                            </div>
-                                            <div class="text-end mb-0 text-muted">
-                                                - by <cite title="Source Title">Force Medicines</cite>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border border-dashed shadow-none">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0">
-                                            <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-3.jpg" alt="" class="avatar-sm rounded">
-                                        </div>
-                                        <div class="flex-grow-1 ms-3">
-                                            <div>
-                                                <p class="text-muted mb-1 fst-italic">" Amazing template, very easy to understand and manipulate. "</p>
-                                                <div class="fs-11 align-middle text-warning">
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-half-fill"></i>
-                                                </div>
-                                            </div>
-                                            <div class="text-end mb-0 text-muted">
-                                                - by <cite title="Source Title">Henry Baird</cite>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border border-dashed shadow-none">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0 avatar-sm">
-                                            <div class="avatar-title bg-light rounded">
-                                                <img src="<?php echo base_url('public/assets') ?>/images/companies/img-8.png" alt="" height="30">
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1 ms-3">
-                                            <div>
-                                                <p class="text-muted mb-1 fst-italic">"Very beautiful product and Very helpful customer service."</p>
-                                                <div class="fs-11 align-middle text-warning">
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-line"></i>
-                                                    <i class="ri-star-line"></i>
-                                                </div>
-                                            </div>
-                                            <div class="text-end mb-0 text-muted">
-                                                - by <cite title="Source Title">Zoetic Fashion</cite>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border border-dashed shadow-none">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0">
-                                            <img src="<?php echo base_url('public/assets') ?>/images/users/avatar-2.jpg" alt="" class="avatar-sm rounded">
-                                        </div>
-                                        <div class="flex-grow-1 ms-3">
-                                            <div>
-                                                <p class="text-muted mb-1 fst-italic">" The product is very beautiful. I like it. "</p>
-                                                <div class="fs-11 align-middle text-warning">
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-fill"></i>
-                                                    <i class="ri-star-half-fill"></i>
-                                                    <i class="ri-star-line"></i>
-                                                </div>
-                                            </div>
-                                            <div class="text-end mb-0 text-muted">
-                                                - by <cite title="Source Title">Nancy Martino</cite>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th class="ps-0 py-0"><span class="fw-medium">Opening Hours :</span></th>
+                                            <td class="py-0">Today 9:00 AM - 8:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="ps-0 pt-1 pb-0"><span class="fw-medium">Website :</span></th>
+                                            <td class="pt-1 pb-0"><a href="https://www.jollibee.com.ph/" class="link-primary">www.jollibee.com.ph</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="ps-0 pt-1"><span class="fw-medium">Address :</span></th>
+                                            <td class="pt-1">10/F Jollibee Plaza Building, Emerald Ave., Ortigas Center, Pasig City 1600</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-3">
-                    <a href="javascript:void(0)" class="link-primary">View All Reviews <i class="ri-arrow-right-line align-bottom ms-1"></i></a>
-                </div>
-            </div>
-            <div class="card-body p-4 border-top border-top-dashed">
-                <h6 class="text-muted text-uppercase fw-semibold mb-4">Contact Support</h6>
-                <form action="#">
-                    <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter your messages..."></textarea>
-                    </div>
-                    <div class="text-end">
-                        <button type="submit" class="btn btn-primary"><i class="ri-mail-send-line align-bottom me-1"></i> Send Messages</button>
-                    </div>
-                </form>
             </div>
             <!--end card-body-->
         </div>
@@ -321,88 +45,546 @@
     </div>
     <!--end col-->
 
-    <div class="col-xxl-9">
-        <div class="card">
-            <div class="card-header border-0 align-items-center d-flex">
-                <h4 class="card-title mb-0 flex-grow-1">Revenue</h4>
-                <div>
-                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                        ALL
-                    </button>
-                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                        1M
-                    </button>
-                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                        6M
-                    </button>
-                    <button type="button" class="btn btn-soft-primary btn-sm">
-                        1Y
-                    </button>
+    <div class="col-xxl-12">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="card">
+                    <div class="card-header border-0">
+                        <div class="d-lg-flex align-items-center">
+                            <div class="flex-shrink-0 mt-4 mt-lg-0">
+                                <ul class="nav nav-pills filter-btns" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium active" type="button" data-filter="all">All Dishes</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="family-meals">Family Meals</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="breakfast">Breakfast</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="burgers">Burgers</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="jolly-spaghetti">Jolly Spaghetti</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="burger-steak">Burger Steak</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="super-meals">Super Meals</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="hotdog-and-pies">Jolly Hotdog & Pies</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="desserts-and-beverages">Desserts & Beverages</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="fries-and-sides">Fries and Sides</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="palabok">Palabok</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="chickenjoy">Chickenjoy</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="chicken-sandwich">Chicken Sandwich</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-medium" type="button" data-filter="jolly-kiddie-meal">Jolly Kiddie Meal</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div><!-- end card header -->
-
-            <div class="card-header p-0 border-0 bg-soft-light">
-                <div class="row g-0 text-center">
-                    <div class="col-6 col-sm-3">
-                        <div class="p-3 border border-dashed border-start-0">
-                            <h5 class="mb-1"><span class="counter-value" data-target="7585">0</span></h5>
-                            <p class="text-muted mb-0">Orders</p>
+                <div class="row row-cols-xl-5 row-cols-lg-3 row-cols-md-2 row-cols-1">
+                    <div class="col product-item family-meals">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-13.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Burger Steak Family Savers</a></h5>
+                                <p class="text-muted mb-0">Family Meals</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 253.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--end col-->
-                    <div class="col-6 col-sm-3">
-                        <div class="p-3 border border-dashed border-start-0">
-                            <h5 class="mb-1">$<span class="counter-value" data-target="22.89">0</span>k</h5>
-                            <p class="text-muted mb-0">Earnings</p>
+                    <div class="col product-item breakfast">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-14.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Longganisa w/ Drink</a></h5>
+                                <p class="text-muted mb-0">Breakfast</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 160.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--end col-->
-                    <div class="col-6 col-sm-3">
-                        <div class="p-3 border border-dashed border-start-0">
-                            <h5 class="mb-1"><span class="counter-value" data-target="367">0</span></h5>
-                            <p class="text-muted mb-0">Refunds</p>
+                    <div class="col product-item burgers">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-15.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Amazing Aloha Champ Jr.</a></h5>
+                                <p class="text-muted mb-0">Burgers</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 109.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--end col-->
-                    <div class="col-6 col-sm-3">
-                        <div class="p-3 border border-dashed border-start-0 border-end-0">
-                            <h5 class="mb-1 text-success"><span class="counter-value" data-target="18.92">0</span>%</h5>
-                            <p class="text-muted mb-0">Conversation Ratio</p>
+                    <div class="col product-item jolly-spaghetti">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-16.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Jolly Spaghetti Family Pan</a></h5>
+                                <p class="text-muted mb-0">Jolly Spaghetti</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 161.70</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--end col-->
+                    <div class="col product-item burger-steak">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-17.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">2pc Burger Steak w/ Drink
+                                    </a></h5>
+                                <p class="text-muted mb-0">Burger Steak</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 116.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item hotdog-and-pies">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-18.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Jolly Hotdog w/ Drink</a></h5>
+                                <p class="text-muted mb-0">Jolly Hotdog & Pies</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 109.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item desserts-and-beverages">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-19.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">3 Sweet Pies To-Go</a></h5>
+                                <p class="text-muted mb-0">Desserts & Beverages</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 110.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item fries-and-sides">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-20.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Jolly Crispy Fries Bucket</a></h5>
+                                <p class="text-muted mb-0">Fries and Sides</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 142.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item palabok">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-21.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Palabok - Solo</a></h5>
+                                <p class="text-muted mb-0">Palabok</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 121.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item jolly-kiddie-meal">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-22.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">
+                                        Yumburger Kiddie Meal</a></h5>
+                                <p class="text-muted mb-0">Jolly Kiddie Meal</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 85.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item chickenjoy">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-23.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">1pc Chickenjoy, Fries & Drink</a></h5>
+                                <p class="text-muted mb-0">Chickenjoy</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 127.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item super-meals">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-24.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Yumburger Super Meal</a></h5>
+                                <p class="text-muted mb-0">Super Meals</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 129.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item chicken-sandwich">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-3.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Chicken Sandwich</a></h5>
+                                <p class="text-muted mb-0">Chicken Sandwich</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 164.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item desserts-and-beverages">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-25.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">Chocolate Sundae Twirl</a></h5>
+                                <p class="text-muted mb-0">Desserts & Beverages</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 50.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col product-item jolly-spaghetti">
+                        <div class="card explore-box card-animate">
+                            <div class="explore-place-bid-img">
+                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-26.png" alt="" class="card-img-top explore-img" />
+                                <div class="bg-overlay"></div>
+                                <div class="place-bid-btn">
+                                    <a href="#!" class="btn btn-success">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1"><a href="#!">
+                                        Family Pan Duo</a></h5>
+                                <p class="text-muted mb-0">Jolly Spaghetti</p>
+                            </div>
+                            <div class="card-footer border-top border-top-dashed">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 fs-14">
+                                        <i class="ri-price-tag-3-fill text-warning align-bottom me-1"></i>
+                                        <h5 class="fw-medium m-0 d-inline-block">₱ 605.00</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-success waves-effect waves-light"><i class="ri-bank-card-line"></i> Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div><!-- end card header -->
-
-            <div class="card-body p-0 pb-2">
-                <div>
-                    <div id="customer_impression_charts" data-colors='["--vz-success", "--vz-primary", "--vz-danger"]' class="apex-charts"></div>
-                </div>
-            </div><!-- end card body -->
-        </div><!-- end card -->
-
-        <div class="row g-4 mb-3">
-            <div class="col-sm-auto">
-                <div>
-                    <a href="apps-ecommerce-add-product.html" class="btn btn-success"><i class="ri-add-line align-bottom me-1"></i> Add New</a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mb-3">
+                            <button class="btn btn-link shadow-none text-success mt-2"><i class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></i> Load more </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="d-flex justify-content-sm-end">
-                    <div class="search-box ms-2">
-                        <input type="text" class="form-control" placeholder="Search Products...">
-                        <i class="ri-search-line search-icon"></i>
-                    </div>
-                </div>
-            </div>
+            <!--end col-->
         </div>
-        <div class="card">
-            <div class="card-body">
-                <div id="table-product-list-all" class="table-card gridjs-border-none"></div>
-            </div>
-        </div>
+        <!--end row-->
+
 
     </div>
     <!--end col-->
 </div>
 <!--end row-->
+</div><!-- end card header -->
