@@ -9,9 +9,19 @@
 
 <!-- Sweet Alert css-->
 <link href="<?php echo base_url('public/assets') ?>/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
-
+ 
 <!--Swiper slider css-->
 <link href="<?php echo base_url('public/assets') ?>/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+  <!--jquery cdn-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!--datatable css-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+    <!--datatable responsive css-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 
 <!-- Layout config Js -->
 <script src="<?php echo base_url('public/assets') ?>/js/layout.js"></script>
