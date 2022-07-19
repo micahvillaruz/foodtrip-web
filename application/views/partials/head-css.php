@@ -62,4 +62,10 @@
 <!-- custom Css-->
 <link href="<?php echo base_url('public/assets') ?>/css/custom.css" rel="stylesheet" type="text/css" />
 
+<!-- Moment JS -->
+<script src="<?= base_url() ?>node_modules/moment/min/moment.min.js"></script>
+
+<!-- Moment-Timer JS -->
+<script src="<?= base_url() ?>node_modules/moment-timer/lib/moment-timer.js"></script>
+
 </head>
