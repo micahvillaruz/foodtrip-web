@@ -84,7 +84,7 @@
                   <table class="table table-borderless mb-0">
                     <tbody>
                       <tr class="border-top border-top-dashed">
-                        <th scope="row">Total (USD) :</th>
+                        <th scope="row">Total Amount :</th>
                         <th class="text-end">$415.96</th>
                       </tr>
                     </tbody>
@@ -198,8 +198,9 @@
         <div class="text-center">
           <lord-icon src="https://cdn.lordicon.com/uetqnvvg.json" trigger="loop" colors="primary:#4b38b3,secondary:#0ab39c" style="width:80px;height:80px"></lord-icon>
           <h5 class="fs-16 mt-2">Grab Express</h5>
-          <p class="text-muted mb-0">ID: MFDS1400457854</p>
-          <p class="text-muted mb-0">Payment Mode : Debit Card</p>
+          <p class="text-muted mb-0">Tracking Number: MFDS1400457854</p>
+          <p class="text-muted mb-0">Driving Name : Benedict Juarez</p>
+          <p class="text-muted mb-0">Driving Phone : 09274538396</p>
         </div>
       </div>
     </div>
