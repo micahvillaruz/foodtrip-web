@@ -95,12 +95,12 @@ linechartcustomerColors &&
 				},
 				{
 					formatter: function (e) {
-						return void 0 !== e ? "$" + e.toFixed(2) + "k" : e;
+						return void 0 !== e ? "₱" + e.toFixed(2) + "k" : e;
 					},
 				},
 				{
 					formatter: function (e) {
-						return void 0 !== e ? e.toFixed(0) + " Sales" : e;
+						return void 0 !== e ? e.toFixed(0) : e;
 					},
 				},
 			],
