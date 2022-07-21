@@ -1416,7 +1416,9 @@
 				: "timepickr" == e.getAttribute("data-provider") &&
 				  ((a = {}),
 				  (n = e.attributes)["data-time-basic"] &&
-						((a.enableTime = !0), (a.noCalendar = !0), (a.dateFormat = "H:i")),
+						((a.enableTime = !0),
+						(a.noCalendar = !0),
+						(a.dateFormat = "h:i K")),
 				  n["data-time-hrs"] &&
 						((a.enableTime = !0),
 						(a.noCalendar = !0),

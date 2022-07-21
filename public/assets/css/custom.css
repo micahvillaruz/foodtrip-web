@@ -40,3 +40,9 @@ File: Custom Css File
 *:focus {
 	outline: 0px;
 }
+.deletebtn-gap {
+	margin-right: 6.2rem !important;
+}
+.opentime-gap {
+	gap: 19.5rem !important;
+}
