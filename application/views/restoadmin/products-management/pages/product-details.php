@@ -4,7 +4,16 @@
       <div class="card-body">
         <div class="row gx-lg-5">
           <div class="col-xl-4 col-md-8 mx-auto">
-          <img src="<?php echo base_url('public/assets') ?>/images/products/1chickenjoy.jpg" class="img-thumbnail" alt="200x200" width="500" />
+            <div class="product-img-slider sticky-side-div">
+              <div class="swiper product-thumbnail-slider p-2 rounded bg-light">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-1.png" alt="" class="img-fluid d-block" />
+                  </div>
+                </div>
+              </div>
+              <!-- end swiper thumbnail slide -->
+            </div>
           </div>
           <!-- end col -->
 
@@ -12,83 +21,39 @@
             <div class="mt-xl-0 mt-5">
               <div class="d-flex">
                 <div class="flex-grow-1">
-                  <h4>Chicken Joy</h4>
+                  <span class="badge badge-soft-info mb-3 fs-12"><i class="ri-store-line me-1 align-bottom"></i> Jollibee</span>
+                  <h4>1 - pc. Chickenjoy w/ Half Jolly Spaghetti & Shanghai Super Meal</h4>
                   <div class="hstack gap-3 flex-wrap">
-                    <div><a href="#" class="text-primary d-block"> Jollibee </a></div>
+                    <div class="text-muted">Category : <a href="#" class="text-primary fw-medium">Super Meals</a></div>
                     <div class="vr"></div>
-                    <div class="text-muted">Published : <span class="text-body fw-medium">26 Mar, 2021</span></div>
-                  </div>
-                </div>
-                <div class="flex-shrink-0">
-                  <div>
-                    <a href="apps-ecommerce-add-product.php" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="ri-pencil-fill align-bottom"></i></a>
+                    <div class="text-muted">Published : <span class="text-body fw-medium">12 Oct, 2021<small class="text-muted ms-1">10:05 AM</small></span></div>
                   </div>
                 </div>
               </div>
-
-           
 
               <div class="row mt-4">
                 <div class="col-lg-3 col-sm-6">
-                  <div class="p-2 border border-dashed rounded">
+                  <div class="p-2 rounded">
                     <div class="d-flex align-items-center">
-                      <div class="avatar-sm me-2">
-                        <div class="avatar-title rounded bg-transparent text-success fs-24">
-                          <i class="ri-money-dollar-circle-fill"></i>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <p class="text-muted mb-1">Price :</p>
-                        <h5 class="mb-0">P79.40</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end col -->
-                     <!-- removed no.orders-->
-                <!-- end col -->
-                     <!-- removed available stocks -->
-                <!-- end col -->
-                <div class="col-lg-3 col-sm-6">
-                  <div class="p-2 border border-dashed rounded">
-                    <div class="d-flex align-items-center">
-                      <div class="avatar-sm me-2">
-                        <div class="avatar-title rounded bg-transparent text-success fs-24">
-                          <i class="ri-inbox-archive-fill"></i>
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <p class="text-muted mb-1">Status:</p>
-                        <h5 class="mb-0">Available</h5>
-                      </div>
+                      <h1 class="mb-0 text-primary">₱ 185.00</h1>
                     </div>
                   </div>
                 </div>
                 <!-- end col -->
               </div>
-
-             <!-- removed sizes -->
-                <!-- end col -->
-                      <!-- removed colors -->
-                <!-- end col -->
-              </div>
-              <!-- end row -->
 
               <div class="mt-4 text-muted">
                 <h5 class="fs-14">Description :</h5>
-                <p> Masarap sya happy ang saya </p>
+                <p>Your Jollibee favorites in one Supermeal: 1pc. Chickenjoy with 3pcs. Shanghai and Half Jolly Spaghetti, with Rice and Drink.</p>
               </div>
 
-                <!-- removed features and services -->
-
-
               <div class="product-content mt-5">
+                <h5 class="fs-14 mb-3">Product Description :</h5>
                 <nav>
-                  <ul class="nav nav-tabs nav-tabs-custom nav-success" id="nav-tab" role="tablist">
+                  <ul class="nav nav-tabs nav-tabs-custom nav-primary" id="nav-tab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="nav-speci-tab" data-bs-toggle="tab" href="#nav-speci" role="tab" aria-controls="nav-speci" aria-selected="true">Specification</a>
                     </li>
-                  
                   </ul>
                 </nav>
                 <div class="tab-content border border-top-0 p-4" id="nav-tabContent">
@@ -98,23 +63,35 @@
                         <tbody>
                           <tr>
                             <th scope="row" style="width: 200px;">Category</th>
-                            <td>Lunch</td>
+                            <td>Super Meals</td>
                           </tr>
                           <tr>
-                            <th scope="row">Brand</th>
-                            <td>Jollibee</td>
-                          </tr>                                                 
+                            <th scope="row">Status</th>
+                            <td><span class="badge badge-soft-success text-uppercase fs-13">Available</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">No. of Orders</th>
+                            <td>2,234</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Total Revenue</th>
+                            <td>₱413,290</td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-               
-                    </div>
-                  </div>
                 </div>
               </div>
-              <!-- product-content -->       
-              <!-- end card body -->
+              <!-- product-content -->
+              <div class="d-flex gap-3 justify-content-end mt-4 mb-3">
+                <div class="edit">
+                  <button class="btn btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                </div>
+                <div class="remove">
+                  <button class="btn btn-danger remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Remove</button>
+                </div>
+              </div>
             </div>
           </div>
           <!-- end col -->
