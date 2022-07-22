@@ -106,7 +106,7 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/head-css');
     $this->load->view('partials/topbar');
     $this->load->view('partials/sidebar');
-    $this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Create Product"]);
+    $this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Add Dish"]);
     $this->load->view('restoadmin/products-management/pages/add-product');
     $this->load->view('partials/footer');
     $this->load->view('partials/foot-scripts');

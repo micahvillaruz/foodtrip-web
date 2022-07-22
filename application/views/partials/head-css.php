@@ -10,6 +10,14 @@
 <!-- Dropzone css -->
 <link href="<?php echo base_url('public/assets') ?>/libs/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
 
+<!-- Filepond css -->
+<link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/filepond/filepond.min.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
+
+<!-- quill css -->
+<link href="<?php echo base_url('public/assets') ?>/libs/quill/quill.core.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('public/assets') ?>/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('public/assets') ?>/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" />
 
 <!-- gridjs css -->
 <link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/gridjs/theme/mermaid.min.css">
