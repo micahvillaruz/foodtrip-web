@@ -7,14 +7,16 @@
                 </div>
             </div>
             <div class="col-sm-auto">
-                <a href="apps-ecommerce-products.html" class="link-primary text-decoration-underline">Continue Shopping</a>
+                <a href="apps-ecommerce-products.html" class="link-primary text-decoration-underline">Continue
+                    Shopping</a>
             </div>
         </div>
         <div class="card bg-soft-success">
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="avatar-sm rounded-circle">
+                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt=""
+                            class="avatar-sm rounded-circle">
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <p class="card-text fs-15 fw-medium">Jollibee</p>
@@ -27,11 +29,13 @@
                 <div class="row gy-3">
                     <div class="col-sm-auto">
                         <div class="avatar-lg bg-light rounded p-1">
-                            <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-27.png" alt="" class="img-fluid d-block">
+                            <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-27.png" alt=""
+                                class="img-fluid d-block">
                         </div>
                     </div>
                     <div class="col-sm">
-                        <h5 class="fs-14 text-truncate"><a href="#!" class="text-dark">8pc Chickenjoy w/ Jolly Spaghetti Pan</a></h5>
+                        <h5 class="fs-14 text-truncate"><a href="#!" class="text-dark">8pc Chickenjoy w/ Jolly Spaghetti
+                                Pan</a></h5>
                         <ul class="list-inline text-muted">
                             <li class="list-inline-item">Category : <span class="fw-medium">Family Meals</span></li>
                         </ul>
@@ -56,7 +60,9 @@
                     <div class="col-sm">
                         <div class="d-flex flex-wrap my-n1">
                             <div>
-                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
+                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal"
+                                    data-bs-target="#removeItemModal"><i
+                                        class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +82,8 @@
                 <div class="row gy-3">
                     <div class="col-sm-auto">
                         <div class="avatar-lg bg-light rounded p-1">
-                            <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-15.png" alt="" class="img-fluid d-block">
+                            <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-15.png" alt=""
+                                class="img-fluid d-block">
                         </div>
                     </div>
                     <div class="col-sm">
@@ -105,7 +112,9 @@
                     <div class="col-sm">
                         <div class="d-flex flex-wrap my-n1">
                             <div>
-                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
+                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal"
+                                    data-bs-target="#removeItemModal"><i
+                                        class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
                             </div>
                         </div>
                     </div>
@@ -125,11 +134,13 @@
                 <div class="row gy-3">
                     <div class="col-sm-auto">
                         <div class="avatar-lg bg-light rounded p-1">
-                            <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-28.png" alt="" class="img-fluid d-block">
+                            <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-28.png" alt=""
+                                class="img-fluid d-block">
                         </div>
                     </div>
                     <div class="col-sm">
-                        <h5 class="fs-14 text-truncate"><a href="#!" class="text-dark">1pc Burger Steak w/ Shanghai w/ Drink</a></h5>
+                        <h5 class="fs-14 text-truncate"><a href="#!" class="text-dark">1pc Burger Steak w/ Shanghai w/
+                                Drink</a></h5>
                         <ul class="list-inline text-muted">
                             <li class="list-inline-item">Category : <span class="fw-medium">Burger Steak</span></li>
                         </ul>
@@ -154,7 +165,9 @@
                     <div class="col-sm">
                         <div class="d-flex flex-wrap my-n1">
                             <div>
-                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
+                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal"
+                                    data-bs-target="#removeItemModal"><i
+                                        class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +184,8 @@
         <!-- end card -->
 
         <div class="text-end mb-4">
-            <a href="apps-ecommerce-checkout.html" class="btn btn-success btn-label right ms-auto"><i class="ri-arrow-right-line label-icon align-bottom fs-16 ms-2"></i> Checkout</a>
+            <a href="apps-ecommerce-checkout.html" class="btn btn-success btn-label right ms-auto"><i
+                    class="ri-arrow-right-line label-icon align-bottom fs-16 ms-2"></i>Place Order</a>
         </div>
     </div>
     <!-- end col -->
@@ -182,7 +196,8 @@
                 <div class="card-body">
                     <div class="p-3 mt-n3 mx-n3 bg-soft-secondary rounded-top">
                         <div class="text-center">
-                            <img src="<?php echo base_url('public/assets') ?>/images/shopping-logo.gif" alt="" height="100">
+                            <img src="<?php echo base_url('public/assets') ?>/images/shopping-logo.gif" alt=""
+                                height="100">
                         </div>
                     </div>
 
@@ -212,19 +227,8 @@
                 <!-- end card body -->
             </div>
             <!-- end card -->
+            <!-- end stickey -->
 
-            <div class="alert border-dashed alert-danger" role="alert">
-                <div class="d-flex align-items-center">
-                    <img src="<?php echo base_url('public/assets') ?>/images/comment.gif" alt="" height="100">
-                    <h5 class="fs-14 text-danger fw-semibold d-inline-block m-0"> Special instructions</h5>
-                </div>
-                <div class="mx-3 my-3">
-                    <textarea class="form-control border-danger bg-soft-danger" placeholder="E.g. No onions please" id="des-info-description-input" rows="3"></textarea>
-                </div>
-            </div>
         </div>
-        <!-- end stickey -->
-
     </div>
-</div>
-<!-- end row -->
+    <!-- end row -->
