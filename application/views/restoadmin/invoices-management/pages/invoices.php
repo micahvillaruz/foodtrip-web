@@ -1,241 +1,409 @@
 <div class="row">
-  <div class="col-xl-3 col-md-6">
-    <!-- card -->
-    <div class="card card-animate">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div class="flex-grow-1">
-            <p class="text-uppercase fw-medium text-muted mb-0">Invoices Sent</p>
-          </div>
-          <div class="flex-shrink-0">
-            <h5 class="text-success fs-14 mb-0">
-              <i class="ri-arrow-right-up-line fs-13 align-middle"></i> +89.24 %
-            </h5>
-          </div>
-        </div>
-        <div class="d-flex align-items-end justify-content-between mt-4">
-          <div>
-            <h4 class="fs-22 fw-semibold ff-secondary mb-4">$<span class="counter-value" data-target="559.25">0</span>k</h4>
-            <span class="badge bg-warning me-1">2,258</span> <span class="text-muted"> Invoices sent</span>
-          </div>
-          <div class="avatar-sm flex-shrink-0">
-            <span class="avatar-title bg-light rounded fs-3">
-              <i data-feather="file-text" class="text-success icon-dual-success"></i>
-            </span>
-          </div>
-        </div>
-      </div><!-- end card body -->
-    </div><!-- end card -->
-  </div><!-- end col -->
-
-  <div class="col-xl-3 col-md-6">
-    <!-- card -->
-    <div class="card card-animate">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div class="flex-grow-1">
-            <p class="text-uppercase fw-medium text-muted mb-0">Paid Invoices</p>
-          </div>
-          <div class="flex-shrink-0">
-            <h5 class="text-danger fs-14 mb-0">
-              <i class="ri-arrow-right-down-line fs-13 align-middle"></i> +8.09 %
-            </h5>
-          </div>
-        </div>
-        <div class="d-flex align-items-end justify-content-between mt-4">
-          <div>
-            <h4 class="fs-22 fw-semibold ff-secondary mb-4">$<span class="counter-value" data-target="409.66">0</span>k</h4>
-            <span class="badge bg-warning me-1">1,958</span> <span class="text-muted"> Paid by clients</span>
-          </div>
-          <div class="avatar-sm flex-shrink-0">
-            <span class="avatar-title bg-light rounded fs-3">
-              <i data-feather="check-square" class="text-success icon-dual-success"></i>
-            </span>
-          </div>
-        </div>
-      </div><!-- end card body -->
-    </div><!-- end card -->
-  </div><!-- end col -->
-
-  <div class="col-xl-3 col-md-6">
-    <!-- card -->
-    <div class="card card-animate">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div class="flex-grow-1">
-            <p class="text-uppercase fw-medium text-muted mb-0">Unpaid Invoices</p>
-          </div>
-          <div class="flex-shrink-0">
-            <h5 class="text-danger fs-14 mb-0">
-              <i class="ri-arrow-right-down-line fs-13 align-middle"></i> +9.01 %
-            </h5>
-          </div>
-        </div>
-        <div class="d-flex align-items-end justify-content-between mt-4">
-          <div>
-            <h4 class="fs-22 fw-semibold ff-secondary mb-4">$<span class="counter-value" data-target="136.98">0</span>k</h4>
-            <span class="badge bg-warning me-1">338</span> <span class="text-muted"> Unpaid by clients</span>
-          </div>
-          <div class="avatar-sm flex-shrink-0">
-            <span class="avatar-title bg-light rounded fs-3">
-              <i data-feather="clock" class="text-success icon-dual-success"></i>
-            </span>
-          </div>
-        </div>
-      </div><!-- end card body -->
-    </div><!-- end card -->
-  </div><!-- end col -->
-
-  <div class="col-xl-3 col-md-6">
-    <!-- card -->
-    <div class="card card-animate">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div class="flex-grow-1">
-            <p class="text-uppercase fw-medium text-muted mb-0">Cancelled Invoices</p>
-          </div>
-          <div class="flex-shrink-0">
-            <h5 class="text-success fs-14 mb-0">
-              <i class="ri-arrow-right-up-line fs-13 align-middle"></i> +7.55 %
-            </h5>
-          </div>
-        </div>
-        <div class="d-flex align-items-end justify-content-between mt-4">
-          <div>
-            <h4 class="fs-22 fw-semibold ff-secondary mb-4">$<span class="counter-value" data-target="84.20">0</span>k</h4>
-            <span class="badge bg-warning me-1">502</span> <span class="text-muted"> Cancelled by clients</span>
-          </div>
-          <div class="avatar-sm flex-shrink-0">
-            <span class="avatar-title bg-light rounded fs-3">
-              <i data-feather="x-octagon" class="text-success icon-dual-success"></i>
-            </span>
-          </div>
-        </div>
-      </div><!-- end card body -->
-    </div><!-- end card -->
-  </div><!-- end col -->
-</div> <!-- end row-->
-
-<div class="row">
-  <div class="col-lg-12">
-    <div class="card" id="invoiceList">
-      <div class="card-header border-0">
-        <div class="d-flex align-items-center">
-          <h5 class="card-title mb-0 flex-grow-1">Invoices</h5>
-          <div class="flex-shrink-0">
-            <button class="btn btn-success" onClick="deleteMultiple()"><i class="ri-delete-bin-2-line"></i></button>
-            <a href="apps-invoices-create.html" class="btn btn-danger"><i class="ri-add-line align-bottom me-1"></i> Create Invoice</a>
-          </div>
-        </div>
-      </div>
-      <div class="card-body bg-soft-light border border-dashed border-start-0 border-end-0">
-        <form>
-          <div class="row g-3">
-            <div class="col-xxl-5 col-sm-12">
-              <div class="search-box">
-                <input type="text" class="form-control search bg-light border-light" placeholder="Search for customer, email, country, status or something...">
-                <i class="ri-search-line search-icon"></i>
-              </div>
-            </div>
-            <!--end col-->
-            <div class="col-xxl-3 col-sm-4">
-              <input type="text" class="form-control bg-light border-light" id="datepicker-range" placeholder="Select date">
-            </div>
-            <!--end col-->
-            <div class="col-xxl-3 col-sm-4">
-              <div class="input-light">
-                <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="idStatus">
-                  <option value="">Status</option>
-                  <option value="all" selected>All</option>
-                  <option value="Unpaid">Unpaid</option>
-                  <option value="Paid">Paid</option>
-                  <option value="Cancel">Cancel</option>
-                  <option value="Refund">Refund</option>
-                </select>
-              </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-xxl-1 col-sm-4">
-              <button type="button" class="btn btn-primary w-100" onclick="SearchData();">
-                <i class="ri-equalizer-fill me-1 align-bottom"></i> Filters
-              </button>
-            </div>
-            <!--end col-->
-          </div>
-          <!--end row-->
-        </form>
-      </div>
-      <div class="card-body">
-        <div>
-          <div class="table-responsive table-card">
-            <table class="table align-middle table-nowrap" id="invoiceTable">
-              <thead class="text-muted">
-                <tr>
-                  <th scope="col" style="width: 50px;">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="checkAll" value="option">
-                    </div>
-                  </th>
-                  <th class="sort text-uppercase" data-sort="invoice_id">ID</th>
-                  <th class="sort text-uppercase" data-sort="customer_name">Customer</th>
-                  <th class="sort text-uppercase" data-sort="email">Email</th>
-                  <th class="sort text-uppercase" data-sort="country">Country</th>
-                  <th class="sort text-uppercase" data-sort="date">Date</th>
-                  <th class="sort text-uppercase" data-sort="invoice_amount">Amount</th>
-                  <th class="sort text-uppercase" data-sort="status">Payment Status</th>
-                  <th class="sort text-uppercase" data-sort="action">Action</th>
-                </tr>
-              </thead>
-              <tbody class="list form-check-all" id="invoice-list-data">
-
-              </tbody>
-            </table>
-            <div class="noresult" style="display: none">
-              <div class="text-center">
-                <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:75px;height:75px"></lord-icon>
-                <h5 class="mt-2">Sorry! No Result Found</h5>
-                <p class="text-muted mb-0">We've searched more than 150+ invoices We did not find any invoices for you search.</p>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-end mt-3">
-            <div class="pagination-wrap hstack gap-2">
-              <a class="page-item pagination-prev disabled" href="#">
-                Previous
-              </a>
-              <ul class="pagination listjs-pagination mb-0"></ul>
-              <a class="page-item pagination-next" href="#">
-                Next
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-labelledby="deleteOrderLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-5 text-center">
-                <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#405189,secondary:#f06548" style="width:90px;height:90px">
-                </lord-icon>
-                <div class="mt-4 text-center">
-                  <h4>You are about to delete a order ?</h4>
-                  <p class="text-muted fs-15 mb-4">Deleting your order will remove all of your information from our database.</p>
-                  <div class="hstack gap-2 justify-content-center remove">
-                    <button class="btn btn-link link-success fw-medium text-decoration-none" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Close</button>
-                    <button class="btn btn-danger" id="delete-record">Yes, Delete It</button>
-                  </div>
+    <div class="col-lg-12">
+        <div class="card" id="invoiceList">
+            <div class="card-header border-0">
+                <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0 flex-grow-1">Payment History</h5>
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="card-body bg-soft-light border border-dashed border-start-0 border-end-0">
+                <table id="buttons-datatables" class="table nowrap align-middle" style="width:100%">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Payment No</th>
+                            <th>Order No</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#89254587838</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#10093436457</a></td>
+                            <td>Estella Nataleigh Valeria Martinez</td>
+                            <td class="date">25 Jul, 2022 <small class="text-muted">11:11 AM</small></td>
+                            <td>₱ 974.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#60524012573</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#15071217362</a></td>
+                            <td>Avianna Rye Diaz</td>
+                            <td class="date">28 May, 2022 <small class="text-muted">05:20 PM</small></td>
+                            <td>₱ 2,496.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#23460193615</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#18043797831</a></td>
+                            <td>Akihiro Leonel Juarez</td>
+                            <td class="date">05 Oct, 2022 <small class="text-muted">10:27 AM</small></td>
+                            <td>₱ 2,175.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#80625248472</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#21139409923</a></td>
+                            <td>Ciandrei Kyle Lopez</td>
+                            <td class="date">28 Apr, 2022 <small class="text-muted">07:10 AM</small></td>
+                            <td>₱ 1,375.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#71825436616</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#25575123394</a></td>
+                            <td>Louisse Natasha Valeria</td>
+                            <td class="date">14 Feb, 2022 <small class="text-muted">12:55 PM</small></td>
+                            <td>₱ 619.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase fs-12 d-block">Refunded</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#18308722558</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#41131549710</a></td>
+                            <td>Amora Elyse Ledezma</td>
+                            <td class="date">29 Apr, 2022 <small class="text-muted">07:22 PM</small></td>
+                            <td>₱ 125.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#21718475100</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#48878619511</a></td>
+                            <td>Kalix Jace Martinez</td>
+                            <td class="date">27 Sept, 2022 <small class="text-muted">01:40 PM</small></td>
+                            <td>₱ 350.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#34499909371</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#59224979901</a></td>
+                            <td>Clyden Jaile Ramirez</td>
+                            <td class="date">20 Mar, 2022 <small class="text-muted">09:35 AM</small></td>
+                            <td>₱ 705.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#70335658010</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#75763423143</a></td>
+                            <td>Larkin Olivier Sanchez</td>
+                            <td class="date">04 Aug, 2022 <small class="text-muted">05:54 PM</small></td>
+                            <td>₱ 185.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#50653202928</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#79677839513</a></td>
+                            <td>Kierra Zylene Ynares</td>
+                            <td class="date">17 Jan, 2022 <small class="text-muted">03:45 PM</small></td>
+                            <td>₱ 1,464.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#35096425218</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#84442428074</a></td>
+                            <td>Sebastian Vincent Camero</td>
+                            <td class="date">19 Mar, 2022 <small class="text-muted">08:47 AM</small></td>
+                            <td>₱ 693.10</td>
+                            <td><span class="badge badge-soft-danger text-uppercase fs-12 d-block">Refunded</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#67607974025</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#92235278555</a></td>
+                            <td>Samantha Maureen Vera</td>
+                            <td class="date">21 Feb, 2022 <small class="text-muted">06:27 AM</small></td>
+                            <td>₱ 604.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase fs-12 d-block">Refunded</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#80542694273</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#93274918283</a></td>
+                            <td>Ashianna Kim Fernandez</td>
+                            <td class="date">26 Jun, 2022 <small class="text-muted">04:42 PM</small></td>
+                            <td>₱ 1,210.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#60524012573</a></td>
+                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#97464507680</a></td>
+                            <td>Avrielle Haven Fernandez Juarez</td>
+                            <td class="date">18 Jul, 2022 <small class="text-muted">11:30 AM</small></td>
+                            <td>₱ 1,750.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Paid</span></td>
+                            <td>
+                                <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                        <a href="#!" class="text-black-50 d-inline-block">
+                                            <i class="ri-eye-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                            <i class="ri-pencil-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Download">
+                                        <a class="text-info d-inline-block">
+                                            <i class="ri-download-2-fill fs-16"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <!--end modal -->
-      </div>
-    </div>
 
-  </div>
-  <!--end col-->
+    </div>
+    <!--end col-->
 </div>
 <!--end row-->

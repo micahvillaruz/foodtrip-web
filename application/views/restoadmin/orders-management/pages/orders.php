@@ -1,292 +1,405 @@
 <div class="row">
-  <div class="col-lg-12">
-    <div class="card" id="orderList">
-      <div class="card-header  border-0">
-        <div class="d-flex align-items-center">
-          <h5 class="card-title mb-0 flex-grow-1">Order History</h5>
-          <div class="flex-shrink-0">
-            <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Create Order</button>
-            <button type="button" class="btn btn-info"><i class="ri-file-download-line align-bottom me-1"></i> Import</button>
-            <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i class="ri-delete-bin-2-line"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="card-body border border-dashed border-end-0 border-start-0">
-        <form>
-          <div class="row g-3">
-            <div class="col-xxl-5 col-sm-6">
-              <div class="search-box">
-                <input type="text" class="form-control search" placeholder="Search for order ID, customer, order status or something...">
-                <i class="ri-search-line search-icon"></i>
-              </div>
-            </div>
-            <!--end col-->
-            <div class="col-xxl-2 col-sm-6">
-              <div>
-                <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-range-date="true" id="demo-datepicker" placeholder="Select date">
-              </div>
-            </div>
-            <!--end col-->
-            <div class="col-xxl-2 col-sm-4">
-              <div>
-                <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="idStatus">
-                  <option value="">Status</option>
-                  <option value="all" selected>All</option>
-                  <option value="Pending">Pending</option>
-                  <option value="Inprogress">Inprogress</option>
-                  <option value="Cancelled">Cancelled</option>
-                  <option value="Pickups">Pickups</option>
-                  <option value="Returns">Returns</option>
-                  <option value="Delivered">Delivered</option>
-                </select>
-              </div>
-            </div>
-            <!--end col-->
-            <div class="col-xxl-2 col-sm-4">
-              <div>
-                <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="idPayment">
-                  <option value="">Select Payment</option>
-                  <option value="all" selected>All</option>
-                  <option value="Mastercard">Mastercard</option>
-                  <option value="Paypal">Paypal</option>
-                  <option value="Visa">Visa</option>
-                  <option value="COD">COD</option>
-                </select>
-              </div>
-            </div>
-            <!--end col-->
-            <div class="col-xxl-1 col-sm-4">
-              <div>
-                <button type="button" class="btn btn-primary w-100" onclick="SearchData();"> <i class="ri-equalizer-fill me-1 align-bottom"></i>
-                  Filters
-                </button>
-              </div>
-            </div>
-            <!--end col-->
-          </div>
-          <!--end row-->
-        </form>
-      </div>
-      <div class="card-body pt-0">
-        <div>
-          <ul class="nav nav-tabs nav-tabs-custom nav-success mb-3" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active All py-3" data-bs-toggle="tab" id="All" href="#home1" role="tab" aria-selected="true">
-                <i class="ri-store-2-fill me-1 align-bottom"></i> All Orders
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link py-3 Delivered" data-bs-toggle="tab" id="Delivered" href="#delivered" role="tab" aria-selected="false">
-                <i class="ri-checkbox-circle-line me-1 align-bottom"></i> Delivered
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link py-3 Pickups" data-bs-toggle="tab" id="Pickups" href="#pickups" role="tab" aria-selected="false">
-                <i class="ri-truck-line me-1 align-bottom"></i> Pickups <span class="badge bg-danger align-middle ms-1">2</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link py-3 Returns" data-bs-toggle="tab" id="Returns" href="#returns" role="tab" aria-selected="false">
-                <i class="ri-arrow-left-right-fill me-1 align-bottom"></i> Returns
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link py-3 Cancelled" data-bs-toggle="tab" id="Cancelled" href="#cancelled" role="tab" aria-selected="false">
-                <i class="ri-close-circle-line me-1 align-bottom"></i> Cancelled
-              </a>
-            </li>
-          </ul>
-
-          <div class="table-responsive table-card mb-1">
-            <table class="table table-nowrap align-middle" id="orderTable">
-              <thead class="text-muted table-light">
-                <tr class="text-uppercase">
-                  <th scope="col" style="width: 25px;">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="checkAll" value="option">
-                    </div>
-                  </th>
-                  <th class="sort" data-sort="id">Order ID</th>
-                  <th class="sort" data-sort="customer_name">Customer</th>
-                  <th class="sort" data-sort="product_name">Product</th>
-                  <th class="sort" data-sort="date">Order Date</th>
-                  <th class="sort" data-sort="amount">Amount</th>
-                  <th class="sort" data-sort="payment">Payment Method</th>
-                  <th class="sort" data-sort="status">Delivery Status</th>
-                  <th class="sort" data-sort="city">Action</th>
-                </tr>
-              </thead>
-              <tbody class="list form-check-all">
-                <tr>
-                  <th scope="row">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="checkAll" value="option1">
-                    </div>
-                  </th>
-                  <td class="id"><a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">#VZ2101</a></td>
-                  <td class="customer_name">Frank Hook</td>
-                  <td class="product_name">Puma Tshirt</td>
-                  <td class="date">20 Dec, 2021, <small class="text-muted">02:21 AM</small></td>
-                  <td class="amount">$654</td>
-                  <td class="payment">Mastercard</td>
-                  <td class="status"><span class="badge badge-soft-warning text-uppercase">Pending</span>
-                  </td>
-                  <td>
-                    <ul class="list-inline hstack gap-2 mb-0">
-                      <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
-                        <a href="apps-ecommerce-order-details.html" class="text-primary d-inline-block">
-                          <i class="ri-eye-fill fs-16"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
-                        <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
-                          <i class="ri-pencil-fill fs-16"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Remove">
-                        <a class="text-danger d-inline-block remove-item-btn" data-bs-toggle="modal" href="#deleteOrder">
-                          <i class="ri-delete-bin-5-fill fs-16"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="noresult" style="display: none">
-              <div class="text-center">
-                <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop" colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px"></lord-icon>
-                <h5 class="mt-2">Sorry! No Result Found</h5>
-                <p class="text-muted">We've searched more than 150+ Orders We did not find any orders for you search.</p>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-end">
-            <div class="pagination-wrap hstack gap-2">
-              <a class="page-item pagination-prev disabled" href="#">
-                Previous
-              </a>
-              <ul class="pagination listjs-pagination mb-0"></ul>
-              <a class="page-item pagination-next" href="#">
-                Next
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header bg-light p-3">
-                <h5 class="modal-title" id="exampleModalLabel">&nbsp;</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
-              </div>
-              <form action="#">
-                <div class="modal-body">
-                  <input type="hidden" id="id-field" />
-
-                  <div class="mb-3" id="modal-id">
-                    <label for="orderId" class="form-label">ID</label>
-                    <input type="text" id="orderId" class="form-control" placeholder="ID" readonly />
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="customername-field" class="form-label">Customer Name</label>
-                    <input type="text" id="customername-field" class="form-control" placeholder="Enter name" required />
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="productname-field" class="form-label">Product</label>
-                    <select class="form-control" data-trigger name="productname-field" id="productname-field">
-                      <option value="">Product</option>
-                      <option value="Puma Tshirt">Puma Tshirt</option>
-                      <option value="Adidas Sneakers">Adidas Sneakers</option>
-                      <option value="350 ml Glass Grocery Container">350 ml Glass Grocery Container</option>
-                      <option value="American egale outfitters Shirt">American egale outfitters Shirt</option>
-                      <option value="Galaxy Watch4">Galaxy Watch4</option>
-                      <option value="Apple iPhone 12">Apple iPhone 12</option>
-                      <option value="Funky Prints T-shirt">Funky Prints T-shirt</option>
-                      <option value="USB Flash Drive Personalized with 3D Print">USB Flash Drive Personalized with 3D Print</option>
-                      <option value="Oxford Button-Down Shirt">Oxford Button-Down Shirt</option>
-                      <option value="Classic Short Sleeve Shirt">Classic Short Sleeve Shirt</option>
-                      <option value="Half Sleeve T-Shirts (Blue)">Half Sleeve T-Shirts (Blue)</option>
-                      <option value="Noise Evolve Smartwatch">Noise Evolve Smartwatch</option>
-                    </select>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="date-field" class="form-label">Order Date</label>
-                    <input type="date" id="date-field" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-enable-time required placeholder="Select date" />
-                  </div>
-
-                  <div class="row gy-4 mb-3">
-                    <div class="col-md-6">
-                      <div>
-                        <label for="amount-field" class="form-label">Amount</label>
-                        <input type="text" id="amount-field" class="form-control" placeholder="Total amount" required />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div>
-                        <label for="payment-field" class="form-label">Payment Method</label>
-                        <select class="form-control" data-trigger name="payment-method" id="payment-field">
-                          <option value="">Payment Method</option>
-                          <option value="Mastercard">Mastercard</option>
-                          <option value="Visa">Visa</option>
-                          <option value="COD">COD</option>
-                          <option value="Paypal">Paypal</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label for="delivered-status" class="form-label">Delivery Status</label>
-                    <select class="form-control" data-trigger name="delivered-status" id="delivered-status">
-                      <option value="">Delivery Status</option>
-                      <option value="Pending">Pending</option>
-                      <option value="Inprogress">Inprogress</option>
-                      <option value="Cancelled">Cancelled</option>
-                      <option value="Pickups">Pickups</option>
-                      <option value="Delivered">Delivered</option>
-                      <option value="Returns">Returns</option>
-                    </select>
-                  </div>
+    <div class="col-lg-12">
+        <div class="card" id="orderList">
+            <div class="card-header  border-0">
+                <div class="d-flex align-items-center">
+                    <h5 class="card-title mb-0 flex-grow-1">Order History</h5>
                 </div>
-                <div class="modal-footer">
-                  <div class="hstack gap-2 justify-content-end">
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success" id="add-btn">Add Order</button>
-                    <button type="button" class="btn btn-success" id="edit-btn">Update</button>
-                  </div>
-                </div>
-              </form>
             </div>
-          </div>
+            <div class="card-body border border-dashed border-end-0 border-start-0">
+                <div>
+                    <table id="buttons-datatables" class="table nowrap align-middle" style="width:100%">
+                        <thead class="bg-light">
+                            <tr>
+                                <th>Order No.</th>
+                                <th>Customer</th>
+                                <th>Order Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#59224979901</a></td>
+                                <td>Clyden Jaile Ramirez</td>
+                                <td class="date">20 Mar, 2022 <small class="text-muted">09:35 AM</small></td>
+                                <td>₱ 705.00</td>
+                                <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Delivered</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#25575123394</a></td>
+                                <td>Louisse Natasha Valeria</td>
+                                <td class="date">14 Feb, 2022 <small class="text-muted">12:55 PM</small></td>
+                                <td>₱ 619.00</td>
+                                <td><span class="badge badge-soft-danger text-uppercase fs-12 d-block">Rejected</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#21139409923</a></td>
+                                <td>Ciandrei Kyle Lopez</td>
+                                <td class="date">28 Apr, 2022 <small class="text-muted">07:10 AM</small></td>
+                                <td>₱ 1,375.00</td>
+                                <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Delivered</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#79677839513</a></td>
+                                <td>Kierra Zylene Ynares</td>
+                                <td class="date">17 Jan, 2022 <small class="text-muted">03:45 PM</small></td>
+                                <td>₱ 1,464.00</td>
+                                <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Delivered</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#92235278555</a></td>
+                                <td>Samantha Maureen Vera</td>
+                                <td class="date">21 Feb, 2022 <small class="text-muted">06:27 AM</small></td>
+                                <td>₱ 604.00</td>
+                                <td><span class="badge badge-soft-danger text-uppercase fs-12 d-block">Rejected</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#15071217362</a></td>
+                                <td>Avianna Rye Diaz</td>
+                                <td class="date">28 May, 2022 <small class="text-muted">05:20 PM</small></td>
+                                <td>₱ 2,496.00</td>
+                                <td><span class="badge badge-soft-secondary text-uppercase fs-12 d-block">On the Way</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#75763423143</a></td>
+                                <td>Larkin Olivier Sanchez</td>
+                                <td class="date">04 Aug, 2022 <small class="text-muted">05:54 PM</small></td>
+                                <td>₱ 185.00</td>
+                                <td><span class="badge badge-soft-warning text-uppercase fs-12 d-block">In Process</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#48878619511</a></td>
+                                <td>Kalix Jace Martinez</td>
+                                <td class="date">27 Sept, 2022 <small class="text-muted">01:40 PM</small></td>
+                                <td>₱ 350.00</td>
+                                <td><span class="badge badge-soft-warning text-uppercase fs-12 d-block">In Process</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#18043797831</a></td>
+                                <td>Akihiro Leonel Juarez</td>
+                                <td class="date">05 Oct, 2022 <small class="text-muted">10:27 AM</small></td>
+                                <td>₱ 2,175.00</td>
+                                <td><span class="badge badge-soft-secondary text-uppercase fs-12 d-block">On the Way</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#10093436457</a></td>
+                                <td>Estella Nataleigh Valeria Martinez</td>
+                                <td class="date">25 Jul, 2022 <small class="text-muted">11:11 AM</small></td>
+                                <td>₱ 974.00</td>
+                                <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Delivered</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#93274918283</a></td>
+                                <td>Ashianna Kim Fernandez</td>
+                                <td class="date">26 Jun, 2022 <small class="text-muted">04:42 PM</small></td>
+                                <td>₱ 1,210.00</td>
+                                <td><span class="badge badge-soft-secondary text-uppercase fs-12 d-block">On the Way</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#97464507680</a></td>
+                                <td>Avrielle Haven Fernandez Juarez</td>
+                                <td class="date">18 Jul, 2022 <small class="text-muted">11:30 AM</small></td>
+                                <td>₱ 1,750.00</td>
+                                <td><span class="badge badge-soft-success text-uppercase fs-12 d-block">Delivered</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#41131549710</a></td>
+                                <td>Amora Elyse Ledezma</td>
+                                <td class="date">29 Apr, 2022 <small class="text-muted">07:22 PM</small></td>
+                                <td>₱ 125.00</td>
+                                <td><span class="badge badge-soft-secondary text-uppercase fs-12 d-block">On the Way</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0);" class="fw-medium link-primary">#84442428074</a></td>
+                                <td>Sebastian Vincent Camero</td>
+                                <td class="date">19 Mar, 2022 <small class="text-muted">08:47 AM</small></td>
+                                <td>₱ 693.10</td>
+                                <td><span class="badge badge-soft-danger text-uppercase fs-12 d-block">Rejected</span></td>
+                                <td>
+                                    <ul class="list-inline hstack gap-3 justify-content-center mb-0">
+                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                            <a href="#!" class="text-black-50 d-inline-block">
+                                                <i class="ri-eye-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                            <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal fade" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light p-3">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Order</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+                            </div>
+                            <form action="#">
+                                <div class="modal-body">
+                                    <input type="hidden" id="id-field" />
+
+                                    <div class="mb-3" id="modal-id">
+                                        <label for="order_no" class="form-label">Order No.</label>
+                                        <input type="text" id="order_no" class="form-control" placeholder="#10093436457" readonly />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="order_status" class="form-label">Status</label>
+                                        <select class="form-select" id="order_status" name="order_status" data-choices data-choices-sorting-false data-choices-search-false>
+                                            <option value="">Select Status</option>
+                                            <option value="1">In Process</option>
+                                            <option value="2">On the Way</option>
+                                            <option value="3">Delivered</option>
+                                            <option value="4">Rejected</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3 release-date">
+                                        <label for="date_released" class="form-label">Date Released</label>
+                                        <input type="date" id="date_released" name="date_released" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-enable-time required placeholder="Select Date" />
+                                    </div>
+
+                                    <div class="reject-date">
+                                        <label for="date_rejected" class="form-label">Date Rejected</label>
+                                        <input type="date" id="date_rejected" name="date_rejected" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-enable-time required placeholder="Select Date" />
+                                    </div>
+
+                                    <div class="mt-3 courier-name">
+                                        <label for="courier_name" class="form-label d-flex justify-content-between">Courier <a href="#" class="text-decoration-underline">Add
+                                                Courier</a></label>
+                                        <select class="form-select" id="courier_name" name="courier_name" data-choices data-choices-search>
+                                            <option value="">Select Courier</option>
+                                            <option value="1">Grab Express</option>
+                                            <option value="2">Lalamove</option>
+                                            <option value="3">Angkas</option>
+                                            <option value="4">Borzo</option>
+                                            <option value="5">Toktok</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mt-3 driver-name">
+                                        <label class="form-label" for="driver_name">Driver Name</label>
+                                        <input type="text" class="form-control" id="driver_name" name="driver_name" placeholder="Enter Driver Name" required>
+                                    </div>
+
+                                    <div class="my-3 driver-phone">
+                                        <label class="form-label" for="driver_phone">Driver Phone</label>
+                                        <input type="number" class="form-control" id="driver_phone" name="driver_phone" placeholder="Enter Driver Phone" required>
+                                    </div>
+
+                                    <div class="date-received">
+                                        <label for="date_received" class="form-label">Date Received</label>
+                                        <input type="date" id="date_received" name="date_received" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-enable-time required placeholder="Select date" />
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="hstack gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" id="edit-btn">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-5 text-center">
-                <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#405189,secondary:#f06548" style="width:90px;height:90px"></lord-icon>
-                <div class="mt-4 text-center">
-                  <h4>You are about to delete a order ?</h4>
-                  <p class="text-muted fs-15 mb-4">Deleting your order will remove all of your information from our database.</p>
-                  <div class="hstack gap-2 justify-content-center remove">
-                    <button class="btn btn-link link-success fw-medium text-decoration-none" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Close</button>
-                    <button class="btn btn-danger" id="delete-record">Yes, Delete It</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--end modal -->
-      </div>
     </div>
-
-  </div>
-  <!--end col-->
+    <!--end col-->
 </div>
 <!--end row-->
+
+<!-- orders ajax js -->
+<script src="<?php echo base_url('public/assets') ?>/js/ajax/restoadmin/orders.ajax.js"></script>

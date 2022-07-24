@@ -10,8 +10,14 @@
 <!-- Dropzone css -->
 <link href="<?php echo base_url('public/assets') ?>/libs/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
 
-<!-- nouisliderribute css -->
-<link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/nouislider/nouislider.min.css">
+<!-- Filepond css -->
+<link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/filepond/filepond.min.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
+
+<!-- quill css -->
+<link href="<?php echo base_url('public/assets') ?>/libs/quill/quill.core.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('public/assets') ?>/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('public/assets') ?>/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" />
 
 <!-- gridjs css -->
 <link rel="stylesheet" href="<?php echo base_url('public/assets') ?>/libs/gridjs/theme/mermaid.min.css">
@@ -28,14 +34,6 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
 
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
-
-<!-- jQuery cdn -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-<!--datatable css-->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
-<!--datatable responsive css-->
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
 
 <!-- Layout config Js -->
 <script src="<?php echo base_url('public/assets') ?>/js/layout.js"></script>
