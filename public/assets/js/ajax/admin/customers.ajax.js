@@ -32,17 +32,17 @@ loadCustomersTable = () => {
 				{
 					data: null,
 					render: (data) => {
-						// Set the full name
-						const fullName =
-							data.first_name + " " + data.middle_name + " " + data.last_name;
+						const fullName = `${data.first_name}  ${
+							data.middle_name === null ? "" : data.middle_name
+						}  ${data.last_name}`;
 
 						// Return the full name
 						return `
                           <div class="d-flex align-items-baseline text-nowrap">
-                              <div class="icon-container">
-                                  <i class="fas fa-user-circle text-secondary"></i>
-                              </div>
-                              <div>
+						  <div class="icon-container">
+						  <i class="fas fa-user-circle text-secondary"></i>
+						  </div>
+						  <div>
                                   <div>${fullName}</div>
                               </div>
                           </div>
@@ -71,12 +71,12 @@ loadCustomersTable = () => {
 							return `
                               <i class="fas fa-venus icon-container text-danger"></i>
                               <span>${gender}</span>
-                          `;
+							  `;
 						} else {
 							return `
-                              <i class="fas fa-mars icon-container text-blue"></i>
-                              <span>${gender}</span>
-                          `;
+								<i class="fas fa-mars icon-container text-blue"></i>
+								<span>${gender}</span>
+								`;
 						}
 					},
 				},
@@ -86,8 +86,8 @@ loadCustomersTable = () => {
 					data: null,
 					render: (data) => {
 						return `
-                  <div>${moment(data.date_created).format("MMM. D, YYYY")}</div>
-              `;
+						<div>${moment(data.date_created).format("MMM. D, YYYY")}</div>
+						`;
 					},
 				},
 
@@ -104,7 +104,7 @@ loadCustomersTable = () => {
 						} else {
 							return `
                               <span class="badge badge-soft-danger text-uppercase">Inactive</span>
-                          `;
+							  `;
 						}
 					},
 				},
@@ -116,17 +116,11 @@ loadCustomersTable = () => {
 					render: (data) => {
 						return `
                     <button class="btn btn-sm btn-soft-info">View</button>
-                  `;
+					`;
 					},
 				},
 			],
-			columnDefs: [
-				{
-					targets: [6],
-					orderable: false,
-				},
-			],
-			order: [[0, "desc"]],
+			order: [[0, "asc"]],
 		});
 	}
 };
