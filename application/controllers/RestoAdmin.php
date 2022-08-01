@@ -151,7 +151,7 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/page-title', ["page_title" => "Payments", "title" => "Payments"]);
     $this->load->view('restoadmin/invoices-management/pages/invoices');
     $this->load->view('partials/footer');
-    $this->load->view('restoadmin/invoices-management/components/modals/remove-payment-modal');
+    $this->load->view('restoadmin/invoices-management/components/modals/edit-payment-modal');
     $this->load->view('partials/foot-scripts');
     $this->load->view('restoadmin/invoices-management/pages/scripts/invoice-scripts');
   }
