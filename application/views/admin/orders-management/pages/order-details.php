@@ -130,13 +130,18 @@
                                 </td>
                             </tr>
                             <tr class="border-top border-top-dashed">
-                                <td colspan="2"></td>
+                                <td colspan="2">
+                                    <span class="badge rounded-pill bg-primary fs-12">Order Comment</span>
+                                    <div class="bg-light ms-1 col-6 text-wrap">
+                                        <p class="p-2">Please provide extra rice and extra gravy and if pwede po thigh and leg part po thank u</p>
+                                    </div>
+                                </td>
                                 <td colspan="2" class="fw-medium p-0">
                                     <table class="table table-borderless mb-0">
                                         <tbody>
-                                            <tr class="border-top border-top-dashed">
-                                                <th scope="row">Total (PHP) :</th>
-                                                <th class="text-end">₱1,458.00</th>
+                                            <tr class="align-bottom">
+                                                <th scope="row"><span class="fs-15">Total (PHP) :</span></th>
+                                                <th class="text-end"><span class="fs-15">₱1,458.00</span></th>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -163,7 +168,29 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 avatar-xs">
                                             <div class="avatar-title bg-success rounded-circle shadow">
-                                                <i class="ri-shopping-bag-line"></i>
+                                                <i class="mdi mdi-cart-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="fs-15 mb-0 fw-semibold">Pending - <span class="fw-normal">Sat, 09 Jul 2022</span></h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body ms-2 ps-5 py-0">
+                                    <h6 class="mb-1">An order has been placed.</h6>
+                                    <p class="text-muted">Sat, 09 Jul 2022 - 02:05PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <div class="accordion-header" id="headingTwo">
+                                <a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 avatar-xs">
+                                            <div class="avatar-title bg-success rounded-circle shadow">
+                                                <i class="bx bx-dish"></i>
                                             </div>
                                         </div>
                                         <div class="flex-grow-1 ms-3">
@@ -172,20 +199,20 @@
                                     </div>
                                 </a>
                             </div>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body ms-2 ps-5 pt-0">
-                                    <h6 class="mb-1">An order has been placed.</h6>
-                                    <p class="text-muted">Sat, 09 Jul 2022 - 02:05PM</p>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body ms-2 ps-5 py-0">
+                                    <h6 class="mb-1">Seller has proccessed your order.</h6>
+                                    <p class="text-muted">Sat, 09 Jul 2022 - 02:10PM</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item border-0">
-                            <div class="accordion-header" id="headingTwo">
-                                <a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="accordion-header" id="headingThree">
+                                <a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 avatar-xs">
                                             <div class="avatar-title bg-success rounded-circle shadow">
-                                                <i class="ri-takeaway-fill"></i>
+                                                <i class="ri-truck-line"></i>
                                             </div>
                                         </div>
                                         <div class="flex-grow-1 ms-3">
@@ -194,17 +221,17 @@
                                     </div>
                                 </a>
                             </div>
-                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body ms-2 ps-5 pt-0">
                                     <h6 class="fs-14">Grab Express - 90083756538</h6>
-                                    <h6 class="mb-1">The order has been shipped.</h6>
+                                    <h6 class="mb-1">The order has been picked up by the courier partner.</h6>
                                     <p class="text-muted mb-0">Sat, 09 Jul 2022 - 02:48PM</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item border-0">
-                            <div class="accordion-header" id="headingThree">
-                                <a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="accordion-header" id="headingFour">
+                                <a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 avatar-xs">
                                             <div class="avatar-title bg-success rounded-circle shadow">
@@ -217,7 +244,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body ms-2 ps-5 pt-0">
                                     <h6 class="mb-1">The order has been delivered.</h6>
                                     <p class="text-muted mb-0">Sat, 09 Jul 2022 - 03:29PM</p>

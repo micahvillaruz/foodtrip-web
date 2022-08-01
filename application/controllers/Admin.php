@@ -40,6 +40,7 @@ class Admin extends CI_Controller
 		$this->load->view('partials/page-title', ["page_title" => "Restaurants", "title" => "Restaurants"]);
 		$this->load->view('admin/restaurants-management/pages/restaurants');
 		$this->load->view('partials/footer');
+		$this->load->view('admin/restaurants-management/components/modals/add-category-modal');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/restaurants-management/pages/scripts/restaurant-scripts');
 	}
