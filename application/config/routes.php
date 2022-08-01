@@ -66,7 +66,6 @@ $route['restaurant']                                = 'home/restaurant';
 // Authentication Routes
 $route['signin']                                    = 'auth/signin';
 $route['register/restaurant']                       = 'auth/register_restaurant';
-$route['signup/restoadmin']                         = 'auth/signup_restoadmin';
 $route['signup/customer']                           = 'auth/signup_customer';
 $route['forgot-password']                           = 'auth/forgot_password';
 $route['password-change']                           = 'auth/password_change';
