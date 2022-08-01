@@ -4,6 +4,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Admin extends CI_Controller
 {
 
+	function __construct()
+	{
+		parent::__construct();
+		//($this->session->userdata('TOKEN')) ? null : redirect('Access/login');
+
+		if ($this->session->userdata('TOKEN')) {
+		} else {
+			redirect('auth/signin');
+		}
+	}
+
 
 	public function dashboard()
 	{
