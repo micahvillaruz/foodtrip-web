@@ -30,7 +30,7 @@ loadRestaurants = () => {
 				/>
 				<div class="bg-overlay"></div>
 				<div class="place-bid-btn">
-					<a href="#!" class="btn btn-success"
+					<a href="${baseURL}signin" class="btn btn-success"
 						><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a
 					>
 				</div>
@@ -83,10 +83,10 @@ loadRestoCat = () => {
                       <!--end col-->
                     </div>
                     <!--end row-->
-                    <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                    <h5 class="mb-0 fs-16"><a href="#!">${
-											restocat.restocatg_name
-										}<span class="badge badge-soft-success">${
+                    <a href="${baseURL}signin" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
+                    <h5 class="mb-0 fs-16"><a href="${baseURL}signin">${
+					restocat.restocatg_name
+				}<span class="badge badge-soft-success">${
 					Object.keys(restocat.restaurants).length
 				}</span></a></h5>
                   </div>
@@ -94,8 +94,6 @@ loadRestoCat = () => {
                 </div>
                 `;
 				$(".all_restocat").append(restcatEl);
-
-				//restocat.restaurants.forEach((resto) => {});
 			});
 		},
 	});

@@ -25,13 +25,13 @@ loadDishes = () => {
 				}" class="card-img-top explore-img" />
 			<div class="bg-overlay"></div>
 			<div class="place-bid-btn">
-				<a href="#!" class="btn btn-success"
+				<a href="${baseURL}signin" class="btn btn-success"
 					><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a
 				>
 			</div>
 		</div>
 		<div class="card-body">
-			<h5 class="mb-1"><a href="#">${dish.dish_name}</a></h5>
+			<h5 class="mb-1"><a>${dish.dish_name}</a></h5>
 			<p class="text-muted mb-0">${dish.restaurant.resto_name}</p>
 		</div>
 		<div class="card-footer border-top border-top-dashed">

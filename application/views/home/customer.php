@@ -4,7 +4,7 @@
   <div class="layout-wrapper landing">
     <nav class="navbar navbar-expand-lg navbar-landing navbar-light fixed-top" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="<?php echo base_url() ?>">
           <img src="<?php echo base_url('public/assets') ?>/images/logo-dark.png" class="card-logo card-logo-dark" alt="logo dark" height="50">
           <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" class="card-logo card-logo-light" alt="logo light" height="50">
         </a>
@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
             <li class="nav-item">
-              <a class="nav-link fs-15 active" href="#hero">Home</a>
+              <a class="nav-link fs-15 active" href="<?php echo base_url() ?>">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-15" href="#menu">Menu</a>
@@ -29,7 +29,7 @@
           </ul>
 
           <div class="">
-            <a href="#" class="btn btn-success">Create Account</a>
+            <a href="<?php echo base_url() ?>signup/customer" class="btn btn-success">Create Account</a>
           </div>
         </div>
 
@@ -49,8 +49,8 @@
               <p class="lead text-white-50 lh-base mb-4 pb-2">Food means everything to Filipino culture, whether ordering at home, visiting restaurants or cooking your favorite meal. From small bites to big meals, we won't limit your appetite. Go ahead and order all you want.</p>
 
               <div class="hstack gap-2 justify-content-center">
-                <a href="#" class="btn btn-primary">Sign In Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
-                <a href="#" class="btn btn-danger">Explore Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="<?php echo base_url() ?>signin" class="btn btn-primary">Sign In Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="<?php echo base_url() ?>signin" class="btn btn-danger">Explore Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
               </div>
             </div>
           </div>
@@ -136,80 +136,11 @@
           <div class="col-lg-12">
             <div class="d-flex align-items-center mb-5">
               <h2 class="mb-0 fw-semibold lh-base flex-grow-1">Discover Restaurants</h2>
-              <a href="#" class="btn btn-primary">View All <i class="ri-arrow-right-line align-bottom"></i></a>
+              <a href="<?php echo base_url() ?>signin" class="btn btn-primary">View All <i class="ri-arrow-right-line align-bottom"></i></a>
             </div>
           </div>
         </div><!-- end row -->
         <div class="row" id="all_restaurants">
-          <!-- <div class="col-lg-4">
-            <div class="card explore-box ribbon-box card-animate border right">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="ms-2 flex-grow-1 card-header">
-                    <a href="#!">
-                      <h6 class="mb-0 fs-15">Kenny Rogers Roasters</h6>
-                    </a>
-                  </div>
-                </div>
-                <div class="explore-place-bid-img overflow-hidden rounded">
-                  <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kenny-rogers-roasters.jpg" alt="" class="explore-img w-100">
-                  <div class="bg-overlay"></div>
-                  <div class="place-bid-btn">
-                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <a href="javascript:void(0)" class="btn btn-info btn-sm d-block">See Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card explore-box card-animate border">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="ms-2 flex-grow-1 card-header">
-                    <a href="#!">
-                      <h6 class="mb-0 fs-15">Red Ribbon</h6>
-                    </a>
-                  </div>
-                </div>
-                <div class="explore-place-bid-img overflow-hidden rounded">
-                  <img src="<?php echo base_url('public/assets') ?>/images/restaurants/red-ribbon.jpg" alt="" class="explore-img w-100">
-                  <div class="bg-overlay"></div>
-                  <div class="place-bid-btn">
-                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <a href="javascript:void(0)" class="btn btn-info btn-sm d-block">See Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card explore-box card-animate border">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="ms-2 flex-grow-1 card-header">
-                    <a href="#!">
-                      <h6 class="mb-0 fs-15">McDonald's</h6>
-                    </a>
-                  </div>
-                </div>
-                <div class="explore-place-bid-img overflow-hidden rounded">
-                  <img src="<?php echo base_url('public/assets') ?>/images/restaurants/mcdonalds.png" alt="" class="img-fluid explore-img">
-                  <div class="bg-overlay"></div>
-                  <div class="place-bid-btn">
-                    <a href="#!" class="btn btn-success"><i class="ri-auction-fill align-bottom me-1"></i> Order Now</a>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <a href="javascript:void(0)" class="btn btn-info btn-sm d-block">See Details</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
           <!--end col-->
         </div>
         <!--end row-->
@@ -234,26 +165,6 @@
             <!-- Swiper -->
             <div class="swiper mySwiper pb-4">
               <div class="swiper-wrapper mb-5 all_restocat">
-                <!-- <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row g-1 mb-3">
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="img-fluid rounded category-img">
-                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kfc.png" alt="" class="img-fluid rounded mt-1 category-img">
-                        </div>
-                        <div class="col-lg-6">
-                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/greenwich.png" alt="" class="img-fluid rounded mb-1 category-img">
-                          <img src="<?php echo base_url('public/assets') ?>/images/restaurants/chowking.jpg" alt="" class="img-fluid rounded category-img">
-                        </div>
-
-                      </div>
-
-                      <a href="#!" class="float-end"> View All <i class="ri-arrow-right-line align-bottom"></i></a>
-                      <h5 class="mb-0 fs-16"><a href="#!">Fast Food <span class="badge badge-soft-success">206</span></a></h5>
-                    </div>
-                  </div>
-                </div> -->
               </div>
               <div class="swiper-pagination swiper-pagination-dark"></div>
             </div>
@@ -276,7 +187,7 @@
           <!-- end col -->
           <div class="col-sm-auto">
             <div>
-              <a href="#" class="btn-lg bg-gradient btn-danger">Order Now</a>
+              <a href="<?php echo base_url() ?>signin" class="btn-lg bg-gradient btn-danger">Order Now</a>
             </div>
           </div>
           <!-- end col -->
@@ -341,7 +252,7 @@
                   <ul class="list-unstyled ff-secondary footer-list">
                     <li><a href="#">Help</a></li>
                     <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Be a FoodTrip Merchant</a></li>
+                    <li><a href="<?php echo base_url() ?>restaurant">Be a FoodTrip Merchant</a></li>
                   </ul>
                 </div>
               </div>
