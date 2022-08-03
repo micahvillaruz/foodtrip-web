@@ -83,16 +83,16 @@
 									1 === a.nodeType && a !== e && t.push(a), (a = a.nextSibling);
 								return t;
 						  })(t.parentElement).forEach(function (e) {
-								2 < e.childNodes.length &&
-									e.firstElementChild.setAttribute("aria-expanded", "false"),
-									e.querySelectorAll("*[id]").forEach(function (e) {
+								/* 2 < e.childNodes.length &&
+									e.firstElementChild.setAttribute("aria-expanded", "false");
+								e.querySelectorAll("*[id]").forEach(function (e) {
 										e.classList.remove("show"),
 											2 < e.childNodes.length &&
 												e.querySelectorAll("ul li a").forEach(function (e) {
 													e.hasAttribute("aria-expanded") &&
 														e.setAttribute("aria-expanded", "false");
 												});
-									});
+									}); */
 						  });
 				}),
 					t.addEventListener("hide.bs.collapse", function (e) {
