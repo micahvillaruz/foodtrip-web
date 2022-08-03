@@ -31,82 +31,52 @@
                     <div id="two-column-menu">
                     </div>
                     <ul class="navbar-nav" id="navbar-nav">
-                        <li class="menu-title"><span data-key="t-menu">Categories</span></li>
+                        <li class="menu-title"><span>Dashboard</span></li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                <i class="mdi mdi-speedometer"></i> <span data-key="t-dashboards">Restaurant Categories</span>
+                                <i class="mdi mdi-speedometer"></i> <span>Explore</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarDashboards">
+                            <div class="menu-dropdown collapse show" id="sidebarDashboards">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="dashboard-analytics.html" class="nav-link" data-key="t-analytics"> Analytics </a>
+                                        <a href="<?php echo base_url() ?>customer/explore#home" class="nav-link"> Home </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="dashboard-crm.html" class="nav-link" data-key="t-crm"> CRM </a>
+                                        <a href="<?php echo base_url() ?>customer/explore#dishes" class="nav-link"> Popular Dishes </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link" data-key="t-ecommerce"> Ecommerce </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="dashboard-crypto.html" class="nav-link" data-key="t-crypto"> Crypto </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="dashboard-projects.html" class="nav-link" data-key="t-projects"> Projects </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="dashboard-nft.html" class="nav-link" data-key="t-nft"> NFT <span class="badge badge-pill bg-danger" data-key="t-new">New</span></a>
+                                        <a href="<?php echo base_url() ?>customer/explore#resto" class="nav-link"> Popular Restaurants </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                                <i class="mdi mdi-view-carousel-outline"></i> <span data-key="t-layouts">Dish Categories</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarLayouts">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="layouts-horizontal.html" class="nav-link" target="_blank" data-key="t-horizontal">Horizontal</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="layouts-detached.html" class="nav-link" target="_blank" data-key="t-detached">Detached</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="layouts-two-column.html" class="nav-link" target="_blank" data-key="t-two-column">Two Column</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="layouts-vertical-hovered.html" class="nav-link" target="_blank" data-key="t-hovered">Hovered</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
 
-                        <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-pages">Restaurants and Dishes</span></li>
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span>Restaurants & Dishes</span></li>
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?php echo base_url() ?>customer/restaurants" role="button" aria-expanded="false" aria-controls="sidebarAuth">
-                                <i class="mdi mdi-account-circle-outline"></i> <span data-key="t-authentication">Restaurants</span>
+                                <i class="mdi mdi-account-circle-outline"></i> <span>Restaurants</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?php echo base_url() ?>customer/products" role="button" aria-expanded="false" aria-controls="sidebarPages">
-                                <i class="mdi mdi-sticker-text-outline"></i> <span data-key="t-pages">Dishes</span>
+                                <i class="mdi mdi-sticker-text-outline"></i> <span>Dishes</span>
                             </a>
                         </li>
 
-                        <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-components">Orders & Payments</span></li>
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span>Orders & Payments</span></li>
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?php echo base_url() ?>customer/orders" role="button" aria-expanded="false" aria-controls="sidebarUI">
-                                <i class="mdi mdi-cube-outline"></i> <span data-key="t-base-ui">Orders</span>
+                                <i class="mdi mdi-cube-outline"></i> <span i">Orders</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?php echo base_url() ?>customer/invoices" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
-                                <i class="mdi mdi-layers-triple-outline"></i> <span data-key="t-advance-ui">Payments</span>
+                                <i class="mdi mdi-layers-triple-outline"></i> <span i">Payments</span>
                             </a>
                         </li>
 
