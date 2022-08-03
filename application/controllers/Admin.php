@@ -40,6 +40,7 @@ class Admin extends CI_Controller
 		$this->load->view('partials/page-title', ["page_title" => "Restaurants", "title" => "Restaurants"]);
 		$this->load->view('admin/restaurants-management/pages/restaurants');
 		$this->load->view('partials/footer');
+		$this->load->view('admin/restaurants-management/components/modals/add-category-modal');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/restaurants-management/pages/scripts/restaurant-scripts');
 	}
@@ -65,40 +66,12 @@ class Admin extends CI_Controller
 		$this->load->view('partials/head-css');
 		$this->load->view('partials/topbar');
 		$this->load->view('partials/sidebar');
-		$this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Products"]);
+		$this->load->view('partials/page-title', ["page_title" => "Dishes", "title" => "Dishes"]);
 		$this->load->view('admin/products-management/pages/products');
 		$this->load->view('partials/footer');
-		$this->load->view('admin/products-management/components/modals/remove-item-modal');
+		$this->load->view('admin/products-management/components/modals/view-dish-modal');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/products-management/pages/scripts/product-scripts');
-	}
-
-	public function product_details()
-	{
-		$this->load->view('partials/main');
-		$this->load->view('partials/title-meta');
-		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
-		$this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Product Details"]);
-		$this->load->view('admin/products-management/pages/product-details');
-		$this->load->view('partials/footer');
-		$this->load->view('partials/foot-scripts');
-		$this->load->view('admin/products-management/pages/scripts/product-details-scripts');
-	}
-
-	public function add_product()
-	{
-		$this->load->view('partials/main');
-		$this->load->view('partials/title-meta');
-		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
-		$this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Create Product"]);
-		$this->load->view('admin/products-management/pages/add-product');
-		$this->load->view('partials/footer');
-		$this->load->view('partials/foot-scripts');
-		$this->load->view('admin/products-management/pages/scripts/add-product-scripts');
 	}
 
 	public function customers()
@@ -127,20 +100,6 @@ class Admin extends CI_Controller
 		$this->load->view('partials/footer');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/orders-management/pages/scripts/order-scripts');
-	}
-
-	public function order_details()
-	{
-		$this->load->view('partials/main');
-		$this->load->view('partials/title-meta');
-		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
-		$this->load->view('partials/page-title', ["page_title" => "Orders", "title" => "Order Details"]);
-		$this->load->view('admin/orders-management/pages/order-details');
-		$this->load->view('partials/footer');
-		$this->load->view('partials/foot-scripts');
-		$this->load->view('admin/orders-management/pages/scripts/order-details-scripts');
 	}
 
 	public function invoices()

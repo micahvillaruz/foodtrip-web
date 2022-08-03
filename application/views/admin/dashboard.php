@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="avatar-sm flex-shrink-0">
                                     <span class="avatar-title bg-info rounded fs-3">
-                                        <i class="bx bx-shopping-bag"></i>
+                                        <i class="mdi mdi-cart-heart"></i>
                                     </span>
                                 </div>
                             </div>
@@ -329,11 +329,15 @@
                                                         <h5 class="fs-14 my-1 fw-medium">
                                                             <a href="#!" class="text-reset">Jollibee</a>
                                                         </h5>
+                                                        <span class="text-muted">Ernesto Tanmantiong</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="text-muted">Fast Food</span>
+                                                <span class="badge badge-soft-danger badge-border fs-12">Fast Food <i class="mdi mdi-french-fries text-warning fs-16"></i></span>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-outline-primary fs-12">375 Orders</span>
                                             </td>
                                             <td>
                                                 <p class="mb-0">₱541,200</p>
@@ -348,11 +352,15 @@
                                                     </div>
                                                     <div class="flex-grow-1">
                                                         <h5 class="fs-14 my-1 fw-medium"><a href="#!" class="text-reset">McDonald's</a></h5>
+                                                        <span class="text-muted">Kenneth S. Yang</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="text-muted">Fast Food</span>
+                                                <span class="badge badge-soft-danger badge-border fs-12">Fast Food <i class="mdi mdi-french-fries text-warning fs-16"></i></span>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-outline-primary fs-12">215 Orders</span>
                                             </td>
                                             <td>
                                                 <p class="mb-0">₱75,030</p>
@@ -367,11 +375,15 @@
                                                     </div>
                                                     <div class="flex-gow-1">
                                                         <h5 class="fs-14 my-1 fw-medium"><a href="apps-ecommerce-seller-details.html" class="text-reset">Starbucks</a></h5>
+                                                        <span class="text-muted">Noey Lopez</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="text-muted">Coffee & Tea</span>
+                                                <span class="badge badge-soft-info badge-border fs-12">Cafe <i class="mdi mdi-coffee-maker text-warning fs-16"></i></span>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-outline-primary fs-12">173 Orders</span>
                                             </td>
                                             <td>
                                                 <p class="mb-0">₱45,600</p>
@@ -386,11 +398,15 @@
                                                     </div>
                                                     <div class="flex-grow-1">
                                                         <h5 class="fs-14 my-1 fw-medium"><a href="#!" class="text-reset">KFC</a></h5>
+                                                        <span class="text-muted">Manuel U. Agustines</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="text-muted">Fast Food</span>
+                                                <span class="badge badge-soft-danger badge-border fs-12">Fast Food <i class="mdi mdi-french-fries text-warning fs-16"></i></span>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-outline-primary fs-12">154 Orders</span>
                                             </td>
                                             <td>
                                                 <p class="mb-0">₱29,456</p>
@@ -407,11 +423,15 @@
                                                         <h5 class="fs-14 my-1 fw-medium">
                                                             <a href="apps-ecommerce-seller-details.html" class="text-reset">Kuya J Restaurant</a>
                                                         </h5>
+                                                        <span class="text-muted">Winglip K. Chang</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="text-muted">Casual Dining</span>
+                                                <span class="badge badge-soft-primary badge-border fs-12">Casual Dining <i class="mdi mdi-rice text-warning fs-16"></i></span>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-outline-primary fs-12">132 Orders</span>
                                             </td>
                                             <td>
                                                 <p class="mb-0">₱11,260</p>
@@ -470,96 +490,111 @@
                                     <thead class="text-muted table-light">
                                         <tr>
                                             <th scope="col">Order No</th>
-                                            <th scope="col">Customer</th>
-                                            <th scope="col">Total Amount</th>
                                             <th scope="col">Restaurant</th>
+                                            <th scope="col">Customer</th>
                                             <th scope="col">Status</th>
+                                            <th scope="col">Order Total</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <a href="#!" class="fw-medium link-primary">#FT2112</a>
+                                                <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">ODR-5807971654758</a>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1">Kalix Jace Martinez</div>
+                                                    <div class="flex-shrink-0 me-2">
+                                                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/starbucks.png" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    </div>
+                                                    <div class="flex-grow-1">Starbucks</div>
                                                 </div>
                                             </td>
+                                            <td>Kalix Jace Martinez</td>
                                             <td>
-                                                <span class="text-success">₱109.00</span>
+                                                <span class="fs-11 badge badge-soft-primary text-uppercase">Pending</span>
                                             </td>
-                                            <td>Tapa King</td>
                                             <td>
-                                                <span class="badge badge-soft-success">Paid</span>
+                                                <h5 class="text-info fw-medium">₱850.00</h5>
                                             </td>
                                         </tr><!-- end tr -->
                                         <tr>
                                             <td>
-                                                <a href="#!" class="fw-medium link-primary">#FT2111</a>
+                                                <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">ODR-5807971778717</a>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1">Louisse Natasha Valeria</div>
+                                                    <div class="flex-shrink-0 me-2">
+                                                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/bonchon.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    </div>
+                                                    <div class="flex-grow-1">Bonchon Chicken</div>
                                                 </div>
                                             </td>
+                                            <td>Louisse Natasha Valeria</td>
                                             <td>
-                                                <span class="text-success">₱149.00</span>
+                                                <span class="fs-11 badge badge-soft-warning text-uppercase">In Process</span>
                                             </td>
-                                            <td>Chowking</td>
                                             <td>
-                                                <span class="badge badge-soft-warning">Pending</span>
+                                                <h5 class="text-info fw-medium">₱1,457.00</h5>
                                             </td>
                                         </tr><!-- end tr -->
                                         <tr>
                                             <td>
-                                                <a href="#!" class="fw-medium link-primary">#FT2109</a>
+                                                <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">ODR-5807971857044</a>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1">Ashianna Kim Fernandez</div>
+                                                    <div class="flex-shrink-0 me-2">
+                                                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kfc.png" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    </div>
+                                                    <div class="flex-grow-1">KFC</div>
                                                 </div>
                                             </td>
+                                            <td>Ashianna Kim Fernandez</td>
                                             <td>
-                                                <span class="text-success">₱215.00</span>
+                                                <span class="fs-11 badge badge-soft-secondary text-uppercase">On the Way</span>
                                             </td>
-                                            <td>Panda Express</td>
                                             <td>
-                                                <span class="badge badge-soft-success">Paid</span>
+                                                <h5 class="text-info fw-medium">₱325.00</h5>
                                             </td>
                                         </tr><!-- end tr -->
                                         <tr>
                                             <td>
-                                                <a href="#!" class="fw-medium link-primary">#FT2108</a>
+                                                <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">ODR-5807971922949</a>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1">Akihiro Leonel Juarez</div>
+                                                    <div class="flex-shrink-0 me-2">
+                                                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/kuyaj.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    </div>
+                                                    <div class="flex-grow-1">Kuya J Restaurant</div>
                                                 </div>
                                             </td>
+                                            <td>Akihiro Leonel Juarez</td>
                                             <td>
-                                                <span class="text-success">₱199.00</span>
+                                                <span class="fs-11 badge badge-soft-danger text-uppercase">Rejected</span>
                                             </td>
-                                            <td>Buffalo's Wings N' Things</td>
                                             <td>
-                                                <span class="badge badge-soft-danger">Unpaid</span>
+                                                <h5 class="text-info fw-medium">₱3,079.00</h5>
                                             </td>
                                         </tr><!-- end tr -->
                                         <tr>
                                             <td>
-                                                <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">#FT2107</a>
+                                                <a href="apps-ecommerce-order-details.html" class="fw-medium link-primary">ODR-5807971995469</a>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1">Amora Elyse Ledezma</div>
+                                                    <div class="flex-shrink-0 me-2">
+                                                        <img src="<?php echo base_url('public/assets') ?>/images/restaurants/conti-bakeshop.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    </div>
+                                                    <div class="flex-grow-1">Conti's Bakeshop and Restaurant</div>
                                                 </div>
                                             </td>
+                                            <td>Amora Elyse Ledezma</td>
                                             <td>
-                                                <span class="text-success">₱330.00</span>
+                                                <span class="fs-11 badge badge-soft-dark text-uppercase">Cancelled</span>
                                             </td>
-                                            <td>Starbucks</td>
                                             <td>
-                                                <span class="badge badge-soft-success">Paid</span>
+                                                <h5 class="text-info fw-medium">₱125.00</h5>
                                             </td>
                                         </tr><!-- end tr -->
                                     </tbody><!-- end tbody -->

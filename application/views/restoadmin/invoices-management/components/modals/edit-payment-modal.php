@@ -13,10 +13,12 @@
           </div>
           <div>
             <label for="payment_status" class="form-label">Status</label>
-            <select class="form-select" data-trigger name="payment_status" id="payment_status" data-choices data-choices-search>
+            <select class="form-select" data-choices data-choices-sorting-false data-choices-search-false name="payment_status" id="payment_status">
               <option value="">Status</option>
-              <option value="1">Paid</option>
-              <option value="2">Refunded</option>
+              <option value="1">Pending</option>
+              <option value="2">Paid</option>
+              <option value="3">Failed</option>
+              <option value="4">Refunded</option>
             </select>
           </div>
         </div>

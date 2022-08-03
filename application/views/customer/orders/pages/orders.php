@@ -52,12 +52,17 @@
                     <ul class="nav nav-tabs nav-tabs-custom nav-success mb-3 filter-btns" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active py-3" data-bs-toggle="tab" role="tab" aria-selected="true" data-filter="all">
-                                <i class="mdi mdi-book-multiple-outline me-1 align-bottom"></i> All Orders <span class="badge bg-danger align-middle ms-1">5</span>
+                                <i class="mdi mdi-book-multiple-outline me-1 align-bottom"></i> All Orders <span class="badge bg-danger align-middle ms-1">8</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3" data-bs-toggle="tab" role="tab" aria-selected="false" data-filter="pending">
+                                <i class="mdi mdi-cart-heart me-1 align-bottom"></i> Pending <span class="badge bg-danger align-middle ms-1">3</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link py-3" data-bs-toggle="tab" role="tab" aria-selected="false" data-filter="in-process">
-                                <i class="mdi mdi-food-takeout-box-outline me-1 align-bottom"></i> In Process <span class="badge bg-danger align-middle ms-1">1</span>
+                                <i class="bx bx-dish me-1 align-middle"></i> In Process <span class="badge bg-danger align-middle ms-1">1</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -75,22 +80,27 @@
                                 <i class="ri-close-circle-line me-1 align-bottom"></i> Rejected <span class="badge bg-danger align-middle ms-1">1</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3" data-bs-toggle="tab" role="tab" aria-selected="false" data-filter="cancelled">
+                                <i class="mdi mdi-basket-remove-outline me-1 align-bottom"></i> Cancelled
+                            </a>
+                        </li>
                     </ul>
 
                     <div class="col-12">
-                        <div class="card card-light product-item delivered">
+                        <div class="card card-light product-item pending">
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="card-header bg-white">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0">
-                                                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="avatar-xs rounded-circle">
+                                                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jco.png" alt="" class="avatar-xs rounded-circle">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
-                                                <p class="card-text fw-medium">Jollibee</p>
+                                                <p class="card-text fw-medium">J.CO Donuts & Coffee </p>
                                             </div>
                                             <div class="flex-end ms-3">
-                                                <span class="badge badge-soft-success text-uppercase fs-12"><i class="me-2 mdi mdi-package-variant fs-15"></i> Delivered</span>
+                                                <span class="badge badge-soft-primary text-uppercase fs-12"><i class="me-2 mdi mdi-cart-heart fs-15"></i> Pending</span>
                                             </div>
                                         </div>
                                     </div>
@@ -101,41 +111,16 @@
                                                     <tr>
                                                         <td class="col-1">
                                                             <div class="avatar-lg bg-light rounded p-1">
-                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-27.png" alt="" class="img-fluid d-block">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jco/img-2.png" alt="" class="img-fluid d-block">
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <h5 class="fs-14"><a href="#!" class="text-dark">8pc Chickenjoy w/ Jolly Spaghetti Pan</a></h5>
-                                                            <p class="text-muted">Category : <span class="fw-medium">Family Meals</span></p>
-                                                            <p class="mb-0">₱ 776.00 x 1</p>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Iced Caramel Jcoccino</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">JCOFFEE - ICED</span></p>
+                                                            <p class="mb-0">₱ 135.00 x 7</p>
                                                         </td>
-                                                        <td class="text-end fs-15">₱ 776.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-1">
-                                                            <div class="avatar-lg bg-light rounded p-1">
-                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-15.png" alt="" class="img-fluid d-block">
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="fs-14"><a href="#!" class="text-dark">Amazing Aloha Champ Jr.</a></h5>
-                                                            <p class="text-muted">Category : <span class="fw-medium">Burgers</span></p>
-                                                            <p class="mb-0">₱ 109.00 x 5</p>
-                                                        </td>
-                                                        <td class="text-end fs-15">₱ 545.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-1">
-                                                            <div class="avatar-lg bg-light rounded p-1">
-                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-28.png" alt="" class="img-fluid d-block">
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="fs-14"><a href="#!" class="text-dark">1pc Burger Steak w/ Shanghai w/ Drink</a></h5>
-                                                            <p class="text-muted">Category : <span class="fw-medium">Burger Steak</span></p>
-                                                            <p class="mb-0">₱ 143.00 x 3</p>
-                                                        </td>
-                                                        <td class="text-end fs-15">₱ 429.00</td>
+                                                        <td class="text-end fs-15">₱ 945.00</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -143,10 +128,212 @@
                                         <!-- end table-responsive -->
                                     </div>
                                     <div class="card-footer bg-white">
-                                        <div class="d-flex justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-danger btn-animation waves-effect waves-light" data-text="Cancel Order"><span>Cancel Order</span></button>
                                             <p class="mb-0 d-inline-block">Total Amount (PHP) :
                                                 <span class="fw-semibold ms-3 fs-20">
-                                                    ₱ 1,750.00
+                                                    ₱ 945.00
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end card -->
+                        <div class="card card-light product-item pending">
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/frankies-buffalo-wings.jpg" alt="" class="avatar-xs rounded-circle">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="card-text fw-medium">Frankie's New York Buffalo Wings</p>
+                                            </div>
+                                            <div class="flex-end ms-3">
+                                                <span class="badge badge-soft-primary text-uppercase fs-12"><i class="me-2 mdi mdi-cart-heart fs-15"></i> Pending</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive pt-2">
+                                            <table class="table table-borderless align-middle mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/frankies-ny/img-1.jpeg" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Regular Wings Honey Mustard Wings (1/2 Dozen)</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Regular Wings</span></p>
+                                                            <p class="mb-0">₱ 273.90 x 1</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 273.90</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/frankies-ny/img-2.jpeg" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">Regular Osaka Toriniku Wings (1 Dozen)</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Regular Wings</span></p>
+                                                            <p class="mb-0">₱ 581.90 x 1</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 581.90</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/frankies-ny/img-3.jpeg" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Liberty Box Basic (Junior)</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Liberty Box</span></p>
+                                                            <p class="mb-0">₱ 1,153.90 x 1</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 1,153.90</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/frankies-ny/img-4.jpeg" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Jr Cheesy Bacon Wings (1 Dozen)</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Junior Wings</span></p>
+                                                            <p class="mb-0">₱ 394.90 x 5</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 1,974.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/frankies-ny/img-5.jpeg" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Boneless Korean</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Boneless Chicken</span></p>
+                                                            <p class="mb-0">₱ 240.90 x 1</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 240.90</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/frankies-ny/img-6.jpeg" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    New York Cheesecake</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Desserts</span></p>
+                                                            <p class="mb-0">₱ 165.00 x 5</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 825.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end table-responsive -->
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-danger btn-animation waves-effect waves-light" data-text="Cancel Order"><span>Cancel Order</span></button>
+                                            <p class="mb-0 d-inline-block">Total Amount (PHP) :
+                                                <span class="fw-semibold ms-3 fs-20">
+                                                    ₱ 5,050.10
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end card -->
+                        <div class="card card-light product-item pending">
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/shakeys.png" alt="" class="avatar-xs rounded-circle">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="card-text fw-medium">Shakey's Pizza </p>
+                                            </div>
+                                            <div class="flex-end ms-3">
+                                                <span class="badge badge-soft-primary text-uppercase fs-12"><i class="me-2 mdi mdi-cart-heart fs-15"></i> Pending</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive pt-2">
+                                            <table class="table table-borderless align-middle mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/shakeys/img-1.png" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Spinach and Glazed Bacon Large (12 inches) Thin Crust</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Spinach Series</span></p>
+                                                            <p class="mb-0">₱ 466.90 x 8</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 3,735.20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/shakeys/img-2.png" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Hawaiian Delight Party (14 inches) Thin Crust</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Classic Pizza</span></p>
+                                                            <p class="mb-0">₱ 595.70 x 3</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 1,787.10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/shakeys/img-3.png" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">
+                                                                    Angus Burger - Regular (9 inches) Hand Tossed</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Premium Pizza</span></p>
+                                                            <p class="mb-0">₱ 368.90 x 1</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 368.90</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end table-responsive -->
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-danger btn-animation waves-effect waves-light" data-text="Cancel Order"><span>Cancel Order</span></button>
+                                            <p class="mb-0 d-inline-block">Total Amount (PHP) :
+                                                <span class="fw-semibold ms-3 fs-20">
+                                                    ₱ 5,891.20
                                                 </span>
                                             </p>
                                         </div>
@@ -166,7 +353,7 @@
                                                 <p class="card-text fw-medium">McDonald's</p>
                                             </div>
                                             <div class="flex-end ms-3">
-                                                <span class="badge badge-soft-warning text-uppercase fs-12"><i class="me-2 mdi mdi-food-takeout-box-outline fs-15"></i> In Process</span>
+                                                <span class="badge badge-soft-warning text-uppercase fs-12"><i class="me-2 bx bx-dish fs-15"></i> In Process</span>
                                             </div>
                                         </div>
                                     </div>
@@ -260,6 +447,82 @@
                                             <p class="mb-0 d-inline-block">Total Amount (PHP) :
                                                 <span class="fw-semibold ms-3 fs-20">
                                                     ₱ 1,980.00
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end card -->
+                        <div class="card card-light product-item delivered">
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="avatar-xs rounded-circle">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="card-text fw-medium">Jollibee</p>
+                                            </div>
+                                            <div class="flex-end ms-3">
+                                                <span class="badge badge-soft-success text-uppercase fs-12"><i class="me-2 mdi mdi-package-variant fs-15"></i> Delivered</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive pt-2">
+                                            <table class="table table-borderless align-middle mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-27.png" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">8pc Chickenjoy w/ Jolly Spaghetti Pan</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Family Meals</span></p>
+                                                            <p class="mb-0">₱ 776.00 x 1</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 776.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-15.png" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">Amazing Aloha Champ Jr.</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Burgers</span></p>
+                                                            <p class="mb-0">₱ 109.00 x 5</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 545.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-1">
+                                                            <div class="avatar-lg bg-light rounded p-1">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-28.png" alt="" class="img-fluid d-block">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="fs-14"><a href="#!" class="text-dark">1pc Burger Steak w/ Shanghai w/ Drink</a></h5>
+                                                            <p class="text-muted">Category : <span class="fw-medium">Burger Steak</span></p>
+                                                            <p class="mb-0">₱ 143.00 x 3</p>
+                                                        </td>
+                                                        <td class="text-end fs-15">₱ 429.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end table-responsive -->
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="mb-0 d-inline-block">Total Amount (PHP) :
+                                                <span class="fw-semibold ms-3 fs-20">
+                                                    ₱ 1,750.00
                                                 </span>
                                             </p>
                                         </div>
