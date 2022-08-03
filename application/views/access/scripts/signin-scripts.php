@@ -8,7 +8,7 @@
             <script src="<?php echo base_url('public/assets') ?>/js/pages/form-validation.init.js"></script>
 
             <!-- custom login.js -->
-            <script src="<?php echo base_url('public/assets') ?>/js/access/signin.js"></script>
+            <script src="<?php echo base_url('public/assets') ?>/js/ajax/home/login.ajax.js"></script>
             <!-- password-addon init -->
             <script src="<?php echo base_url('public/assets') ?>/js/pages/password-addon.init.js"></script>
 
