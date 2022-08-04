@@ -21,8 +21,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Dashboard", "title" => "Dashboard"]);
 		$this->load->view('admin/dashboard');
 		$this->load->view('partials/footer');
@@ -35,8 +35,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Restaurants", "title" => "Restaurants"]);
 		$this->load->view('admin/restaurants-management/pages/restaurants');
 		$this->load->view('partials/footer');
@@ -50,8 +50,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Restaurants", "title" => "Restaurant Details"]);
 		$this->load->view('admin/restaurants-management/pages/restaurant-details');
 		$this->load->view('partials/footer');
@@ -64,8 +64,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Dishes", "title" => "Dishes"]);
 		$this->load->view('admin/products-management/pages/products');
 		$this->load->view('partials/footer');
@@ -79,8 +79,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Customers", "title" => "Customers"]);
 		$this->load->view('admin/customers-management/pages/customers');
 		$this->load->view('partials/footer');
@@ -93,8 +93,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Orders", "title" => "Orders"]);
 		$this->load->view('admin/orders-management/pages/orders');
 		$this->load->view('partials/footer');
@@ -107,8 +107,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Invoices", "title" => "Invoice List"]);
 		$this->load->view('admin/invoices-management/pages/invoices');
 		$this->load->view('partials/footer');
@@ -121,8 +121,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Invoices", "title" => "Invoice Details"]);
 		$this->load->view('admin/invoices-management/pages/invoice-details');
 		$this->load->view('partials/footer');
@@ -135,8 +135,8 @@ class Admin extends CI_Controller
 		$this->load->view('partials/main');
 		$this->load->view('partials/title-meta');
 		$this->load->view('partials/head-css');
-		$this->load->view('partials/topbar');
-		$this->load->view('partials/sidebar');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
 		$this->load->view('partials/page-title', ["page_title" => "Restaurant Admins", "title" => "Restaurant Admins"]);
 		$this->load->view('admin/restaurant-admins-management/pages/restaurant-admins');
 		$this->load->view('partials/footer');
