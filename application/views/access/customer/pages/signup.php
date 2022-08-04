@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="mt-4">
-                      <form class="needs-validation" novalidate action="index.html">
+                      <form id="signup_form" class="needs-validation" novalidate>
                         <div class="mb-3">
                           <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
                           <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name" required>
@@ -51,57 +51,51 @@
                         <div class="mb-3">
                           <label for="middle-name" class="form-label">Middle Name</label>
                           <input type="text" class="form-control" id="middle_name" name="middle_name" placeholder="Enter Middle Name">
-                          <div class="invalid-feedback">
-                            Please enter Middle Name
-                          </div>
                         </div>
                         <div class="mb-3">
                           <label for="last-name" class="form-label">Last Name <span class="text-danger">*</span></label>
-                          <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name">
+                          <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name" required>
                           <div class="invalid-feedback">
                             Please enter Last Name
                           </div>
                         </div>
                         <div class="mb-3">
                           <label for="useremail" class="form-label">Email Address <span class="text-danger">*</span></label>
-                          <input type="email" class="form-control" id="email_address" name="email_address" placeholder="Enter email address" required>
+                          <input type="email" class="form-control" id="email_address" name="email_address" placeholder="Enter email address" data-parsley-type="email" required>
                           <div class="invalid-feedback">
                             Please enter Email Address
                           </div>
                         </div>
                         <div class="mb-3">
                           <label for="phone_number" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                          <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone Number">
+                          <input type="text" class="form-control" id="phone_number" name="phone_number" required pattern="^(09|\+639)\d{9}$" placeholder="####-###-####">
                           <div class="invalid-feedback">
-                            Please enter Phone Number
+                            Please enter a valid Phone Number
                           </div>
                         </div>
                         <div class="mb-3">
                           <div class="col-lg-12">
                             <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
-                            <select class="js-example-basic-single" id="gender" name="gender">
-                              <option value="1">Male</option>
-                              <option value="2">Female</option>
-                              <option value="3">Others</option>
+                            <select class="form-select js-example-basic-single" id="gender" name="gender" data-choices data-choices-search-false required>
+                              <option value="" selected disabled>Select Gender</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Others">Others</option>
                             </select>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="password-input">Password</label>
-                          <div class="position-relative auth-pass-inputgroup">
-                            <input type="password" class="form-control pe-5 password-input" onpaste="return false" placeholder="Enter password" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
                             <div class="invalid-feedback">
-                              Please enter password
+                              Please select Gender
                             </div>
                           </div>
                         </div>
-                        <div id="password-contain" class="p-3 bg-light mb-2 rounded">
-                          <h5 class="fs-13">Password must contain:</h5>
-                          <p id="pass-length" class="invalid fs-12 mb-2">Minimum <b>8 characters</b></p>
-                          <p id="pass-lower" class="invalid fs-12 mb-2">At <b>lowercase</b> letter (a-z)</p>
-                          <p id="pass-upper" class="invalid fs-12 mb-2">At least <b>uppercase</b> letter (A-Z)</p>
-                          <p id="pass-number" class="invalid fs-12 mb-0">A least <b>number</b> (0-9)</p>
+                        <div class="mb-3">
+                          <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
+                          <div class="position-relative auth-pass-inputgroup mb-3">
+                            <input type="password" class="form-control pe-5" placeholder="Enter Password" id="password" name="password" required>
+                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
+                            <div class="invalid-feedback">
+                              Please create a Password
+                            </div>
+                          </div>
                         </div>
 
                         <div class="mt-4">
@@ -119,7 +113,7 @@
                     </div>
 
                     <div class="mt-5 text-center">
-                      <p class="mb-0">Already have an account ? <a href="auth-signin-cover.html" class="fw-semibold text-primary text-decoration-underline"> Signin</a> </p>
+                      <p class="mb-0">Already have an account ? <a href="<?php echo base_url() ?>signin" class="fw-semibold text-primary text-decoration-underline"> Signin</a> </p>
                     </div>
                   </div>
                 </div>
