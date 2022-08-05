@@ -6,9 +6,6 @@
 <script src="<?php echo base_url('public/assets') ?>/libs/gridjs/gridjs.umd.js"></script>
 <script src="https://unpkg.com/gridjs/plugins/selection/dist/selection.umd.js"></script>
 
-<!-- ecommerce product list -->
-<script src="<?php echo base_url('public/assets') ?>/js/pages/ecommerce-product-list.init.js"></script>
-
 <!--datatable js-->
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
