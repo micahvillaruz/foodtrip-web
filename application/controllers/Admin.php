@@ -84,6 +84,7 @@ class Admin extends CI_Controller
 		$this->load->view('partials/page-title', ["page_title" => "Customers", "title" => "Customers"]);
 		$this->load->view('admin/customers-management/pages/customers');
 		$this->load->view('partials/footer');
+		$this->load->view('admin/customers-management/components/modals/view-customer-modal');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/customers-management/pages/scripts/customer-scripts');
 	}
