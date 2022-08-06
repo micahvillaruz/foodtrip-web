@@ -171,7 +171,8 @@ loadOrdersTable = () => {
 						return `
 							<ul class="list-inline hstack gap-3 justify-content-center mb-0">
                 <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
-                  <a href="${baseURL}restoadmin/orders/order-details" role="button" class="text-black-50 d-inline-block">
+                  <a href="${baseURL}restoadmin/orders/order-details" role="button" onclick="localStorage.setItem('orderID', '${data.order_id}');
+				  " class="text-black-50 d-inline-block">
                     <i class="ri-eye-fill fs-16"></i>
                   </a>
                 </li>

@@ -1,5 +1,5 @@
 $(function () {
-	viewOrderDetails();
+	viewOrderDetails(localStorage.getItem("orderID"));
 });
 
 // View Order Details
@@ -55,13 +55,13 @@ viewOrderDetails = (order_id) => {
 					</tr>
 				`;
 			});
-			$("dishes").html(orderDishes);
+			$("#dishes").prepend(orderDishes);
 
-			$("comment").html(data.order_comment);
+			$("#comment").html(data.order_comment);
 
 			let orderTotal = data.order_total;
 			orderTotal = `₱ ${data.order_total}`;
-			$("total").html(orderTotal);
+			$("#total").html(orderTotal);
 
 			const pending_date = data.date_created;
 			let pendingDate = `
@@ -69,14 +69,14 @@ viewOrderDetails = (order_id) => {
 				"D MMM YYYY"
 			)}
 			`;
-			$("date_created").html(pendingDate);
+			$("#date_created").html(pendingDate);
 
 			let pendingDateFull = `
 				${moment(pending_date).format("ddd")}, ${moment(pending_date).format(
 				"D MMM YYYY"
 			)} - ${moment(pending_date).format("hh:mm A")}
 			`;
-			$("full_date_created").html(pendingDateFull);
+			$("#full_date_created").html(pendingDateFull);
 
 			let inProcess = "";
 			if (data.date_processed !== null) {
@@ -111,7 +111,7 @@ viewOrderDetails = (order_id) => {
 						</div>
 					</div>
 				`;
-				$("in_process").html(inProcess);
+				$("#in_process").html(inProcess);
 			} else if (data.date_processed === null) {
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
@@ -129,7 +129,7 @@ viewOrderDetails = (order_id) => {
 							</a>
 						</div>
 				`;
-				$("in_process").html(inProcess);
+				$("#in_process").html(inProcess);
 			}
 
 			let onTheWay = "";
@@ -166,7 +166,7 @@ viewOrderDetails = (order_id) => {
 						</div>
 					</div>
 				`;
-				$("on_the_way").html(onTheWay);
+				$("#on_the_way").html(onTheWay);
 			} else if (data.date_released === null) {
 				onTheWay += `
 					<div class="accordion-header" id="headingThree">
@@ -184,7 +184,7 @@ viewOrderDetails = (order_id) => {
 						</a>
 					</div>
 				`;
-				$("on_the_way").html(onTheWay);
+				$("#on_the_way").html(onTheWay);
 			}
 
 			let Delivered = "";
@@ -221,7 +221,7 @@ viewOrderDetails = (order_id) => {
 						</div>
 					</div>
 				`;
-				$("delivered").html(Delivered);
+				$("#delivered").html(Delivered);
 			} else if (data.order_status !== "Delivered") {
 				Delivered += `
 					<div class="accordion-header" id="headingFour">
@@ -239,7 +239,7 @@ viewOrderDetails = (order_id) => {
 						</a>
 					</div>
 				`;
-				$("delivered").html(Delivered);
+				$("#delivered").html(Delivered);
 			}
 
 			let deliveryDetails = "";
@@ -287,26 +287,26 @@ viewOrderDetails = (order_id) => {
 				data.created.middle_name === null ? "" : data.created.middle_name
 			}  ${data.created.last_name}`;
 
-			$("customer_name").html(fullName);
-			$("email").html(data.created.email_address);
-			$("phone").html(data.created.phone_number);
+			$("#customer_name").html(fullName);
+			$("#email").html(data.created.email_address);
+			$("#phone").html(data.created.phone_number);
 
-			$("address_owner").html(data.address.full_name);
-			$("address_owner_phone").html(data.address.phone_number);
+			$("#address_owner").html(data.address.full_name);
+			$("#address_owner_phone").html(data.address.phone_number);
 
 			let addressFirstLine = `${data.address.address_1} ${
 				data.address.address_2 === null ? "" : data.address.address_2
 			}`;
 
-			$("address_first_line").html(addressFirstLine);
+			$("#address_first_line").html(addressFirstLine);
 
 			let addressSecondLine = `${data.address.barangay} ${data.address.city}`;
 
-			$("address_second_line").html(addressSecondLine);
+			$("#address_second_line").html(addressSecondLine);
 
 			let addressThirdLine = `${data.address.province} ${data.address.region} ${data.address.zip_code}`;
 
-			$("address_third_line").html(addressThirdLine);
+			$("#address_third_line").html(addressThirdLine);
 		},
 	}).fail(() =>
 		console.error("There was an error in getting the order details")
