@@ -20,9 +20,7 @@
                 <th scope="col" class="text-end">Sub Total</th>
               </tr>
             </thead>
-            <tbody>
-              <div id="dishes">
-              </div>
+            <tbody id="dishes">
               <tr class="border-top border-top-dashed">
                 <td colspan="2">
                   <span class="badge rounded-pill bg-primary fs-12">Order Comment</span>
@@ -30,7 +28,7 @@
                     <p id="comment" class="p-2"></p>
                   </div>
                 </td>
-                <td colspan="2" class="fw-medium p-0 align-bottom">
+                <td colspan="2" class="fw-medium p-0 align-center">
                   <table class="table table-borderless mb-0">
                     <tbody>
                       <tr>
