@@ -87,7 +87,7 @@
                         </li>
                     </ul>
 
-                    <div class="col-12">
+                    <div id="orders" class="col-12">
                         <div class="card card-light product-item pending">
                             <div class="row g-0">
                                 <div class="col-md-12">
@@ -691,3 +691,5 @@
     <!--end col-->
 </div>
 <!--end row-->
+
+<script src="<?php echo base_url('public/assets') ?>/js/ajax/customer/orders.ajax.js"></script>
