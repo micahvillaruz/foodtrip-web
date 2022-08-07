@@ -160,4 +160,18 @@ class Admin extends CI_Controller
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/couriers-management/pages/scripts/courier-scripts');
 	}
+
+	public function delivery_details()
+	{
+		$this->load->view('partials/main');
+		$this->load->view('partials/title-meta');
+		$this->load->view('partials/head-css');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
+		$this->load->view('partials/page-title', ["page_title" => "Couriers", "title" => "Delivery Details"]);
+		$this->load->view('admin/couriers-management/pages/delivery-details');
+		$this->load->view('partials/footer');
+		$this->load->view('partials/foot-scripts');
+		$this->load->view('admin/couriers-management/pages/scripts/delivery-details-scripts');
+	}
 }
