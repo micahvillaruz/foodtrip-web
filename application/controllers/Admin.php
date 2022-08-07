@@ -99,6 +99,7 @@ class Admin extends CI_Controller
 		$this->load->view('partials/page-title', ["page_title" => "Orders", "title" => "Orders"]);
 		$this->load->view('admin/orders-management/pages/orders');
 		$this->load->view('partials/footer');
+		$this->load->view('admin/orders-management/components/modals/view-order-modal');
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/orders-management/pages/scripts/order-scripts');
 	}
