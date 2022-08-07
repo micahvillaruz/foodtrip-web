@@ -81,6 +81,7 @@ $route['admin/orders']                              = 'admin/orders';
 $route['admin/invoices']                            = 'admin/invoices';
 $route['admin/invoices/invoice-details']            = 'admin/invoice_details';
 $route['admin/restaurant-admins']                   = 'admin/restaurant_admins';
+$route['admin/couriers']                            = 'admin/couriers';
 
 // Customer Routes
 $route['customer/explore']                          = 'customer/explore';

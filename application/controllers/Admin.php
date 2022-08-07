@@ -144,4 +144,20 @@ class Admin extends CI_Controller
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/restaurant-admins-management/pages/scripts/restaurant-admins-scripts');
 	}
+
+	public function couriers()
+	{
+		$this->load->view('partials/main');
+		$this->load->view('partials/title-meta');
+		$this->load->view('partials/head-css');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
+		$this->load->view('partials/page-title', ["page_title" => "Couriers", "title" => "Couriers"]);
+		$this->load->view('admin/couriers-management/pages/couriers');
+		$this->load->view('partials/footer');
+		$this->load->view('admin/couriers-management/components/modals/add-courier-modal');
+		$this->load->view('admin/couriers-management/components/modals/delete-courier-modal');
+		$this->load->view('partials/foot-scripts');
+		$this->load->view('admin/couriers-management/pages/scripts/courier-scripts');
+	}
 }
