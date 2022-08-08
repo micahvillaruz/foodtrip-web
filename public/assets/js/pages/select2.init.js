@@ -36,6 +36,9 @@ $(document).ready(function () {
 			{ id: 4, text: "wontfix" },
 		],
 	});
+	$(".select-no-search").select2({
+		minimumResultsForSearch: Infinity,
+	});
 }),
 	$(".js-example-templating").select2({ templateResult: formatState }),
 	$(".select-flag-templating").select2({ templateSelection: formatState }),
