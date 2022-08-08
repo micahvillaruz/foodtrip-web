@@ -1,20 +1,4 @@
 $(function () {
-	$(".courier-name").hide();
-	$(".driver-name").hide();
-	$(".driver-phone").hide();
-
-	$("#order_status").change(function () {
-		var orderStatus = $(this).val();
-		if (orderStatus === "2") {
-			$(".courier-name").show();
-			$(".driver-name").show();
-			$(".driver-phone").show();
-		} else {
-			$(".courier-name").hide();
-			$(".driver-name").hide();
-			$(".driver-phone").hide();
-		}
-	});
 	loadOrdersTable();
 });
 
@@ -32,6 +16,7 @@ loadOrdersTable = () => {
 
 	if (dt.length) {
 		dt.DataTable({
+			bDestroy: true,
 			ajax: {
 				url: apiURL + "resto-admin/orders",
 				type: "GET",
@@ -177,7 +162,7 @@ loadOrdersTable = () => {
                   </a>
                 </li>
                 <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
-                  <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                  <a href="#editOrderModal" data-bs-toggle="modal" onclick = "editOrder('${data.order_id}')" class="text-primary d-inline-block edit-item-btn">
                     <i class="ri-pencil-fill fs-16"></i>
                   </a>
                 </li>
@@ -189,4 +174,196 @@ loadOrdersTable = () => {
 			order: [[0, "asc"]],
 		});
 	}
+};
+
+// Update Order Status
+editOrder = (order_id) => {
+	$.ajax({
+		type: "GET",
+		cache: false,
+		url: apiURL + `resto-admin/order/${order_id}`,
+		dataType: "json",
+		success: (result) => {
+			const data = result.data;
+			$("#order_no").prop("readonly", false);
+			$("#order_no").val(data.order_no);
+			$("#order_no").prop("readonly", true);
+
+			$("#order_status").change(() => {
+				let orderStatus = $("#order_status").val();
+				// Update order status via AJAX
+
+				if (orderStatus === "On the Way") {
+					$("#courierName").removeClass("d-none");
+					$("#driverName").removeClass("d-none");
+					$("#driverPhone").removeClass("d-none");
+				}
+			});
+
+			$("#editOrderStatusForm").on("submit", function (e) {
+				e.preventDefault(); // prevent page refresh
+
+				{
+					// no validation error
+					const form = new FormData($("#editOrderStatusForm")[0]);
+
+					let data = {
+						order_status: form.get("order_status"),
+					};
+
+					if (data.order_status === "Rejected") {
+						$.ajaxSetup({
+							headers: {
+								Accept: "application/json",
+								Authorization: "Bearer " + token,
+								ContentType: "application/x-www-form-urlencoded",
+							},
+						});
+
+						$.ajax({
+							type: "PUT",
+							cache: false,
+							url: apiURL + `resto-admin/order/rejected/${order_id}`,
+							dataType: "json",
+							success: (result) => {
+								if (result) {
+									document.getElementById("close-modal").click();
+
+									// Show success alert
+									Swal.fire({
+										position: "center",
+										icon: "success",
+										title: "Order status updated successfully!",
+										showConfirmButton: false,
+										timer: 2000,
+										showCloseButton: true,
+									});
+
+									// Reload the DataTable
+									loadOrdersTable();
+								}
+							},
+						}).fail(() =>
+							console.error("There was a problem in updating the order status")
+						);
+					} else if (data.order_status === "In Process") {
+						$.ajaxSetup({
+							headers: {
+								Accept: "application/json",
+								Authorization: "Bearer " + token,
+								ContentType: "application/x-www-form-urlencoded",
+							},
+						});
+
+						$.ajax({
+							type: "PUT",
+							cache: false,
+							url: apiURL + `resto-admin/order/in-process/${order_id}`,
+							dataType: "json",
+							success: (result) => {
+								if (result) {
+									document.getElementById("close-modal").click();
+
+									// Show success alert
+									Swal.fire({
+										position: "center",
+										icon: "success",
+										title: "Order status updated successfully!",
+										showConfirmButton: false,
+										timer: 2000,
+										showCloseButton: true,
+									});
+
+									// Reload the DataTable
+									loadOrdersTable();
+								}
+							},
+						}).fail(() =>
+							console.error("There was a problem in updating the order status")
+						);
+					} else if (data.order_status === "On the Way") {
+						data = {
+							courier_id: form.get("courier"),
+							driver_name: form.get("driver_name"),
+							driver_phone: form.get("driver_phone"),
+						};
+
+						$.ajaxSetup({
+							headers: {
+								Accept: "application/json",
+								Authorization: "Bearer " + token,
+								ContentType: "application/x-www-form-urlencoded",
+							},
+						});
+
+						$.ajax({
+							type: "PUT",
+							cache: false,
+							url: apiURL + `resto-admin/order/otw/${order_id}`,
+							data: data,
+							dataType: "json",
+							success: (result) => {
+								if (result) {
+									document.getElementById("close-modal").click();
+
+									// Show success alert
+									Swal.fire({
+										position: "center",
+										icon: "success",
+										title: "Order status updated successfully!",
+										showConfirmButton: false,
+										timer: 2000,
+										showCloseButton: true,
+									});
+
+									// Reload the DataTable
+									loadOrdersTable();
+								}
+							},
+						}).fail(() =>
+							console.error("There was a problem in updating the order status")
+						);
+					} else if (data.order_status === "Delivered") {
+						$.ajaxSetup({
+							headers: {
+								Accept: "application/json",
+								Authorization: "Bearer " + token,
+								ContentType: "application/x-www-form-urlencoded",
+							},
+						});
+
+						$.ajax({
+							type: "PUT",
+							cache: false,
+							url: apiURL + `resto-admin/order/delivered/${order_id}`,
+							data: data,
+							dataType: "json",
+							success: (result) => {
+								if (result) {
+									document.getElementById("close-modal").click();
+
+									// Show success alert
+									Swal.fire({
+										position: "center",
+										icon: "success",
+										title: "Order status updated successfully!",
+										showConfirmButton: false,
+										timer: 2000,
+										showCloseButton: true,
+									});
+
+									// Reload the DataTable
+									loadOrdersTable();
+								}
+							},
+						}).fail(() =>
+							console.error("There was a problem in updating the order status")
+						);
+					}
+				}
+			});
+		},
+	}).fail(() =>
+		console.error("There was an error in getting the order details")
+	);
 };
