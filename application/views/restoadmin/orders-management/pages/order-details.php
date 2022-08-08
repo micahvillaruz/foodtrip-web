@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-header">
         <div class="d-flex align-items-center">
-          <h5 class="card-title flex-grow-1 mb-0">Order <span id="order_no"></span></h5>
+          <h5 id="order_no" class="card-title flex-grow-1 mb-0 fw-medium link-primary"></h5>
           <div class="flex-shrink-0">
             <a href="#!" class="btn btn-success btn-sm"><i class="ri-download-2-fill align-middle me-1"></i> Invoice</a>
           </div>
@@ -23,10 +23,6 @@
             <tbody id="dishes">
               <tr class="border-top border-top-dashed">
                 <td colspan="2">
-                  <span class="badge rounded-pill bg-primary fs-12">Order Comment</span>
-                  <div class="bg-light ms-1 col-10 text-wrap">
-                    <p id="comment" class="p-2"></p>
-                  </div>
                 </td>
                 <td colspan="2" class="fw-medium p-0 align-center">
                   <table class="table table-borderless mb-0">
@@ -37,6 +33,14 @@
                       </tr>
                     </tbody>
                   </table>
+                </td>
+              </tr>
+              <tr class="border-top border-top-dashed">
+                <td colspan="4">
+                  <span class="badge rounded-pill bg-primary fs-12">Order Comment</span>
+                  <div class="bg-light ms-1 col-10 text-wrap">
+                    <p id="comment" class="p-2"></p>
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -149,7 +153,7 @@
             <p class="text-muted mb-0">Payment No:</p>
           </div>
           <div class="flex-grow-1 ms-2">
-            <h6 class="mb-0">60524012573</h6>
+            <h6 id="payment_no" class="mb-0"></h6>
           </div>
         </div>
         <div class="d-flex align-items-center mb-2">
@@ -157,7 +161,7 @@
             <p class="text-muted mb-0">Payment Status:</p>
           </div>
           <div class="flex-grow-1 ms-2">
-            <h6 class="mb-0">Paid</h6>
+            <h6 id="payment_status" class="mb-0"></h6>
           </div>
         </div>
         <div class="d-flex align-items-center mb-2">
@@ -165,8 +169,7 @@
             <p class="text-muted mb-0">Date Paid:</p>
           </div>
           <div class="flex-grow-1 ms-2">
-            <h6 class="mb-0">
-              18 Jul, 2022 <small class="text-muted">11:30 AM</small></h6>
+            <h6 id="payment_date" class="mb-0"></h6>
           </div>
         </div>
         <div class="d-flex align-items-center">
@@ -174,7 +177,7 @@
             <p class="text-muted mb-0">Total Amount:</p>
           </div>
           <div class="flex-grow-1 ms-2">
-            <h6 class="mb-0">₱1,750.00</h6>
+            <h6 id="payment_total" class="mb-0"></h6>
           </div>
         </div>
       </div>

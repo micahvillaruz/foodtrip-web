@@ -30,7 +30,7 @@ viewOrderDetails = (order_id) => {
 							<td>
 								<div class="d-flex">
 									<div class="flex-shrink-0 avatar-md bg-light rounded p-1">
-										<img src="${dish.dish_img}" alt="" class="img-fluid d-block">
+										<img src="${dish.dish_img}" alt="${dish.dish_name}" class="img-fluid d-block">
 									</div>
 									<div class="flex-grow-1 ms-3">
 										<h5 class="fs-15">
@@ -82,7 +82,7 @@ viewOrderDetails = (order_id) => {
 			if (data.date_processed !== null) {
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
-						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 							<div class="d-flex align-items-center">
 								<div class="flex-shrink-0 avatar-xs">
 									<div class="avatar-title bg-success rounded-circle shadow">
@@ -156,7 +156,8 @@ viewOrderDetails = (order_id) => {
 					</div>
 					<div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 						<div class="accordion-body ms-2 ps-5 pt-0">
-							<h6 class="fs-14">LalaMove - 26325016208</h6>
+							<h6 class="fs-14">${data.delivery_details.courier.courier_name} - 
+							${data.delivery_details.tracking_no}</h6>
 							<h6 class="mb-1">The order has been picked up by the courier partner.</h6>
 							<p class="text-muted mb-0">
 								${moment(data.date_released).format("ddd")},
@@ -188,9 +189,13 @@ viewOrderDetails = (order_id) => {
 			}
 
 			let Delivered = "";
-			if (data.order_status === "Delivered") {
-				let date_delivered = new Date();
-				Delivered += `
+			if (
+				data.delivery_details !== null &&
+				data.order_status !== "On the Way"
+			) {
+				const date_received = data.delivery_details.date_received;
+				if (date_received !== null) {
+					Delivered += `
 					<div class="accordion-header" id="headingFour">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 							<div class="d-flex align-items-center">
@@ -202,8 +207,8 @@ viewOrderDetails = (order_id) => {
 								<div class="flex-grow-1 ms-3">
 									<h6 class="fs-15 mb-1 fw-semibold">Delivered - 
 										<span class="fw-normal">
-											${moment(date_delivered).format("ddd")}, 
-											${moment(date_delivered).format("D MMM YYYY")}
+											${moment(date_received).format("ddd")}, 
+											${moment(date_received).format("D MMM YYYY")}
 										</span>
 									</h6>
 								</div>
@@ -214,15 +219,16 @@ viewOrderDetails = (order_id) => {
 						<div class="accordion-body ms-2 ps-5 pt-0">
 							<h6 class="mb-1">The order has been delivered.</h6>
 							<p class="text-muted mb-0">
-								${moment(data.date_delivered).format("ddd")},
-								${moment(data.date_delivered).format("D MMM YYYY")} - 
-								${moment(data.date_delivered).format("hh:mm A")}
+								${moment(date_received).format("ddd")},
+								${moment(date_received).format("D MMM YYYY")} - 
+								${moment(date_received).format("hh:mm A")}
 							</p>
 						</div>
 					</div>
 				`;
-				$("#delivered").html(Delivered);
-			} else if (data.order_status !== "Delivered") {
+					$("#delivered").html(Delivered);
+				}
+			} else {
 				Delivered += `
 					<div class="accordion-header" id="headingFour">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false">
@@ -245,68 +251,81 @@ viewOrderDetails = (order_id) => {
 			let deliveryDetails = "";
 			if (data.delivery_details !== null) {
 				deliveryDetails += `
-				<div class="card-header">
-					<div class="d-flex">
-						<h5 class="card-title flex-grow-1 mb-0"><i class="mdi mdi-truck-fast-outline align-middle me-1 text-muted"></i> Delivery Details</h5>
-						<div class="flex-shrink-0">
-							<a href="javascript:void(0);" class="badge badge-soft-primary fs-11">Track Order</a>
+					<div class="card-header">
+						<div class="d-flex">
+							<h5 class="card-title flex-grow-1 mb-0"><i class="mdi mdi-truck-fast-outline align-middle me-1 text-muted"></i> Delivery Details</h5>
+							<div class="flex-shrink-0">
+								<a href="javascript:void(0);" class="badge badge-soft-primary fs-11">Track Order</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="card-body">
-					<div class="text-center">
-						<lord-icon src="https://cdn.lordicon.com/uetqnvvg.json" trigger="loop" colors="primary:#4b38b3,secondary:#0ab39c" style="width:80px;height:80px"></lord-icon>
-						<h5 class="fs-16 mt-2">LalaMove</h5>
-						<p class="text-muted mb-0">Tracking No: 26325016208</p>
-						<p class="text-muted mb-0">Driver Name : Adonis Saide Figueroa</p>
-						<p class="text-muted mb-0">Driver Phone : 09918291232</p>
+					<div class="card-body">
+						<div class="text-center">
+							<lord-icon src="https://cdn.lordicon.com/uetqnvvg.json" trigger="loop" colors="primary:#4b38b3,secondary:#0ab39c" style="width:80px;height:80px"></lord-icon>
+							<h5 class="fs-16 mt-2">${data.delivery_details.courier.courier_name}</h5>
+							<p class="text-muted mb-0">Tracking No: ${data.delivery_details.tracking_no}</p>
+							<p class="text-muted mb-0">Driver Name : ${data.delivery_details.driver_name}</p>
+							<p class="text-muted mb-0">Driver Phone : ${data.delivery_details.driver_phone}</p>
+						</div>
 					</div>
-				</div>
 				`;
-			} else if (data.deliveryDetails === null) {
+			} else if (data.delivery_details === null) {
 				deliveryDetails += `
-				<div class="card-header">
-					<div class="d-flex">
-						<h5 class="card-title flex-grow-1 mb-0"><i class="mdi mdi-truck-fast-outline align-middle me-1 text-muted"></i> Delivery Details</h5>
-						<div class="flex-shrink-0">
-							<a href="javascript:void(0);" class="badge badge-soft-primary fs-11">Track Order</a>
+					<div class="card-header">
+						<div class="d-flex">
+							<h5 class="card-title flex-grow-1 mb-0"><i class="mdi mdi-truck-fast-outline align-middle me-1 text-muted"></i> Delivery Details</h5>
 						</div>
 					</div>
-				</div>
-				<div class="card-body">
-					<div class="text-center">
-						<i class="h1 mdi mdi-close-circle-outline text-danger"></i>
-						<h5 class="fs-16 mt-2">Order has not yet been shipped.</h5>
-						<p class="text-muted mb-0">No delivery information available</p>
+					<div class="card-body">
+						<div class="text-center">
+							<i class="h1 mdi mdi-close-circle-outline text-danger"></i>
+							<h5 class="fs-16 mt-2">Order has not yet been shipped.</h5>
+							<p class="text-muted mb-0">No delivery information available</p>
+						</div>
 					</div>
-				</div>
 				`;
 			}
+			$("#delivery-details").html(deliveryDetails);
 
-			const fullName = `${data.created.first_name}  ${
+			const customerName = `${data.created.first_name}  ${
 				data.created.middle_name === null ? "" : data.created.middle_name
 			}  ${data.created.last_name}`;
 
-			$("#customer_name").html(fullName);
+			$("#customer_name").html(customerName);
 			$("#email").html(data.created.email_address);
 			$("#phone").html(data.created.phone_number);
 
 			$("#address_owner").html(data.address.full_name);
 			$("#address_owner_phone").html(data.address.phone_number);
 
-			let addressFirstLine = `${data.address.address_1} ${
+			let addressFirstLine = `${data.address.address_1}, ${
 				data.address.address_2 === null ? "" : data.address.address_2
 			}`;
 
 			$("#address_first_line").html(addressFirstLine);
 
-			let addressSecondLine = `${data.address.barangay} ${data.address.city}`;
+			let addressSecondLine = `${data.address.barangay}, ${data.address.city}`;
 
 			$("#address_second_line").html(addressSecondLine);
 
-			let addressThirdLine = `${data.address.province} ${data.address.region} ${data.address.zip_code}`;
+			let addressThirdLine = `${data.address.province}, ${data.address.region}, ${data.address.zip_code}`;
 
 			$("#address_third_line").html(addressThirdLine);
+
+			$("#payment_no").html("PYT-6639796322464");
+			$("#payment_status").html("Paid");
+
+			let paymentDate = `
+				${moment(data.date_created).format("MMM. D, YYYY")} 
+				<small class="text-muted">
+				${moment(data.date_created).format("hh:mm A")}</small>
+			`;
+			$("#payment_date").html(paymentDate);
+
+			let paymentTotal = `
+				₱ ${data.order_total}
+			`;
+			$("#payment_total").html(paymentTotal);
 		},
 	}).fail(() =>
 		console.error("There was an error in getting the order details")
