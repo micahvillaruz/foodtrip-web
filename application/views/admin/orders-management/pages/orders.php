@@ -8,10 +8,6 @@
                             <h5 class="card-title mb-0">Order History</h5>
                         </div>
                     </div>
-                    <div class="col-sm-auto">
-                        <div id="export-buttons">
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="card-body border border-dashed border-end-0 border-start-0">
