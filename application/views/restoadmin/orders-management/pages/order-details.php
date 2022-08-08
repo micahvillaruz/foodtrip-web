@@ -87,7 +87,7 @@
             </div>
             <div id="on_the_way" class="accordion-item border-0">
             </div>
-            <div id="delivered" class="accordion-item border-0">
+            <div id="end" class="accordion-item border-0">
             </div>
           </div>
           <!--end accordion-->
