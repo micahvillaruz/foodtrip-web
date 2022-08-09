@@ -64,10 +64,10 @@
                             </div>
                         </div>
 
-                        <div class="dropdown topbar-head-dropdown ms-1 header-item">
-                            <a href="<?php echo base_url() ?>customer/cart" type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none" id="page-header-cart-dropdown">
+                        <div id="cartDiv" class="dropdown topbar-head-dropdown ms-1 header-item">
+                            <a id="cartBtn" href="<?php echo base_url() ?>customer/cart" type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none" id="page-header-cart-dropdown">
                                 <i class='bx bx-shopping-bag fs-22'></i>
-                                <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-info">5</span>
+                                <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-info" id="cart"></span>
                             </a>
                         </div>
 
