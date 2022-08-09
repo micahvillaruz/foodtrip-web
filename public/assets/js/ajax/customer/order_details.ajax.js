@@ -157,6 +157,7 @@ loadOrderDetailsPage = (order_id) => {
 
 			let inProcess = "";
 			if (data.date_processed !== null) {
+				$("#in_process").removeClass("d-none");
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -189,7 +190,12 @@ loadOrderDetailsPage = (order_id) => {
 					</div>
 				`;
 				$("#in_process").html(inProcess);
-			} else if (data.date_processed === null) {
+			} else if (
+				data.date_processed === null &&
+				data.date_rejected === null &&
+				data.date_cancelled === null
+			) {
+				$("#in_process").removeClass("d-none");
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
 							<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false">
@@ -211,6 +217,7 @@ loadOrderDetailsPage = (order_id) => {
 
 			let onTheWay = "";
 			if (data.date_released !== null) {
+				$("#on_the_way").removeClass("d-none");
 				onTheWay += `
 					<div class="accordion-header" id="headingThree">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -245,7 +252,12 @@ loadOrderDetailsPage = (order_id) => {
 					</div>
 				`;
 				$("#on_the_way").html(onTheWay);
-			} else if (data.date_released === null) {
+			} else if (
+				data.date_released === null &&
+				data.date_rejected === null &&
+				data.date_cancelled === null
+			) {
+				$("#on_the_way").removeClass("d-none");
 				onTheWay += `
 					<div class="accordion-header" id="headingThree">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false">
