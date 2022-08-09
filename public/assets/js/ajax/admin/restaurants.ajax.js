@@ -234,13 +234,15 @@ loadRestoCategoriesTable = () => {
 				{
 					data: null,
 					render: (data) => {
-						const created_by = data.created_by;
+						const createdBy = `${data.created.first_name}  ${
+							data.created.middle_name === null ? "" : data.created.middle_name
+						}  ${data.created.last_name}`;
 
 						return `
 							<div class="d-flex">
 								<i class="ri-account-circle-fill text-muted me-3 fs-17"></i>
 							  <div>
-								  <span class="d-block fw-medium">${created_by}</span>
+								  <span class="d-block fw-medium">${createdBy}</span>
 								</div>
 							</div>
 								`;
