@@ -111,8 +111,7 @@ viewOrderDetails = (order_id) => {
 						</div>
 					</div>
 				`;
-				$("#end").addClass("rejected");
-				$(".rejected").html(rejectedOrder);
+				$("#end").html(rejectedOrder);
 				$("#in_process").addClass("d-none");
 				$("#on_the_way").addClass("d-none");
 				$("#delivery-details").addClass("d-none");
@@ -151,8 +150,7 @@ viewOrderDetails = (order_id) => {
 						</div>
 					</div>
 				`;
-				$("#end").addClass("cancelled");
-				$(".cancelled").html(cancelledOrder);
+				$("#end").html(cancelledOrder);
 				$("#in_process").addClass("d-none");
 				$("#on_the_way").addClass("d-none");
 				$("#delivery-details").addClass("d-none");
@@ -192,10 +190,7 @@ viewOrderDetails = (order_id) => {
 					</div>
 				`;
 				$("#in_process").html(inProcess);
-			} else if (
-				data.date_processed === null &&
-				(data.date_cancelled === null || data.date_rejected === null)
-			) {
+			} else if (data.date_processed === null) {
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
 							<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false">
@@ -251,10 +246,7 @@ viewOrderDetails = (order_id) => {
 					</div>
 				`;
 				$("#on_the_way").html(onTheWay);
-			} else if (
-				data.date_released === null &&
-				(data.date_cancelled === null || data.date_rejected === null)
-			) {
+			} else if (data.date_released === null) {
 				onTheWay += `
 					<div class="accordion-header" id="headingThree">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false">
@@ -312,10 +304,9 @@ viewOrderDetails = (order_id) => {
 						</div>
 					</div>
 				`;
-					$("#end").addClass("delivered");
-					$(".delivered").html(Delivered);
+					$("#end").html(Delivered);
 				}
-			} else if (data.date_rejected === null && data.date_cancelled === null) {
+			} else {
 				Delivered += `
 					<div class="accordion-header" id="headingFour">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false">
@@ -332,8 +323,7 @@ viewOrderDetails = (order_id) => {
 						</a>
 					</div>
 				`;
-				$("#end").addClass("delivered");
-				$(".delivered").html(Delivered);
+				$("#end").html(Delivered);
 			}
 
 			let deliveryDetails = "";

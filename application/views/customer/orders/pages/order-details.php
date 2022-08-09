@@ -84,7 +84,7 @@
                         </div>
                         <div id="on_the_way" class="accordion-item border-0">
                         </div>
-                        <div id="delivered" class="accordion-item border-0">
+                        <div id="end" class="accordion-item border-0">
                         </div>
                     </div>
                     <!--end accordion-->
@@ -95,25 +95,6 @@
     </div>
     <!--end col-->
     <div class="col-xl-3">
-        <!-- <div class="card">
-            <div class="card-header">
-                <div class="d-flex">
-                    <h5 class="card-title flex-grow-1 mb-0"><i class="mdi mdi-truck-fast-outline align-middle me-1 text-muted"></i> Delivery Details</h5>
-                    <div class="flex-shrink-0">
-                        <a href="javascript:void(0);" class="badge badge-soft-primary fs-11">Track Order</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="text-center">
-                    <lord-icon src="https://cdn.lordicon.com/uetqnvvg.json" trigger="loop" colors="primary:#4b38b3,secondary:#0ab39c" style="width:80px;height:80px"></lord-icon>
-                    <h5 class="fs-16 mt-2">LalaMove</h5>
-                    <p class="text-muted mb-0">Tracking No: 26325016208</p>
-                    <p class="text-muted mb-0">Driver Name : Adonis Saide Figueroa</p>
-                    <p class="text-muted mb-0">Driver Phone : 09918291232</p>
-                </div>
-            </div>
-        </div> -->
         <div id="delivery-details" class="card">
         </div>
         <!--end card-->
