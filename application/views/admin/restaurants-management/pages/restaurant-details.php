@@ -24,12 +24,68 @@
                                     <td>Fast Food</td>
                                 </tr>
                                 <tr>
-                                    <th><span class="fw-medium">Email</span></th>
-                                    <td>president@jollibee.com.ph</td>
-                                </tr>
-                                <tr>
                                     <th><span class="fw-medium">Website</span></th>
                                     <td><a href="http://www.jollibee.com.ph/" class="link-primary">www.jollibee.com.ph</a></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="fw-medium">Opening <br> Hours</span></th>
+                                    <td class="text-muted align-middle ps-0 pt-0">
+                                        <div class="table-responsive text-start">
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="col-2">
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Mon</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            07:00AM - 12:00AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Tues</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            12:00AM - 12:00AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Wed</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            12:00AM - 12:00AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Thurs</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            12:00AM - 12:00AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Fri</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            12:00AM - 12:00AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Sat</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            08:00AM - 07:00PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="badge rounded-pill badge-outline-primary fs-12">Sun</span>
+                                                        </th>
+                                                        <td class="text-muted">
+                                                            07:00AM - 11:00PM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th><span class="fw-medium">Phone No.</span></th>
@@ -40,12 +96,20 @@
                                     <td>(02) 8-7000</td>
                                 </tr>
                                 <tr>
-                                    <th><span class="fw-medium">Status</span></th>
-                                    <td>Open</td>
+                                    <th><span class="fw-medium">Email</span></th>
+                                    <td>president@jollibee.com.ph</td>
                                 </tr>
                                 <tr>
                                     <th><span class="fw-medium">Address</span></th>
                                     <td>10/F Jollibee Plaza Building, <br> Emerald Ave., Ortigas Center, <br> Pasig City 1600</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="fw-medium">Status</span></th>
+                                    <td><span class="badge badge-soft-success text-uppercase fs-12">Open</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="fw-medium">Joining Date</span></th>
+                                    <td>20, June 2021 <small class="text-muted">09:29AM</small></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -123,19 +187,260 @@
             </div><!-- end card body -->
         </div><!-- end card -->
 
-        <div class="row g-4 mb-3">
-            <div class="col-sm">
-                <div class="d-flex justify-content-sm-end">
-                    <div class="search-box ms-2">
-                        <input type="text" class="form-control" placeholder="Search Products...">
-                        <i class="ri-search-line search-icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="card">
             <div class="card-body">
-                <div id="table-product-list-all" class="table-card gridjs-border-none"></div>
+                <table id="example" class="table dt-responsive nowrap align-middle" style="width:100%">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Published</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-1.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">1 - pc. Chickenjoy w/ Half Jolly Spaghetti & Shanghai Super Meal</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Super Meals</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱185.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>12 Oct, 2021<small class="text-muted ms-1">10:05 AM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-2.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Jolly Spaghetti Family Pan</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Jolly Spaghetti</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱210.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>06 Jan, 2021<small class="text-muted ms-1">01:31 PM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-3.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Chicken Sandwich</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Chicken Sandwich</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱158.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase">Unavailable</span></td>
+                            <td>26 Mar, 2021<small class="text-muted ms-1">11:40 AM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-4.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Cheesy Classic Jolly Hotdog</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Jolly Hotdog and Pies</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱64.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase">Unavailable</span></td>
+                            <td>19 Apr, 2021<small class="text-muted ms-1">02:51 PM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-5.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">6 - pc. Chickenjoy Solo</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Family Meals</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱399.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase">Unavailable</span></td>
+                            <td>30 Mar, 2021<small class="text-muted ms-1">09:42 AM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-6.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Palabok</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Palabok</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱117.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>12 Oct, 2021<small class="text-muted ms-1">04:55 PM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-7.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Ultimate Burger Steak w/ Egg</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Burger Steak</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱207.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>15 May, 2021<small class="text-muted ms-1">03:40 PM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-8.png" alt="" class="img-fluid d-block">
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Double Bacon Champ Jr.</a></h5>
+                                    <p class="text-muted mb-0">Category : <span class="fw-medium">Burgers</span></p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>₱181.00</td>
+                        <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                        <td>21 Jun, 2021<small class="text-muted ms-1">12:18 PM</small></td>
+                        <td>
+                            <button class="btn btn-sm btn-soft-info">View</button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-9.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">3 Pies To-Go</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Desserts</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱106.00</td>
+                            <td><span class="badge badge-soft-danger text-uppercase">Unavailable</span></td>
+                            <td>15 Jan, 2021<small class="text-muted ms-1">10:29 AM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-10.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">1 - pc. Chickenjoy</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Chickenjoy</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱79.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>15 Jun, 2021<small class="text-muted ms-1">03:51 PM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-11.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Jolly Crispy Fries</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Fries and Sides</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱48.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>12 Oct, 2021<small class="text-muted ms-1">10:05 AM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-sm bg-light rounded p-1"><img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-12.png" alt="" class="img-fluid d-block">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="fs-14 mb-1"><a href="#!" class="text-dark">Chocolate Sundae Twirl</a></h5>
+                                        <p class="text-muted mb-0">Category : <span class="fw-medium">Desserts</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>₱48.00</td>
+                            <td><span class="badge badge-soft-success text-uppercase">Available</span></td>
+                            <td>06 Jan, 2021<small class="text-muted ms-1">01:31 PM</small></td>
+                            <td>
+                                <button class="btn btn-sm btn-soft-info">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 

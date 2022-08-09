@@ -4,7 +4,7 @@
   <div class="layout-wrapper landing">
     <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="<?php echo base_url() ?>restaurant">
           <img src="<?php echo base_url('public/assets') ?>/images/logo-dark.png" class="card-logo card-logo-dark" alt="logo dark" height="50">
           <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" class="card-logo card-logo-light" alt="logo light" height="50">
         </a>
@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
             <li class="nav-item">
-              <a class="nav-link fs-14 active" href="#hero">Home</a>
+              <a class="nav-link fs-14 active" href="<?php echo base_url() ?>restaurant">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-14" href="#services">Services</a>
@@ -38,8 +38,8 @@
           </ul>
 
           <div class="">
-            <a href="auth-signin-basic.html" class="btn btn-link fw-medium text-decoration-none text-dark">Sign in</a>
-            <a href="auth-signup-basic.html" class="btn btn-primary">Sign Up</a>
+            <a href="<?php echo base_url() ?>signin" class="btn btn-link fw-medium text-decoration-none text-dark">Sign in</a>
+            <a href="<?php echo base_url() ?>register/restaurant" class="btn btn-primary">Sign Up</a>
           </div>
         </div>
 
@@ -58,8 +58,8 @@
               <p class="lead text-muted lh-base">Grow your business by getting your food out the door and onto the tables of hungry customers. FoodTrip's fast-checkout process increase average order value by 20%, save 15 minutes per table and generate 40% more tips.</p>
 
               <div class="d-flex gap-2 justify-content-center mt-4">
-                <a href="#" class="btn btn-primary">Register Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
-                <a href="#" class="btn btn-danger">Book a Demo <i class="ri-booklet-line align-middle ms-1"></i></a>
+                <a href="<?php echo base_url() ?>register/restaurant" class="btn btn-primary">Register Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="<?php echo base_url() ?>register/restaurant" class="btn btn-danger">Book a Demo <i class="ri-booklet-line align-middle ms-1"></i></a>
               </div>
             </div>
 
@@ -376,7 +376,7 @@
           <!-- end col -->
           <div class="col-sm-auto">
             <div>
-              <a href="#" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-hand-coin-line align-middle me-1"></i> Partner with Us</a>
+              <a href="<?php echo base_url() ?>register/restaurant" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-hand-coin-line align-middle me-1"></i> Partner with Us</a>
             </div>
           </div>
           <!-- end col -->
@@ -515,7 +515,7 @@
               </div>
 
               <div class="mt-4">
-                <a href="index.html" class="btn btn-primary">Learn More <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                <a href="<?php echo base_url() ?>register/restaurant" class="btn btn-primary">Learn More <i class="ri-arrow-right-line align-middle ms-1"></i></a>
               </div>
             </div>
           </div>
@@ -909,7 +909,7 @@
 
               <h5>Register your restaurant.</h5>
               <p class="text-muted ff-secondary">Sign up your restaurant on the FoodTrip website by clicking the Register Now / Sign Up button. Make sure to type the restaurant details as accurately as possible.</p>
-              <a href="#" class="btn btn-primary">Register <i class="ri-arrow-right-line ms-1 align-bottom"></i></a>
+              <a href="<?php echo base_url() ?>register/restaurant" class="btn btn-primary">Register <i class="ri-arrow-right-line ms-1 align-bottom"></i></a>
             </div>
           </div>
           <!-- end col -->
@@ -969,7 +969,7 @@
                   <img src="https://www.gifcen.com/wp-content/uploads/2021/07/ramen-gif-3.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Menu Management</a></h5>
+                <h5 class="mb-1"><a href="<?php echo base_url() ?>register/restaurant" class="text-body">Menu Management</a></h5>
                 <p class="text-muted mb-0 ff-secondary">Build and edit your menu anytime by yourself with one click. Customize your menu to reflect your branding. A faster and easier experience for all restaurant managers</p>
               </div>
             </div>
@@ -983,7 +983,7 @@
                   <img src="https://delivery.namkalam.in/wp-content/uploads/2021/03/delivery.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Order Management</a></h5>
+                <h5 class="mb-1"><a href="<?php echo base_url() ?>register/restaurant" class="text-body">Order Management</a></h5>
                 <p class="text-muted mb-0 ff-secondary">Customers place their orders on FoodTrip without any help. The orders are reflected on the client side and can be managed by the restaurant admin.</p>
               </div>
             </div>
@@ -997,7 +997,7 @@
                   <img src="https://cdn.dribbble.com/users/520375/screenshots/3645713/weblet-animation.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Payment Management</a></h5>
+                <h5 class="mb-1"><a href="<?php echo base_url() ?>register/restaurant" class="text-body">Payment Management</a></h5>
                 <p class="text-muted mb-0 ff-secondary">52 % of the consumers want to make ordering and payment easier during dining activities. FoodTrip's payment module allows you to take online payments.</p>
               </div>
             </div>
@@ -1011,7 +1011,7 @@
                   <img src="https://images.ctfassets.net/pnliwdxhy0tx/4BObUpGsDEaSOiUjoKGd68/a0991616b97aec2c7a9e4692f96f62b2/img.gif" alt="" class="img-fluid use-cases">
                 </div>
                 <!-- end card body -->
-                <h5 class="mb-1"><a href="pages-profile.html" class="text-body">Data Management</a></h5>
+                <h5 class="mb-1"><a href="<?php echo base_url() ?>register/restaurant" class="text-body">Data Management</a></h5>
                 <p class="text-muted mb-0 ff-secondary">The actions your guests make on your menu is precious. FoodTrip gives you a summary of the most/least sold items and revenue share across sections.</p>
               </div>
             </div>
@@ -1126,7 +1126,7 @@
           <!-- end col -->
           <div class="col-sm-auto">
             <div>
-              <a href="#" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-hand-coin-line align-middle me-1"></i> Partner with Us</a>
+              <a href="<?php echo base_url() ?>register/restaurant" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-hand-coin-line align-middle me-1"></i> Partner with Us</a>
             </div>
           </div>
           <!-- end col -->
@@ -1190,7 +1190,7 @@
                   <ul class="list-unstyled ff-secondary footer-list fs-14">
                     <li><a href="#">Help</a></li>
                     <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Be a FoodTrip Merchant</a></li>
+                    <li><a href="<?php echo base_url() ?>register/restaurant">Be a FoodTrip Merchant</a></li>
                   </ul>
                 </div>
               </div>

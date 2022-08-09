@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		new DataTable("#fixed-header", { fixedHeader: !0 });
 	}),
 	document.addEventListener("DOMContentLoaded", function () {
-		new DataTable("#model-datatables", {
+		new DataTable(".model-datatables", {
 			responsive: {
 				details: {
 					display: $.fn.dataTable.Responsive.display.modal({
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}),
 	document.addEventListener("DOMContentLoaded", function () {
-		new DataTable("#buttons-datatables", {
+		new DataTable(".buttons-datatables", {
 			dom: "Bfrtip",
 			buttons: ["copy", "csv", "excel", "print", "pdf"],
 		});

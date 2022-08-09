@@ -10,8 +10,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Dashboard", "title" => "Dashboard"]);
     $this->load->view('restoadmin/dashboard');
     $this->load->view('partials/footer');
@@ -24,8 +24,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('restoadmin/profile/pages/profile');
     $this->load->view('partials/footer');
     $this->load->view('partials/foot-scripts');
@@ -37,8 +37,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('restoadmin/profile/pages/profile-settings');
     $this->load->view('partials/footer');
     $this->load->view('partials/foot-scripts');
@@ -50,8 +50,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('restoadmin/restaurant-management/pages/restaurant');
     $this->load->view('partials/footer');
     $this->load->view('partials/foot-scripts');
@@ -63,8 +63,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('restoadmin/restaurant-management/pages/edit-restaurant');
     $this->load->view('partials/footer');
     $this->load->view('partials/foot-scripts');
@@ -76,8 +76,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Products"]);
     $this->load->view('restoadmin/products-management/pages/products');
     $this->load->view('partials/footer');
@@ -90,8 +90,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Product Details"]);
     $this->load->view('restoadmin/products-management/pages/product-details');
     $this->load->view('partials/footer');
@@ -104,8 +104,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Products", "title" => "Add Dish"]);
     $this->load->view('restoadmin/products-management/pages/add-product');
     $this->load->view('partials/footer');
@@ -118,11 +118,12 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Orders", "title" => "Orders"]);
     $this->load->view('restoadmin/orders-management/pages/orders');
     $this->load->view('partials/footer');
+    $this->load->view('restoadmin/orders-management/components/modals/edit-order-modal');
     $this->load->view('partials/foot-scripts');
     $this->load->view('restoadmin/orders-management/pages/scripts/order-scripts');
   }
@@ -132,8 +133,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Orders", "title" => "Order Details"]);
     $this->load->view('restoadmin/orders-management/pages/order-details');
     $this->load->view('partials/footer');
@@ -146,12 +147,12 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Payments", "title" => "Payments"]);
     $this->load->view('restoadmin/invoices-management/pages/invoices');
     $this->load->view('partials/footer');
-    $this->load->view('restoadmin/invoices-management/components/modals/remove-payment-modal');
+    $this->load->view('restoadmin/invoices-management/components/modals/edit-payment-modal');
     $this->load->view('partials/foot-scripts');
     $this->load->view('restoadmin/invoices-management/pages/scripts/invoice-scripts');
   }
@@ -161,8 +162,8 @@ class RestoAdmin extends CI_Controller
     $this->load->view('partials/main');
     $this->load->view('partials/title-meta');
     $this->load->view('partials/head-css');
-    $this->load->view('partials/topbar');
-    $this->load->view('partials/sidebar');
+    $this->load->view('partials/restoadmin/topbar');
+    $this->load->view('partials/restoadmin/sidebar');
     $this->load->view('partials/page-title', ["page_title" => "Payments", "title" => "Invoice"]);
     $this->load->view('restoadmin/invoices-management/pages/invoice-details');
     $this->load->view('partials/footer');

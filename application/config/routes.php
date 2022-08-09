@@ -66,7 +66,6 @@ $route['restaurant']                                = 'home/restaurant';
 // Authentication Routes
 $route['signin']                                    = 'auth/signin';
 $route['register/restaurant']                       = 'auth/register_restaurant';
-$route['signup/restoadmin']                         = 'auth/signup_restoadmin';
 $route['signup/customer']                           = 'auth/signup_customer';
 $route['forgot-password']                           = 'auth/forgot_password';
 $route['password-change']                           = 'auth/password_change';
@@ -77,13 +76,13 @@ $route['admin']                                     = 'admin/dashboard';
 $route['admin/restaurants']                         = 'admin/restaurants';
 $route['admin/restaurants/restaurant-details']      = 'admin/restaurant_details';
 $route['admin/products']                            = 'admin/products';
-$route['admin/products/product-details']            = 'admin/product_details';
 $route['admin/customers']                           = 'admin/customers';
-$route['admin/orders']                              = 'admin/orders'; // remove add order
-$route['admin/orders/order-details']                = 'admin/order_details'; // edit order status, courier etc
+$route['admin/orders']                              = 'admin/orders';
 $route['admin/invoices']                            = 'admin/invoices';
 $route['admin/invoices/invoice-details']            = 'admin/invoice_details';
 $route['admin/restaurant-admins']                   = 'admin/restaurant_admins';
+$route['admin/couriers']                            = 'admin/couriers';
+$route['admin/delivery-details']                    = 'admin/delivery_details';
 
 // Customer Routes
 $route['customer/explore']                          = 'customer/explore';

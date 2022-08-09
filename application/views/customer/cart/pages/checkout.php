@@ -2,7 +2,6 @@
     <div class="col-xl-8">
         <div class="card">
             <div class="card-body checkout-tab">
-
                 <form action="#">
                     <div class="step-arrow-nav mt-n3 mx-n3 mb-3">
                         <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
@@ -17,7 +16,7 @@
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fs-15 p-3" id="pills-finish-tab" data-bs-toggle="pill" data-bs-target="#pills-finish" type="button" role="tab" aria-controls="pills-finish" aria-selected="false">
+                                <button class="nav-link fs-15 p-3" id="pills-finish-tab" data-bs-toggle="pill" data-bs-target="#pills-finish" type="button" role="tab" aria-controls="pills-finish" aria-selected="false" disabled>
                                     <i class="ri-checkbox-circle-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></i> Finish
                                 </button>
                             </li>
@@ -42,102 +41,12 @@
                                         <button type="button" class="btn btn-sm btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addAddressModal">
                                             <i class="ri-map-pin-add-line"></i> Add New Address
                                         </button> <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-sm btn-info mb-3">
+                                        <a href="<?php echo base_url() ?>customer/profile" type="button" class="btn btn-sm btn-info mb-3">
                                             <i class="ri-quill-pen-line"></i> Manage Addresses
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="row gy-3">
-                                    <div class="col-lg-4 col-sm-6 my-3">
-                                        <div class="form-check card-radio">
-                                            <input id="shippingAddress01" name="shippingAddress" type="radio" class="form-check-input" checked>
-                                            <label class="form-check-label" for="shippingAddress01">
-                                                <span class="fs-14 mb-2 d-block">Avrielle Haven Fernandez Juarez</span>
-                                                <span class="fs-14 mb-2 d-block">09872537193</span>
-                                                <span class="text-muted fw-normal text-wrap mb-1 d-block">1071 Del Monte Avenue, Barangay Paltok, Quezon City, Metro Manila, 1105</span>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#addAddressModal"><i class="ri-pencil-fill text-muted align-bottom me-1"></i> Edit</a>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6 my-3">
-                                        <div class="form-check card-radio">
-                                            <input id="shippingAddress02" name="shippingAddress" type="radio" class="form-check-input">
-                                            <label class="form-check-label" for="shippingAddress02">
-                                                <span class="fs-14 mb-2 d-block">Avrielle Haven Fernandez Juarez</span>
-                                                <span class="fs-14 mb-2 d-block">09872537193</span>
-                                                <span class="text-muted fw-normal text-wrap mb-1 d-block">Block 8 Lot 34 Sunrise Street, Maligaya Subdivision, Barangay 177, Caloocan City, Metro Manila, 1424</span>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#addAddressModal"><i class="ri-pencil-fill text-muted align-bottom me-1"></i> Edit</a>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6 my-3">
-                                        <div class="form-check card-radio">
-                                            <input id="shippingAddress03" name="shippingAddress" type="radio" class="form-check-input">
-                                            <label class="form-check-label" for="shippingAddress03">
-                                                <span class="fs-14 mb-2 d-block">Louisse Natasha Valeria</span>
-                                                <span class="fs-14 mb-2 d-block">09271829173</span>
-                                                <span class="text-muted fw-normal text-wrap mb-1 d-block">1218b Grass Residence, Barangay Santo Cristo, Quezon City, Metro Manila, 1105</span>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#addAddressModal"><i class="ri-pencil-fill text-muted align-bottom me-1"></i> Edit</a>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6 my-3">
-                                        <div class="form-check card-radio">
-                                            <input id="shippingAddress04" name="shippingAddress" type="radio" class="form-check-input">
-                                            <label class="form-check-label" for="shippingAddress04">
-                                                <span class="fs-14 mb-2 d-block">Samantha Maureen Vera</span>
-                                                <span class="fs-14 mb-2 d-block">09182938290</span>
-                                                <span class="text-muted fw-normal text-wrap mb-1 d-block">1105 Pagcor Annex, Carmen Building, corner Ma. Orosa, UN Avenue, Barangay 660-A, Ermita, Metro Manila, 1000</span>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#addAddressModal"><i class="ri-pencil-fill text-muted align-bottom me-1"></i> Edit</a>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6 my-3">
-                                        <div class="form-check card-radio">
-                                            <input id="shippingAddress05" name="shippingAddress" type="radio" class="form-check-input">
-                                            <label class="form-check-label" for="shippingAddress05">
-                                                <span class="fs-14 mb-2 d-block">Akihiro Leonel Juarez</span>
-                                                <span class="fs-14 mb-2 d-block">09171839204</span>
-                                                <span class="text-muted fw-normal text-wrap mb-1 d-block">Lot 21, Block 16, Molave St., Violago Homes Parkwoods, Barangay Payatas, Quezon City, Metro Manila, 1119</span>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#addAddressModal"><i class="ri-pencil-fill text-muted align-bottom me-1"></i> Edit</a>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="d-block text-body p-1 px-2" data-bs-toggle="modal" data-bs-target="#removeItemModal"><i class="ri-delete-bin-fill text-muted align-bottom me-1"></i> Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="row gy-3" id="addresses">
                                 </div>
                             </div>
 
@@ -209,21 +118,19 @@
 
                             <div class="d-flex align-items-start gap-3 mt-4">
                                 <button type="button" class="btn btn-light btn-label previestab" data-previous="pills-bill-address-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i>Back to Shipping</button>
-                                <button type="button" class="btn btn-primary btn-label right ms-auto nexttab" data-nexttab="pills-finish-tab"><i class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"></i>Complete Order</button>
+                                <button onclick='createOrder()' id="completeBtn" type="button" class="btn btn-primary btn-label right ms-auto nexttab"><i class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"></i>Complete Order</button>
                             </div>
                         </div>
                         <!-- end tab pane -->
 
                         <div class="tab-pane fade" id="pills-finish" role="tabpanel" aria-labelledby="pills-finish-tab">
                             <div class="text-center py-5">
-
                                 <div class="mb-4">
                                     <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#0ab39c,secondary:#405189" style="width:120px;height:120px"></lord-icon>
                                 </div>
                                 <h5>Thank you ! Your Order is Completed !</h5>
                                 <p class="text-muted">You will receive an order confirmation email with details of your order.</p>
-
-                                <h3 class="fw-semibold">Order No: <a href="#!" class="text-decoration-underline">97464507680</a></h3>
+                                <h3 class="fw-semibold" id="order_no"></h3>
                             </div>
                         </div>
                         <!-- end tab pane -->
@@ -238,7 +145,7 @@
     <!-- end col -->
 
     <div class="col-xl-4">
-        <div class="card">
+        <div class="card" id="orderDetails">
             <div class="card-header">
                 <div class="d-flex">
                     <div class="flex-grow-1">
@@ -246,78 +153,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body">
-                <div class="table-responsive table-card">
-                    <table class="table table-borderless align-middle mb-0">
-                        <thead class="table-light text-muted">
-                            <tr class="table-success">
-                                <th colspan="3">
-                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/jollibee.jpg" alt="" class="rounded-circle avatar-xs shadow me-2"><a href="#!" class="text-dark"> Jollibee</a>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th style="width: 90px;" scope="col">Product</th>
-                                <th scope="col">Product Info</th>
-                                <th scope="col" class="text-end">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="avatar-md bg-light rounded p-1">
-                                        <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-27.png" alt="" class="img-fluid d-block">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5 class="fs-14"><a href="#!" class="text-dark">8pc Chickenjoy w/ Jolly Spaghetti Pan</a></h5>
-                                    <p class="text-muted mb-0">₱ 776.00 x 1</p>
-                                </td>
-                                <td class="text-end">₱ 776.00</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="avatar-md bg-light rounded p-1">
-                                        <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-15.png" alt="" class="img-fluid d-block">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5 class="fs-14"><a href="#!" class="text-dark">Amazing Aloha Champ Jr.</a></h5>
-                                    <p class="text-muted mb-0">₱ 109.00 x 5</p>
-                                </td>
-                                <td class="text-end">₱ 545.00</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="avatar-md bg-light rounded p-1">
-                                        <img src="<?php echo base_url('public/assets') ?>/images/food/jollibee/img-28.png" alt="" class="img-fluid d-block">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h5 class="fs-14"><a href="#!" class="text-dark">1pc Burger Steak w/ Shanghai w/ Drink</a></h5>
-                                    <p class="text-muted mb-0">₱ 143.00 x 3</p>
-                                </td>
-                                <td class="text-end">₱ 429.00</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-semibold" colspan="2">Sub Total :</td>
-                                <td class="fw-semibold text-end">₱ 1,750.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- end card body -->
-            <div class="card-footer bg-gradient bg-light">
-                <div class="d-flex justify-content-between">
-                    <h5 class="card-title mb-0 d-inline-block">Total Amount (PHP) :</h5>
-                    <span class="fw-semibold fs-15">
-                        ₱ 1,750.00
-                    </span>
-                </div>
-            </div>
         </div>
-        <!-- end card -->
     </div>
     <!-- end col -->
 </div>
 <!-- end row -->
+<script src="<?php echo base_url('public/assets') ?>/js/ajax/customer/checkout.ajax.js"></script>

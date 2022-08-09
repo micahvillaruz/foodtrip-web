@@ -40,7 +40,7 @@
                   <h5>You are Logged Out</h5>
                   <p class="text-muted">Thank you for visiting <span class="fw-semibold">FoodTrip</span></p>
                   <div class="mt-4">
-                    <a href="auth-signin-basic.html" class="btn btn-success w-100">Sign In</a>
+                    <a href="<?php echo base_url() ?>signin" class="btn btn-success w-100">Sign In</a>
                   </div>
                 </div>
               </div>
