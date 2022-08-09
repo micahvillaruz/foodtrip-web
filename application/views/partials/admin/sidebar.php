@@ -66,6 +66,20 @@
                             </a>
                         </li>
 
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span>Delivery Management</span></li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="<?php echo base_url() ?>admin/delivery-details" role="button">
+                                <i class="mdi mdi-cube-outline"></i> <span>Delivery Details</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="<?php echo base_url() ?>admin/couriers" role="button">
+                                <i class="mdi mdi-layers-triple-outline"></i> <span>Couriers</span>
+                            </a>
+                        </li>
+
                         <li class="menu-title"><span menu>User Management</span></li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarUser" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUser">
