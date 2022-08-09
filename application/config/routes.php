@@ -85,6 +85,7 @@ $route['admin/couriers']                            = 'admin/couriers';
 $route['admin/delivery-details']                    = 'admin/delivery_details';
 $route['admin/admins']                              = 'admin/admins';
 $route['admin/profile']                             = 'admin/profile';
+$route['admin/profile/settings']                    = 'admin/profile_settings';
 
 // Customer Routes
 $route['customer/explore']                          = 'customer/explore';

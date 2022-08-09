@@ -202,4 +202,17 @@ class Admin extends CI_Controller
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/profile/pages/scripts/profile-scripts');
 	}
+
+	public function profile_settings()
+	{
+		$this->load->view('partials/main');
+		$this->load->view('partials/title-meta');
+		$this->load->view('partials/head-css');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
+		$this->load->view('admin/profile/pages/profile-settings');
+		$this->load->view('partials/footer');
+		$this->load->view('partials/foot-scripts');
+		$this->load->view('admin/profile/pages/scripts/profile-settings-scripts');
+	}
 }
