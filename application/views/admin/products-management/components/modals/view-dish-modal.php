@@ -1,4 +1,4 @@
-<div class="modal fade zoomIn" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade zoomIn" id="viewDishDetailsModal" tabindex="-1" aria-labelledby="viewDishDetailsModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content border-0">
             <div class="modal-header p-3 bg-soft-info">
@@ -15,16 +15,16 @@
                                     <tbody>
                                         <tr>
                                             <td class="col-1 ps-0">
-                                                <div class="avatar-lg bg-light rounded p-1">
-                                                    <img src="<?php echo base_url('public/assets') ?>/images/food/burger-king/img-6.png" alt="" class="img-fluid d-block">
+                                                <div id="dish_img" class="avatar-lg bg-light rounded p-1">
                                                 </div>
                                             </td>
                                             <td>
-                                                <h4 class="fw-medium"><a href="#!" class="text-dark">
-                                                        BBQ X-tra Long Chicken Jr. w/ Rice Meal</a></h4>
-                                                <p class="text-muted">Category : <span class="fw-medium">Crispy & Tender Chicken</span></p>
+                                                <h4 class="fw-medium">
+                                                    <a href="#!" id="dish_name" class="text-dark text-uppercase"></a>
+                                                </h4>
+                                                <p class="text-muted fs-14">Category : <span id="dishcatg_name" class="fw-medium"></span></p>
                                             </td>
-                                            <td class="text-end fs-19 fw-medium">₱ 99.00</td>
+                                            <td class="text-end fs-19 fw-medium">₱ <span id="dish_price"></span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -32,45 +32,92 @@
                             <!-- end table-responsive -->
                         </div>
                         <!--end col-->
-                        <div class="col-lg-12">
-                            <div>
-                                <h5 class="fs-15 badge rounded-pill badge-outline-info">Description :</h5>
-                                <p class="ms-5">Enjoy our new and improved gravy that perfectly complements X-tra Long Chicken with Rice.</p>
-                            </div>
+
+                        <div data-simplebar class="mx-n3">
+                            <ul class="list list-group list-group-flush mb-0">
+                                <li class="list-group-item" data-id="01">
+                                    <div class="d-flex">
+                                        <div class="col-6">
+                                            <h5 class="fs-13 mb-1">
+                                                <a href="#" class="link text-dark">Description</a>
+                                            </h5>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="text-wrap" style="width: 20rem;">
+                                                <p id="dish_desc" class="mb-0">
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- end list item -->
+                                <li class="list-group-item" data-id="02">
+                                    <div class="d-flex">
+                                        <div class="col-6">
+                                            <h5 class="fs-13 mb-1">
+                                                <a href="#" class="link text-dark">Status</a>
+                                            </h5>
+                                        </div>
+                                        <div id="dish_status" class="col-6">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- end list item -->
+                                <li class="list-group-item" data-id="03">
+                                    <div class="d-flex align-items-center">
+                                        <div class="col-6">
+                                            <h5 class="fs-13 mb-1">
+                                                <a href="#" class="link text-dark">Restaurant</a>
+                                            </h5>
+                                        </div>
+                                        <div class="me-2">
+                                            <div id="resto_img">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p id="resto_name" class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- end list item -->
+                                <li class="list-group-item" data-id="04">
+                                    <div class="d-flex align-items-center">
+                                        <div class="col-6">
+                                            <h5 class="fs-13 mb-1">
+                                                <a href="#" class="link text-dark">Published</a>
+                                            </h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="mb-0">
+                                                <i class="bx bx-calendar text-primary fs-13 me-1"></i>
+                                                <span id="date_created"></span>
+                                                <small id="time_created" class="text-muted ms-1"></small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- end list item -->
+                                <li class="list-group-item" data-id="05">
+                                    <div class="d-flex align-items-center">
+                                        <div class="col-6">
+                                            <h5 class="fs-13 mb-1">
+                                                <a href="#" class="link text-dark">Created By</a>
+                                            </h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="mb-0 d-flex align-items-center">
+                                                <i class="ri-account-circle-fill text-secondary fs-15 me-2"></i>
+                                                <span id="created_by"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- end list item -->
+                            </ul>
+                            <!-- end ul list -->
                         </div>
-                        <!--end col-->
-                        <div class="col-lg-12">
-                            <h5 class="fs-15 badge rounded-pill badge-outline-info">Status :</h5>
-                            <p class="ms-5">
-                                <badge type="button" class="badge badge-soft-success position-relative fs-15">
-                                    Available
-                                    <i class="ms-1 mdi fs-15 mdi-food"></i>
-                                </badge>
-                            </p>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-12">
-                            <h5 class="fs-15 badge rounded-pill badge-outline-info">Restaurant :</h5>
-                            <p class="ms-5">
-                                <span class="flex-shrink-0">
-                                    <img src="<?php echo base_url('public/assets') ?>/images/restaurants/burger-king.png" alt="" class="avatar-xxs rounded-circle">
-                                </span>
-                                <span class="flex-grow-1 ms-2">
-                                    Burger King
-                                </span>
-                            </p>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-12">
-                            <h5 class="fs-15 badge rounded-pill badge-outline-info">Published :</h5>
-                            <p class="ms-5">26 Mar, 2021<small class="text-muted ms-1">11:40 AM</small></p>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-12">
-                            <h5 class="fs-15 badge rounded-pill badge-outline-info">Created By :</h5>
-                            <p class="ms-5">Manuel V. Pangilinan</p>
-                        </div>
-                        <!--end col-->
                     </div>
                     <!--end row-->
                 </div>
