@@ -34,7 +34,7 @@
                         <li class="menu-title"><span menu>Restaurant Details</span></li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarResto" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResto">
-                                <i class="mdi mdi-speedometer"></i> <span>Jollibot</span>
+                                <i class="mdi mdi-speedometer"></i> <span id="restoName"></span>
                             </a>
                             <div class="menu-dropdown collapse show" id="sidebarResto">
                                 <ul class="nav nav-sm flex-column">
@@ -78,3 +78,5 @@
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->
         <div class="vertical-overlay"></div>
+
+        <script src="<?php echo base_url('public/assets') ?>/js/ajax/restoadmin/sidebar.ajax.js"></script>
