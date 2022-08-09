@@ -1,5 +1,6 @@
 $(function () {
 	loadOrdersTable();
+	loadCouriers();
 });
 
 // Load Orders DataTable
@@ -366,4 +367,29 @@ editOrder = (order_id) => {
 	}).fail(() =>
 		console.error("There was an error in getting the order details")
 	);
+};
+
+// Load Couriers
+loadCouriers = () => {
+	$.ajaxSetup({
+		headers: {
+			Accept: "application/json",
+			Authorization: "Bearer " + token,
+			ContentType: "application/x-www-form-urlencoded",
+		},
+	});
+	$.ajax({
+		type: "GET",
+		cache: false,
+		url: apiURL + `resto-admin/couriers`,
+		dataType: "json",
+		success: (result) => {
+			const data = result.data;
+			data.forEach((courier) => {
+				$("#couriers").append(
+					`<option value="${courier.courier_id}">${courier.courier_name}</option>`
+				);
+			});
+		},
+	});
 };

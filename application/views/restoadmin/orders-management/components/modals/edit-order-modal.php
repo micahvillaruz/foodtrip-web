@@ -26,13 +26,8 @@
           <div id="courierName" class="mt-3 d-none">
             <label for="courier_name" class="form-label d-flex justify-content-between">Courier <a href="#" class="text-decoration-underline">Add
                 Courier</a></label>
-            <select class="form-select select-no-search" id="courier" name="courier">
+            <select class="form-select select-no-search" id="couriers" name="courier">
               <option value="" selected disabled>Select Courier</option>
-              <option value="474200b9-3d65-40dc-b30f-ff9200554af0">Transportify</option>
-              <option value="7c6eada5-03bf-4394-ac12-38061cb2076d">Black Arrow Express</option>
-              <option value="a92163eb-8fc8-418d-b035-88e1da7d7a8a">LBC Express</option>
-              <option value="b34ceb41-5b25-4de3-b872-14aa5b05b7df">Lalamove</option>
-              <option value="b4133e4d-571c-4dfb-b154-eaf78f109bfc">2GO</option>
             </select>
           </div>
 
