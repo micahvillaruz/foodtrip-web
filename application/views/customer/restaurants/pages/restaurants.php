@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="mt-4">
-                    <a href="#!" class="btn btn-light w-100">View Details</a>
+                    <a href="<?php echo base_url() ?>customer/restaurants/restaurant-details" class="btn btn-light w-100">View Details</a>
                 </div>
             </div>
         </div>
