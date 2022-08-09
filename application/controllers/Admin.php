@@ -175,4 +175,18 @@ class Admin extends CI_Controller
 		$this->load->view('partials/foot-scripts');
 		$this->load->view('admin/couriers-management/pages/scripts/delivery-details-scripts');
 	}
+
+	public function admins()
+	{
+		$this->load->view('partials/main');
+		$this->load->view('partials/title-meta');
+		$this->load->view('partials/head-css');
+		$this->load->view('partials/admin/topbar');
+		$this->load->view('partials/admin/sidebar');
+		$this->load->view('partials/page-title', ["page_title" => "Admins", "title" => "Admins"]);
+		$this->load->view('admin/admins-management/pages/admins');
+		$this->load->view('partials/footer');
+		$this->load->view('partials/foot-scripts');
+		$this->load->view('admin/admins-management/pages/scripts/admin-scripts');
+	}
 }
