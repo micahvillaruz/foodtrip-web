@@ -306,7 +306,7 @@ viewOrderDetails = (order_id) => {
 				`;
 					$("#end").html(Delivered);
 				}
-			} else {
+			} else if (data.date_rejected === null && data.date_cancelled === null) {
 				Delivered += `
 					<div class="accordion-header" id="headingFour">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false">
