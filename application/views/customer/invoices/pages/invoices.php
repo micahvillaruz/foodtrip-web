@@ -29,7 +29,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="javascript:void(0);" class="fw-medium link-primary">#60524012573</a></td>
+                            <td><a href="<?php echo base_url() ?>customer/invoices/invoice-details" class="fw-medium link-primary">#60524012573</a></td>
                             <td><a href="javascript:void(0);" class="fw-medium link-primary">#97464507680</a></td>
                             <td>
                                 <div class="d-flex align-items-center fw-medium">

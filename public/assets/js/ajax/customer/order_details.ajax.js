@@ -77,8 +77,87 @@ loadOrderDetailsPage = (order_id) => {
 			`;
 			$("#full_date_created").html(pendingDateFull);
 
+			let rejectedOrder = "";
+			if (data.date_rejected !== null) {
+				rejectedOrder += `
+					<div class="accordion-header" id="headingTwo">
+						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<div class="d-flex align-items-center">
+								<div class="flex-shrink-0 avatar-xs">
+									<div class="avatar-title bg-success rounded-circle shadow">
+										<i class="ri-close-circle-line"></i>
+									</div>
+								</div>
+								<div class="flex-grow-1 ms-3">
+									<h6 class="fs-15 mb-0 fw-semibold">Rejected - 
+										<span class="fw-normal">
+											${moment(data.date_rejected).format("ddd")}, 
+											${moment(data.date_rejected).format("D MMM YYYY")}
+										</span>
+									</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body ms-2 ps-5 p-0">
+							<h6 class="mb-1">The order has been rejected by the restaurant.</h6>
+							<p class="text-muted">
+								${moment(data.date_rejected).format("ddd")},
+								${moment(data.date_rejected).format("D MMM YYYY")} - 
+								${moment(data.date_rejected).format("hh:mm A")}
+							</p>
+						</div>
+					</div>
+				`;
+				$("#end").html(rejectedOrder);
+				$("#in_process").addClass("d-none");
+				$("#on_the_way").addClass("d-none");
+				$("#delivery-details").addClass("d-none");
+			}
+
+			let cancelledOrder = "";
+			if (data.date_cancelled !== null) {
+				cancelledOrder += `
+					<div class="accordion-header" id="headingTwo">
+						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<div class="d-flex align-items-center">
+								<div class="flex-shrink-0 avatar-xs">
+									<div class="avatar-title bg-success rounded-circle shadow">
+										<i class="mdi mdi-basket-remove-outline"></i>
+									</div>
+								</div>
+								<div class="flex-grow-1 ms-3">
+									<h6 class="fs-15 mb-0 fw-semibold">Cancelled - 
+										<span class="fw-normal">
+											${moment(data.date_cancelled).format("ddd")}, 
+											${moment(data.date_cancelled).format("D MMM YYYY")}
+										</span>
+									</h6>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body ms-2 ps-5 p-0">
+							<h6 class="mb-1">The order has been cancelled by the customer.</h6>
+							<p class="text-muted">
+								${moment(data.date_cancelled).format("ddd")},
+								${moment(data.date_cancelled).format("D MMM YYYY")} - 
+								${moment(data.date_cancelled).format("hh:mm A")}
+							</p>
+						</div>
+					</div>
+				`;
+				$("#end").html(cancelledOrder);
+				$("#in_process").addClass("d-none");
+				$("#on_the_way").addClass("d-none");
+				$("#delivery-details").addClass("d-none");
+			}
+
 			let inProcess = "";
 			if (data.date_processed !== null) {
+				$("#in_process").removeClass("d-none");
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -101,7 +180,7 @@ loadOrderDetailsPage = (order_id) => {
 					</div>
 					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 						<div class="accordion-body ms-2 ps-5 py-0">
-							<h6 class="mb-1">Seller has proccessed your order.</h6>
+							<h6 class="mb-1">The restaurant has proccessed your order.</h6>
 							<p class="text-muted">
 								${moment(data.date_processed).format("ddd")},
 								${moment(data.date_processed).format("D MMM YYYY")} - 
@@ -111,7 +190,12 @@ loadOrderDetailsPage = (order_id) => {
 					</div>
 				`;
 				$("#in_process").html(inProcess);
-			} else if (data.date_processed === null) {
+			} else if (
+				data.date_processed === null &&
+				data.date_rejected === null &&
+				data.date_cancelled === null
+			) {
+				$("#in_process").removeClass("d-none");
 				inProcess += `
 					<div class="accordion-header" id="headingTwo">
 							<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false">
@@ -133,6 +217,7 @@ loadOrderDetailsPage = (order_id) => {
 
 			let onTheWay = "";
 			if (data.date_released !== null) {
+				$("#on_the_way").removeClass("d-none");
 				onTheWay += `
 					<div class="accordion-header" id="headingThree">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -167,7 +252,12 @@ loadOrderDetailsPage = (order_id) => {
 					</div>
 				`;
 				$("#on_the_way").html(onTheWay);
-			} else if (data.date_released === null) {
+			} else if (
+				data.date_released === null &&
+				data.date_rejected === null &&
+				data.date_cancelled === null
+			) {
+				$("#on_the_way").removeClass("d-none");
 				onTheWay += `
 					<div class="accordion-header" id="headingThree">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false">
@@ -225,9 +315,9 @@ loadOrderDetailsPage = (order_id) => {
 						</div>
 					</div>
 				`;
-					$("#delivered").html(Delivered);
+					$("#end").html(Delivered);
 				}
-			} else {
+			} else if (data.date_rejected === null && data.date_cancelled === null) {
 				Delivered += `
 					<div class="accordion-header" id="headingFour">
 						<a class="accordion-button p-2 shadow-none" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false">
@@ -244,7 +334,7 @@ loadOrderDetailsPage = (order_id) => {
 						</a>
 					</div>
 				`;
-				$("#delivered").html(Delivered);
+				$("#end").html(Delivered);
 			}
 
 			let deliveryDetails = "";
@@ -287,31 +377,31 @@ loadOrderDetailsPage = (order_id) => {
 			$("#delivery-details").html(deliveryDetails);
 
 			$("#restaurantDetails").html(`
-			<div class="card-header">
-                <div class="d-flex">
-                    <h5 class="card-title flex-grow-1 mb-0">Restaurant Details</h5>
-                    <div class="flex-shrink-0">
-                        <a href="${baseURL}customer/restaurants/restaurant-details" class="link-secondary">View Restaurant</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <ul class="list-unstyled mb-0 vstack gap-3">
-                    <li>
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0">
-                                <img src="${data.restaurant.resto_img}" alt=""${data.restaurant.resto_name}" class="avatar-sm rounded shadow">
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                                <h6 class="fs-14 mb-1">"${data.restaurant.resto_name}</h6>
-                                <p class="text-muted mb-0">"${data.restaurant.restaurant_category.restocatg_name}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li><i class="ri-mail-line me-2 align-middle text-muted fs-16"></i>"${data.restaurant.resto_website}</li>
-                    <li><i class="ri-phone-line me-2 align-middle text-muted fs-16"></i>"${data.restaurant.resto_phone}</li>
-                </ul>
-            </div>
+				<div class="card-header">
+					<div class="d-flex">
+						<h5 class="card-title flex-grow-1 mb-0">Restaurant Details</h5>
+							<div class="flex-shrink-0">
+								<a href="${baseURL}customer/restaurants/restaurant-details" class="link-secondary">View Restaurant</a>
+							</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<ul class="list-unstyled mb-0 vstack gap-3">
+						<li>
+							<div class="d-flex align-items-center">
+								<div class="flex-shrink-0">
+									<img src="${data.restaurant.resto_img}" alt="${data.restaurant.resto_name}" class="avatar-sm rounded shadow">
+								</div>
+								<div class="flex-grow-1 ms-3">
+									<h6 class="fs-14 mb-1">${data.restaurant.resto_name}</h6>
+									<p class="text-muted mb-0">${data.restaurant.restaurant_category.restocatg_name}</p>
+								</div>
+							</div>
+						</li>
+						<li><i class="ri-mail-line me-2 align-middle text-muted fs-16"></i>"${data.restaurant.resto_website}</li>
+						<li><i class="ri-phone-line me-2 align-middle text-muted fs-16"></i>"${data.restaurant.resto_phone}</li>
+					</ul>
+				</div>
 			`);
 
 			$("#address_owner").html(data.address.full_name);

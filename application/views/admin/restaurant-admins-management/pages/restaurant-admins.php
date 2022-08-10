@@ -8,12 +8,6 @@
                             <h5 class="card-title mb-0">Restaurant Admin List</h5>
                         </div>
                     </div>
-                    <div class="flex-shrink-0">
-                        <div class="hstack text-nowrap gap-2">
-                            <div id="export-buttons">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
